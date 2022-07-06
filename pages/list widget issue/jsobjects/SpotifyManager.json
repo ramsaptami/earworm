@@ -1,0 +1,15 @@
+{
+  "unpublishedCollection": {
+    "name": "SpotifyManager",
+    "pageId": "list widget issue",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "body": "export default {\n\tfilterResults: (data = SpotifySearch.data) => {\n\t\tlet results = data\n\t\t\n\t\t//if(selectAlbum.selectedOptionLabel)\n\t\t\n\t\treturn results\t\n\t},\n\t\n\tmapingData: () => {\n\t\treturn fetchAlbums.data.items.filter((albums) => {\n\t\t\tconsole.log(albums)\n\t\t})/*.map((item) => {\n\t\t\treturn {label: item.album, value: item.album}\n\t\t})*/\n\t},\n\tfetchSongArtists: () => {\n\t\tif (fetchTopTracks.data != null) {\n\t\t\t\n\t\t}\n\t}\n}",
+    "variables": []
+  },
+  "id": "list widget issue_SpotifyManager",
+  "deleted": false,
+  "gitSyncId": "61ea4a44361846772cfb117d_62acb62078c5ed4cdfd8da1f"
+}

@@ -1,0 +1,15 @@
+{
+  "unpublishedCollection": {
+    "name": "SpotifySettings",
+    "pageId": "list widget issue",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "body": "export default {\n\n\tauthTPP: () => {\n\t\tconsole.log(\"STEP 2: Requesting either request or refresh token based on token validity\")\n\t\tconsole.log(\"STEP 3a: Attempting to run requestToken API query\")\n\t\treturn this.requestCall()\n\t\t.then((s) => console.log(s.message) )\n\t\t.catch((e) => {\n\t\t\tconsole.log(e.message)\n\t\t\tif(requestToken.responseMeta.statusCode != '200') {\n\t\t\t\treturn this.refreshCall()\n\t\t\t}\n\t\t})\n\t},\t\n\n\t//-----Calling requestToken API and saving authorization code to store-----//\n\trequestCall: () => {\n\t\t\tconsole.log(\"STEP 4: *REQUEST CALL* Successfully ran requestToken API query\")\n\t\t\treturn requestToken.run()\n\t\t\tlet tokens = [\n\t\t\t\tstoreValue('authToken', requestToken.data.access_token),\n\t\t\t\tstoreValue('refreshToken', requestToken.data.refresh_token)\n\t\t\t]\n\t\t\treturn Promise.all(tokens)\n\t\t\t\t.then(() => {\t\n\t\t\t\tconsole.log(\"Auth code in store is \" + appsmith.store.authToken)\n\t\t\t\tconsole.log(\"Refresh token in store is \" + appsmith.store.refreshToken)\n\t\t\t})\n\t\t\t\t.catch((err) => {return showAlert('Could not store tokens in store ' + err.toString())})\n\t},\n\n\t//-----Calling refreshToken and replacing auth code in store-----//\n\trefreshCall: () => {\n\t\tconsole.log(\"STEP 3b: Attempting to run refreshToken API query\")\n\t\tconsole.log(\"*REFRESH CALL* \\\\nAuth code before refresh is \" + appsmith.store.authToken)\n\t\treturn refreshToken.run()\n\t\t\t.then((refreshResponse) => {\n\t\t\treturn storeValue('authToken', refreshResponse.access_token)\n\t\t\t\t.then(() => console.log(\"STEP 4: *REFRESH CALL* \\\\nAuth code after refresh is \" + appsmith.store.authToken))\n\t\t\t\t.catch(() => console.log(\"Failed to update auth code from refresh call\"))\n\t\t})\n\t},\n\n\t//-----Custom search artists on Spotify-----//\n\trunCustomSearch: async () => {\n\t\tconst searchValue = (searchArtist?.text?.length > 2 ? searchArtist.text : selectArtist.selectedOptionLabel)\n\t\tif(searchValue.length > 0) {\n\t\t\tshowAlert(searchValue);\n\t\t\tawait searchAnyArtist.run()\n\t\t\treturn searchAnyArtist.data.tracks\n\t\t}\n\t\telse {\n\t\t\tshowAlert(appsmith.store.searchValue)\n\t\t\tawait fetchTopTracks.run()\n\t\t\treturn fetchTopTracks.data.tracks\n\t\t}\n\t},\n\n\tclearStorage: () => {\n\t\tObject.keys(appsmith.store).forEach((eachKey) => {\n\t\t\tstoreValue(eachKey, undefined)\t\n\t\t\tshowAlert(eachKey)\n\t\t})\n\t},\n\n\tclearAuthCode: () => {\n\t\tstoreValue('authToken', 'undefined')\n\t\tshowAlert(appsmith.store.authToken)\n\t},\n\n\t//---test reactivity--//\n\tdisplaySearchText: () => {\n\t\tshowAlert(this.searchValue)\n\t}\n}",
+    "variables": []
+  },
+  "id": "list widget issue_SpotifySettings",
+  "deleted": false,
+  "gitSyncId": "61ea4a44361846772cfb117d_62acb62078c5ed4cdfd8da1d"
+}

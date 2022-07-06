@@ -1,0 +1,20 @@
+{
+  "unpublishedCollection": {
+    "name": "SpotifySettings",
+    "pageId": "debugging page",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "body": "export default {\n\tsearchValue: searchArtist?.text?.length > 2 ? searchArtist.text : selectArtist.selectedOptionLabel,\n\t\n\tauthTPP: async () => {\n\t\tconsole.log(\"STEP 2: Requesting either request or refresh token based on token validity\");\n\t\treturn this.requestCall()\n\t\t.then((s) => console.log(s))\n\t\t.catch((e) => {\n\t\t\tconsole.log(e.message)\n\t\t\tif(requestToken.responseMeta.statusCode != '200') {\n\t\t\t\treturn this.refreshCall()\n\t\t\t}\n\t\t})\n\t},\t\n\t\n//-----Calling requestToken API and saving authorization code to store-----//\n\trequestCall: () => {\n\t\tconsole.log(\"STEP 3a: Attempting to run requestToken API query \")\n\t\treturn requestToken.run()\n\t\t.then((response) => {\n\t\t\tconsole.log(\"STEP 4: *REQUEST CALL* Successfully ran requestToken API query \")\n\t\t\tlet tokens = [\n\t\t\t\tstoreValue('authToken', response.access_token),\n\t\t\t\tstoreValue('refreshToken', response.refresh_token),\n\t\t\t]\n\t\t\t\treturn Promise.all(tokens).then((resultTokens) => {\t\n\t\t\t\t\tconsole.log(\"resultTokens\", resultTokens)\n\t\t\t\t\tconsole.log(\"Auth code in store is \" + appsmith.store.authToken)\n\t\t\t\t\tconsole.log(\"Refresh token in store is \" + appsmith.store.refreshToken)\n\t\t\t\t})\n\t\t\t\t.catch((err) => { \n\t\t\t\t\tconsole.log(\"Could not store tokens in store\");\n\t\t\t\t\treturn showAlert('Could not store tokens in store ' + err.toString());\n\t\t\t\t})\n\t\t})\n\t},\n\t\n//-----Calling refreshToken and replacing auth code in store-----//\n\trefreshToken: () => {\n\t\tconsole.log(\"STEP 3b: Attempting to run refreshToken API query\")\n\t\tconsole.log(\"*REFRESH CALL* \\\\nAuth code before refresh is \" + appsmith.store.authToken)\n\t\treturn refreshToken.run()\n\t\t.then((refreshResponse) => {\n\t\t\treturn storeValue('authToken', refreshResponse.access_token)\n\t\t\t.then(() => console.log(\"STEP 4: *REFRESH CALL* \\\\nAuth code after refresh is \" + appsmith.store.authToken))\n\t\t\t.catch(() => console.log(\"Failed to update auth code from refresh call\"))\n\t\t})\n\t},\n\n//-----Custom search artists on Spotify-----//\n\trunCustomSearch: async () => {\n\t\tif (this.searchValue.length > 0) {\n\t\t\t\tshowAlert(this.searchValue);\n\t\t\t\tawait searchAnyArtist.run()\n\t\t\t\treturn searchAnyArtist.data.tracks\n\t\t\t}\n\t\t\telse {\n\t\t\t\tshowAlert(appsmith.store.searchValue)\n\t\t\t\tawait fetchTopTracks.run()\n\t\t\t\treturn fetchTopTracks.data.tracks\n\t\t\t}\n\t},\n\t\n\tclearStorage: () => {\n\t\tObject.keys(appsmith.store).forEach((eachKey) => {\n\t\t\tstoreValue(eachKey, undefined)\t\n\t\t\tshowAlert(eachKey)\n     })\n  },\n\t\n\tclearAuthCode: () => {\n\t\tstoreValue('authToken', 'undefined')\n\t\tshowAlert(appsmith.store.authToken)\n\t},\n\t\n//---test reactivity--//\n\tdisplaySearchText: () => {\n\t\tshowAlert(this.searchValue)\n\t}\n}",
+    "variables": [
+      {
+        "name": "searchValue",
+        "value": "{{(()=>{const index = _.findIndex(selectArtist.options, { value: selectArtist.value }); return selectArtist.options[index]?.label; })()}}"
+      }
+    ]
+  },
+  "id": "debugging page_SpotifySettings",
+  "deleted": false,
+  "gitSyncId": "61ea4a44361846772cfb117d_62a32578f4e3980741ff575f"
+}

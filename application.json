@@ -1,0 +1,35 @@
+{
+  "pages": [
+    {
+      "id": "Home",
+      "isDefault": true
+    },
+    {
+      "id": "Spotify and YouTube",
+      "isDefault": false
+    },
+    {
+      "id": "debugging page",
+      "isDefault": false
+    },
+    {
+      "id": "list widget issue",
+      "isDefault": false
+    }
+  ],
+  "viewMode": false,
+  "appIsExample": false,
+  "unreadCommentThreads": 0,
+  "clonedFromApplicationId": "61ea49fb361846772cfb1113",
+  "color": "#F5D1D1",
+  "icon": "love",
+  "unpublishedAppLayout": {
+    "type": "DESKTOP"
+  },
+  "publishedAppLayout": {
+    "type": "DESKTOP"
+  },
+  "applicationVersion": 2,
+  "isManualUpdate": false,
+  "deleted": false
+}
