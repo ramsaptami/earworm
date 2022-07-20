@@ -42,7 +42,7 @@
         },
         {
           "key": "redirect_uri",
-          "value": "https://appsmith-git-fix-jsobject-stalevalues-get-appsmith.vercel.app/app/earworm/spotify-and-youtube-61ea4a44361846772cfb1180/edit"
+          "value": "https://release.app.appsmith.com/app/earworm/spotify-and-youtube-61ea4a44361846772cfb1180/edit?branch=master"
         }
       ],
       "httpMethod": "POST",
@@ -55,7 +55,7 @@
         "apiContentType": "application/x-www-form-urlencoded"
       }
     },
-    "executeOnLoad": false,
+    "executeOnLoad": true,
     "dynamicBindingPathList": [
       {
         "key": "bodyFormData[1].value"
@@ -71,12 +71,12 @@
       "appsmith.URL.queryParams.code",
       "btoa(\"6ff9274520cd4d5aa5a19fe75894aa90:f44e22bcd9d14ef09480b39ae3aad59e\")"
     ],
-    "userSetOnLoad": true,
+    "userSetOnLoad": false,
     "confirmBeforeExecute": false,
     "policies": [],
     "userPermissions": []
   },
   "id": "Spotify and YouTube_requestToken",
   "deleted": false,
-  "gitSyncId": "61ea4a44361846772cfb117d_62ac5d3878c5ed4cdfd8d659"
+  "gitSyncId": "61ea4a44361846772cfb117d_62c41c515debc513b2e5bc7c"
 }

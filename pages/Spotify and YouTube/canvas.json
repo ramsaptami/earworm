@@ -4108,6 +4108,19 @@
           ],
           [
             {
+              "id": "Spotify and YouTube_requestToken",
+              "name": "requestToken",
+              "confirmBeforeExecute": false,
+              "pluginType": "API",
+              "jsonPathKeys": [
+                "appsmith.URL.queryParams.code",
+                "btoa(\"6ff9274520cd4d5aa5a19fe75894aa90:f44e22bcd9d14ef09480b39ae3aad59e\")"
+              ],
+              "timeoutInMillisecond": 10000
+            }
+          ],
+          [
+            {
               "id": "Spotify and YouTube__onPageActions.authorizeSpotifyUsage",
               "name": "_onPageActions.authorizeSpotifyUsage",
               "collectionId": "Spotify and YouTube__onPageActions",
