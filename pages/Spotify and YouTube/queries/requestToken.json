@@ -55,7 +55,7 @@
         "apiContentType": "application/x-www-form-urlencoded"
       }
     },
-    "executeOnLoad": true,
+    "executeOnLoad": false,
     "dynamicBindingPathList": [
       {
         "key": "bodyFormData[1].value"
@@ -71,7 +71,7 @@
       "appsmith.URL.queryParams.code",
       "btoa(\"6ff9274520cd4d5aa5a19fe75894aa90:f44e22bcd9d14ef09480b39ae3aad59e\")"
     ],
-    "userSetOnLoad": false,
+    "userSetOnLoad": true,
     "confirmBeforeExecute": false,
     "policies": [],
     "userPermissions": []

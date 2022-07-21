@@ -661,7 +661,7 @@
               "renderMode": "CANVAS",
               "isLoading": false,
               "borderRadius": "0px",
-              "onOptionChange": "{{SpotifyManager.processInformation(selectArtist.selectedOptionValue)}}"
+              "onOptionChange": "{{SpotifyManager.processArtist(selectArtist.selectedOptionValue)}}"
             },
             {
               "boxShadow": "none",
@@ -1710,7 +1710,7 @@
               "dynamicPropertyPathList": [],
               "displayName": "Input",
               "iconSVG": "/static/media/icon.9f505595.svg",
-              "onSubmit": "{{searchAnyArtist.run(() => SpotifyManager.processInformation(searchAnyArtist.data.artists.items[0].id), () => showAlert('Unable to fetch artist ID','warning'))}}",
+              "onSubmit": "{{searchAnyArtist.run(() => SpotifyManager.processArtist(searchAnyArtist.data.artists.items[0].id), () => showAlert('Unable to fetch artist ID','warning'))}}",
               "topRow": 21,
               "bottomRow": 26,
               "parentRowSpace": 10,
@@ -4093,32 +4093,6 @@
           ]
         },
         "layoutOnLoadActions": [
-          [
-            {
-              "id": "Spotify and YouTube_refreshToken",
-              "name": "refreshToken",
-              "confirmBeforeExecute": false,
-              "pluginType": "API",
-              "jsonPathKeys": [
-                "appsmith.store.refreshToken",
-                "btoa(\"6ff9274520cd4d5aa5a19fe75894aa90:f44e22bcd9d14ef09480b39ae3aad59e\")"
-              ],
-              "timeoutInMillisecond": 10000
-            }
-          ],
-          [
-            {
-              "id": "Spotify and YouTube_requestToken",
-              "name": "requestToken",
-              "confirmBeforeExecute": false,
-              "pluginType": "API",
-              "jsonPathKeys": [
-                "appsmith.URL.queryParams.code",
-                "btoa(\"6ff9274520cd4d5aa5a19fe75894aa90:f44e22bcd9d14ef09480b39ae3aad59e\")"
-              ],
-              "timeoutInMillisecond": 10000
-            }
-          ],
           [
             {
               "id": "Spotify and YouTube__onPageActions.authorizeSpotifyUsage",

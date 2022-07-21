@@ -6,7 +6,7 @@
     "pluginType": "JS",
     "actions": [],
     "archivedActions": [],
-    "body": "export default {\n\tfetchArtistAlbums: () => {\n\t\tconst albums = fetchAlbums.data.items.map((item) => ({\n\t\t\tlabel:item.name , value: item.id\n\t\t}))\n\t\treturn albums\n\t},\n\t\n\tfetchSongArtists: () => {\n\t\tif (fetchTopTracks.data != null) {\n\t\t\t\n\t\t}\n\t},\n\t\n\tprocessInformation: (artistCode) => {\n\t\tstoreValue('artistCode', artistCode)\n\t\t\t.then(() => {\n\t\t\t\tfetchTopTracks.run(() => {\n\t\t\t\t\tyouTubeCustomSearch.run();\n\t\t\t\t\tshowAlert('♬ ♩ 𝅘𝅥𝅰 ♩ 𝅘𝅥𝅰 ♬')}, \n\t\t\t() => showAlert('Uh uh! :( Looks like auth token has expired','warning') )\n\t\t})\n\t}\n}",
+    "body": "export default {\n\tfetchArtistAlbums: () => {\n\t\tconst albums = fetchAlbums.data.items.map((item) => ({\n\t\t\tlabel:item.name , value: item.id\n\t\t}))\n\t\treturn albums\n\t},\n\t\n\tfetchSongArtists: () => {\n\t\tif (fetchTopTracks.data != null) {\n\t\t\t\n\t\t}\n\t},\n\t\n\tprocessArtist: (artistCode) => {\n\t\tstoreValue('artistCode', artistCode)\n\t\t\t.then(() => {\n\t\t\t\tfetchTopTracks.run(() => {\n\t\t\t\t\tyouTubeCustomSearch.run();\n\t\t\t\t\tshowAlert('♬ ♩ 𝅘𝅥𝅰 ♩ 𝅘𝅥𝅰 ♬')}, \n\t\t\t() => showAlert('Uh uh! :( Looks like auth token has expired','warning') )\n\t\t})\n\t}\n}",
     "variables": []
   },
   "id": "Spotify and YouTube_SpotifyManager",
