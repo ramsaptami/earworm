@@ -20,7 +20,7 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "() => {\n\t\tconsole.log(\"Step 1: Calling SpotifyAuthOp after page load\")\n\t\treturn SpotifySettings.authTPP()\n\t\t\t.then(() => {\n\t\t\t\tconsole.log(\"Step 5: Coming back to onPageLoad flow - app has been authorized from nested calls. Next is to run all Spotify API's\")\n\t\t\t\treturn RaceCondition.runAllSpotifyAPIs()\t\n\t\t\t})\n\t\t.catch((error) => {\n\t\t\tshowAlert(\"There's an issue connecting Spotify to your app 💔 \\n \" + error.toString(), 'error')\n\t\t\tconsole.log(\"Abandoning all steps since something went wrong\") })\n\t}",
+      "body": "() => {\n  console.log(\"Step 1: Calling SpotifyAuthOp after page load\");\n  return SpotifySettings.authTPP().then(() => {\n    console.log(\"Step 5: Coming back to onPageLoad flow - app has been authorized from nested calls. Next is to run all Spotify API's\");\n    return RaceCondition.runAllSpotifyAPIs();\n  }).catch(error => {\n    showAlert(\"There's an issue connecting Spotify to your app 💔 \\\\n \" + error.toString(), 'error');\n    console.log(\"Abandoning all steps since something went wrong\");\n  });\n}",
       "jsArguments": [],
       "isAsync": true
     },
@@ -34,7 +34,7 @@
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "() => {\n\t\tconsole.log(\"Step 1: Calling SpotifyAuthOp after page load\")\n\t\treturn SpotifySettings.authTPP()\n\t\t\t.then(() => {\n\t\t\t\tconsole.log(\"Step 5: Coming back to onPageLoad flow - app has been authorized from nested calls. Next is to run all Spotify API's\")\n\t\t\t\treturn RaceCondition.runAllSpotifyAPIs()\t\n\t\t\t})\n\t\t.catch((error) => {\n\t\t\tshowAlert(\"There's an issue connecting Spotify to your app 💔 \\n \" + error.toString(), 'error')\n\t\t\tconsole.log(\"Abandoning all steps since something went wrong\") })\n\t}"
+      "() => {\n  console.log(\"Step 1: Calling SpotifyAuthOp after page load\");\n  return SpotifySettings.authTPP().then(() => {\n    console.log(\"Step 5: Coming back to onPageLoad flow - app has been authorized from nested calls. Next is to run all Spotify API's\");\n    return RaceCondition.runAllSpotifyAPIs();\n  }).catch(error => {\n    showAlert(\"There's an issue connecting Spotify to your app 💔 \\\\n \" + error.toString(), 'error');\n    console.log(\"Abandoning all steps since something went wrong\");\n  });\n}"
     ],
     "userSetOnLoad": true,
     "confirmBeforeExecute": false,

@@ -20,7 +20,7 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "async () => {\n\t\tconsole.log(\"STEP 2: Requesting either request or refresh token based on token validity\");\n\t\treturn SpotifySettings.requestCall()\n\t\t.then((s) => console.log(s))\n\t\t.catch((e) => {\n\t\t\tconsole.log(e.message)\n\t\t\tif(requestToken.responseMeta.statusCode != '200') {\n\t\t\t\treturn SpotifySettings.refreshCall()\n\t\t\t}\n\t\t})\n\t}",
+      "body": "async () => {\n  console.log(\"STEP 2: Requesting either request or refresh token based on token validity\");\n  return SpotifySettings.requestCall().then(s => console.log(s)).catch(e => {\n    console.log(e.message);\n    if (requestToken.responseMeta.statusCode != '200') {\n      return SpotifySettings.refreshCall();\n    }\n  });\n}",
       "jsArguments": [],
       "isAsync": true
     },
@@ -34,7 +34,7 @@
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "async () => {\n\t\tconsole.log(\"STEP 2: Requesting either request or refresh token based on token validity\");\n\t\treturn SpotifySettings.requestCall()\n\t\t.then((s) => console.log(s))\n\t\t.catch((e) => {\n\t\t\tconsole.log(e.message)\n\t\t\tif(requestToken.responseMeta.statusCode != '200') {\n\t\t\t\treturn SpotifySettings.refreshCall()\n\t\t\t}\n\t\t})\n\t}"
+      "async () => {\n  console.log(\"STEP 2: Requesting either request or refresh token based on token validity\");\n  return SpotifySettings.requestCall().then(s => console.log(s)).catch(e => {\n    console.log(e.message);\n    if (requestToken.responseMeta.statusCode != '200') {\n      return SpotifySettings.refreshCall();\n    }\n  });\n}"
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,

@@ -20,7 +20,7 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "() => {\n\t\tlocationSong.autoPlay = true\n\t}",
+      "body": "() => {\n  locationSong.autoPlay = true;\n}",
       "jsArguments": [],
       "isAsync": false
     },
@@ -34,7 +34,7 @@
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "() => {\n\t\tlocationSong.autoPlay = true\n\t}"
+      "() => {\n  locationSong.autoPlay = true;\n}"
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,

@@ -20,7 +20,7 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "async () => {\n\t\tif (SpotifySettings.searchValue.length > 0) {\n\t\t\t\tshowAlert(SpotifySettings.searchValue);\n\t\t\t\tawait searchAnyArtist.run()\n\t\t\t\treturn searchAnyArtist.data.tracks\n\t\t\t}\n\t\t\telse {\n\t\t\t\tshowAlert(appsmith.store.searchValue)\n\t\t\t\tawait fetchTopTracks.run()\n\t\t\t\treturn fetchTopTracks.data.tracks\n\t\t\t}\n\t}",
+      "body": "async () => {\n  if (SpotifySettings.searchValue.length > 0) {\n    showAlert(SpotifySettings.searchValue);\n    await searchAnyArtist.run();\n    return searchAnyArtist.data.tracks;\n  } else {\n    showAlert(appsmith.store.searchValue);\n    await fetchTopTracks.run();\n    return fetchTopTracks.data.tracks;\n  }\n}",
       "jsArguments": [],
       "isAsync": true
     },
@@ -34,7 +34,7 @@
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "async () => {\n\t\tif (SpotifySettings.searchValue.length > 0) {\n\t\t\t\tshowAlert(SpotifySettings.searchValue);\n\t\t\t\tawait searchAnyArtist.run()\n\t\t\t\treturn searchAnyArtist.data.tracks\n\t\t\t}\n\t\t\telse {\n\t\t\t\tshowAlert(appsmith.store.searchValue)\n\t\t\t\tawait fetchTopTracks.run()\n\t\t\t\treturn fetchTopTracks.data.tracks\n\t\t\t}\n\t}"
+      "async () => {\n  if (SpotifySettings.searchValue.length > 0) {\n    showAlert(SpotifySettings.searchValue);\n    await searchAnyArtist.run();\n    return searchAnyArtist.data.tracks;\n  } else {\n    showAlert(appsmith.store.searchValue);\n    await fetchTopTracks.run();\n    return fetchTopTracks.data.tracks;\n  }\n}"
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,

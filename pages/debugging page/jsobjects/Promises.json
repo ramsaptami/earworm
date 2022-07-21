@@ -10,7 +10,7 @@
     "variables": [
       {
         "name": "artist",
-        "value": "{{(()=>{const index = _.findIndex(selectArtist.options, { value: selectArtist.value }); return selectArtist.options[index]?.value; })()}}"
+        "value": "selectArtist.selectedOptionValue"
       }
     ]
   },

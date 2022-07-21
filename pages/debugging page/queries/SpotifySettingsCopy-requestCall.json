@@ -20,7 +20,7 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "() => {\n\t\tconsole.log(\"STEP 3a: Attempting to run requestToken API query \")\n\t\treturn requestToken.run()\n\t\t.then((response) => {\n\t\t\tconsole.log(\"STEP 4: *REQUEST CALL* Successfully ran requestToken API query \")\n\t\t\tlet tokens = [\n\t\t\t\tstoreValue('authToken', response.access_token),\n\t\t\t\tstoreValue('refreshToken', response.refresh_token)\n\t\t\t]\n\t\t\t\treturn Promise.all(tokens)\n\t\t\t\t.then(() => {\t\n\t\t\t\t\tconsole.log(\"Auth code in store is \" + appsmith.store.authToken)\n\t\t\t\t\tconsole.log(\"Refresh token in store is \" + appsmith.store.refreshToken)\n\t\t\t\t})\n\t\t\t\t.catch((err) => showAlert('Could not store tokens in store ' + err.toString()))\n\t\t})\n\t}",
+      "body": "() => {\n  console.log(\"STEP 3a: Attempting to run requestToken API query \");\n  return requestToken.run().then(response => {\n    console.log(\"STEP 4: *REQUEST CALL* Successfully ran requestToken API query \");\n    let tokens = [storeValue('authToken', response.access_token), storeValue('refreshToken', response.refresh_token)];\n    return Promise.all(tokens).then(() => {\n      console.log(\"Auth code in store is \" + appsmith.store.authToken);\n      console.log(\"Refresh token in store is \" + appsmith.store.refreshToken);\n    }).catch(err => showAlert('Could not store tokens in store ' + err.toString()));\n  });\n}",
       "jsArguments": [],
       "isAsync": true
     },
@@ -34,7 +34,7 @@
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "() => {\n\t\tconsole.log(\"STEP 3a: Attempting to run requestToken API query \")\n\t\treturn requestToken.run()\n\t\t.then((response) => {\n\t\t\tconsole.log(\"STEP 4: *REQUEST CALL* Successfully ran requestToken API query \")\n\t\t\tlet tokens = [\n\t\t\t\tstoreValue('authToken', response.access_token),\n\t\t\t\tstoreValue('refreshToken', response.refresh_token)\n\t\t\t]\n\t\t\t\treturn Promise.all(tokens)\n\t\t\t\t.then(() => {\t\n\t\t\t\t\tconsole.log(\"Auth code in store is \" + appsmith.store.authToken)\n\t\t\t\t\tconsole.log(\"Refresh token in store is \" + appsmith.store.refreshToken)\n\t\t\t\t})\n\t\t\t\t.catch((err) => showAlert('Could not store tokens in store ' + err.toString()))\n\t\t})\n\t}"
+      "() => {\n  console.log(\"STEP 3a: Attempting to run requestToken API query \");\n  return requestToken.run().then(response => {\n    console.log(\"STEP 4: *REQUEST CALL* Successfully ran requestToken API query \");\n    let tokens = [storeValue('authToken', response.access_token), storeValue('refreshToken', response.refresh_token)];\n    return Promise.all(tokens).then(() => {\n      console.log(\"Auth code in store is \" + appsmith.store.authToken);\n      console.log(\"Refresh token in store is \" + appsmith.store.refreshToken);\n    }).catch(err => showAlert('Could not store tokens in store ' + err.toString()));\n  });\n}"
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,

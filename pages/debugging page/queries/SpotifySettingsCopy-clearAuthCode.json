@@ -20,7 +20,7 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "() => {\n\t\tstoreValue(appsmith.store.authToken, undefined)\n\t\tshowAlert(appsmith.store.authToken)\n\t}",
+      "body": "() => {\n  storeValue(appsmith.store.authToken, undefined);\n  showAlert(appsmith.store.authToken);\n}",
       "jsArguments": [],
       "isAsync": true
     },
@@ -34,7 +34,7 @@
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "() => {\n\t\tstoreValue(appsmith.store.authToken, undefined)\n\t\tshowAlert(appsmith.store.authToken)\n\t}"
+      "() => {\n  storeValue(appsmith.store.authToken, undefined);\n  showAlert(appsmith.store.authToken);\n}"
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,

@@ -6,11 +6,11 @@
     "pluginType": "JS",
     "actions": [],
     "archivedActions": [],
-    "body": "export default {\n\tartist: selectArtist.selectedOptionValue,\n\t\n\talbums: () => {\n\t\treturn fetchAlbums.run()\n\t\t.then(() => showAlert(\"Showing top tracks of \" + this.artist))\n\t\t.catch(() => showAlert(\"Unable to show top tracks of \" + this.artist))\n\t},\n\t\n\talbumTracks: () => {\n\t\treturn fetchAlbumTracks.run()\n\t\t.then(() => showAlert(\"Showing albums of album tracks \" + this.artist))\n\t\t.catch(() => showAlert(\"Unable to show album tracks of \" + this.artist))\n\t},\n\t\n\ttopTracks: () => {\n\t\treturn Promise.resolve(() => fetchTopTracks.run() )\n\t\t.then(() => showAlert(\"Showing top tracks of \" + this.artist))\n\t\t.catch(() => showAlert(\"Unable to show top tracks of  \" + this.artist))\n\t}\n}",
+    "body": "export default {\n\tartist: selectArtist.selectedOptionLabel,\n\t\n\talbums: () => {\n\t\treturn fetchAlbums.run()\n\t\t.then(() => showAlert(\"Showing top tracks of \" + this.artist))\n\t\t.catch(() => showAlert(\"Unable to show top tracks of \" + this.artist))\n\t},\n\t\n\talbumTracks: () => {\n\t\treturn fetchAlbumTracks.run()\n\t\t.then(() => showAlert(\"Showing albums of album tracks \" + this.artist))\n\t\t.catch(() => showAlert(\"Unable to show album tracks of \" + this.artist))\n\t},\n\t\n\ttopTracks: () => {\n\t\treturn Promise.resolve(() => fetchTopTracks.run() )\n\t\t.then(() => showAlert(\"Showing top tracks of \" + this.artist))\n\t\t.catch(() => showAlert(\"Unable to show top tracks of  \" + this.artist))\n\t}\n}",
     "variables": [
       {
         "name": "artist",
-        "value": "selectArtist.selectedOptionValue"
+        "value": "selectArtist.selectedOptionLabel"
       }
     ]
   },

@@ -10,7 +10,7 @@
     "variables": [
       {
         "name": "searchValue",
-        "value": "{{(()=>{const index = _.findIndex(selectArtist.options, { value: selectArtist.value }); return selectArtist.options[index]?.label; })()}}"
+        "value": "searchArtist?.text?.length > 2 ? searchArtist.text : selectArtist.selectedOptionLabel"
       }
     ]
   },

@@ -20,7 +20,7 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "() => {\n\t\tconsole.log(\"STEP 3b: Attempting to run refreshToken API query\")\n\t\tconsole.log(\"*REFRESH CALL* \\nAuth code before refresh is \" + appsmith.store.authToken)\n\t\treturn refreshToken.run()\n\t\t.then((refreshResponse) => {\n\t\t\treturn storeValue('authToken', refreshResponse.access_token)\n\t\t\t.then(() => console.log(\"STEP 4: *REFRESH CALL* \\nAuth code after refresh is \" + appsmith.store.authToken))\n\t\t\t.catch(() => console.log(\"Failed to update auth code from refresh call\"))\n\t\t})\n\t}",
+      "body": "() => {\n  console.log(\"STEP 3b: Attempting to run refreshToken API query\");\n  console.log(\"*REFRESH CALL* \\\\nAuth code before refresh is \" + appsmith.store.authToken);\n  return refreshToken.run().then(refreshResponse => {\n    return storeValue('authToken', refreshResponse.access_token).then(() => console.log(\"STEP 4: *REFRESH CALL* \\\\nAuth code after refresh is \" + appsmith.store.authToken)).catch(() => console.log(\"Failed to update auth code from refresh call\"));\n  });\n}",
       "jsArguments": [],
       "isAsync": true
     },
@@ -34,7 +34,7 @@
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "() => {\n\t\tconsole.log(\"STEP 3b: Attempting to run refreshToken API query\")\n\t\tconsole.log(\"*REFRESH CALL* \\nAuth code before refresh is \" + appsmith.store.authToken)\n\t\treturn refreshToken.run()\n\t\t.then((refreshResponse) => {\n\t\t\treturn storeValue('authToken', refreshResponse.access_token)\n\t\t\t.then(() => console.log(\"STEP 4: *REFRESH CALL* \\nAuth code after refresh is \" + appsmith.store.authToken))\n\t\t\t.catch(() => console.log(\"Failed to update auth code from refresh call\"))\n\t\t})\n\t}"
+      "() => {\n  console.log(\"STEP 3b: Attempting to run refreshToken API query\");\n  console.log(\"*REFRESH CALL* \\\\nAuth code before refresh is \" + appsmith.store.authToken);\n  return refreshToken.run().then(refreshResponse => {\n    return storeValue('authToken', refreshResponse.access_token).then(() => console.log(\"STEP 4: *REFRESH CALL* \\\\nAuth code after refresh is \" + appsmith.store.authToken)).catch(() => console.log(\"Failed to update auth code from refresh call\"));\n  });\n}"
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,

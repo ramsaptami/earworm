@@ -20,7 +20,7 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "() => {\n\t\tif (appsmith.geolocation.currentPosition != null) {\n\t\t\tappsmith.geolocation.clearWatch()\n\t\t}\n\t}",
+      "body": "() => {\n  if (appsmith.geolocation.currentPosition != null) {\n    appsmith.geolocation.clearWatch();\n  }\n}",
       "jsArguments": [],
       "isAsync": false
     },
@@ -34,7 +34,7 @@
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "() => {\n\t\tif (appsmith.geolocation.currentPosition != null) {\n\t\t\tappsmith.geolocation.clearWatch()\n\t\t}\n\t}"
+      "() => {\n  if (appsmith.geolocation.currentPosition != null) {\n    appsmith.geolocation.clearWatch();\n  }\n}"
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,

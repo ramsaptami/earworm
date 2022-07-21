@@ -20,7 +20,7 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "() => {\n\t\tshowAlert(SpotifySettingsCopy.searchValue)\n\t}",
+      "body": "() => {\n  showAlert(SpotifySettingsCopy.searchValue);\n}",
       "jsArguments": [],
       "isAsync": true
     },
@@ -34,7 +34,7 @@
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "() => {\n\t\tshowAlert(SpotifySettingsCopy.searchValue)\n\t}"
+      "() => {\n  showAlert(SpotifySettingsCopy.searchValue);\n}"
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,

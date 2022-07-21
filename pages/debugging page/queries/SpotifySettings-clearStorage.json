@@ -20,9 +20,9 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "() => {\n\t\tObject.keys(appsmith.store).forEach((eachKey) => {\n\t\t\tstoreValue(eachKey, undefined)\t\n\t\t\tshowAlert(eachKey)\n     })\n  }",
+      "body": "() => {\n  Object.keys(appsmith.store).forEach(eachKey => {\n    storeValue(eachKey, undefined);\n    showAlert(eachKey);\n  });\n}",
       "jsArguments": [],
-      "isAsync": true
+      "isAsync": false
     },
     "executeOnLoad": false,
     "dynamicBindingPathList": [
@@ -34,7 +34,7 @@
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "() => {\n\t\tObject.keys(appsmith.store).forEach((eachKey) => {\n\t\t\tstoreValue(eachKey, undefined)\t\n\t\t\tshowAlert(eachKey)\n     })\n  }"
+      "() => {\n  Object.keys(appsmith.store).forEach(eachKey => {\n    storeValue(eachKey, undefined);\n    showAlert(eachKey);\n  });\n}"
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,

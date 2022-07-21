@@ -20,7 +20,7 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "() => {\n\t\treturn fetchAlbumTracks.run()\n\t\t.then(() => showAlert(\"Showing albums of album tracks \" + Promises.artist))\n\t\t.catch(() => showAlert(\"Unable to show album tracks of \" + Promises.artist))\n\t}",
+      "body": "() => {\n  return fetchAlbumTracks.run().then(() => showAlert(\"Showing albums of album tracks \" + Promises.artist)).catch(() => showAlert(\"Unable to show album tracks of \" + Promises.artist));\n}",
       "jsArguments": [],
       "isAsync": true
     },
@@ -34,7 +34,7 @@
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "() => {\n\t\treturn fetchAlbumTracks.run()\n\t\t.then(() => showAlert(\"Showing albums of album tracks \" + Promises.artist))\n\t\t.catch(() => showAlert(\"Unable to show album tracks of \" + Promises.artist))\n\t}"
+      "() => {\n  return fetchAlbumTracks.run().then(() => showAlert(\"Showing albums of album tracks \" + Promises.artist)).catch(() => showAlert(\"Unable to show album tracks of \" + Promises.artist));\n}"
     ],
     "userSetOnLoad": true,
     "confirmBeforeExecute": false,
