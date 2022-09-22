@@ -21,7 +21,7 @@
       "headers": [
         {
           "key": "Authorization",
-          "value": "Bearer {{requestToken.responseMeta.statusCode === 200 ? requestToken.data.access_token : refreshToken.data.access_token}}"
+          "value": "Bearer {{appsmith.store.authToken}}"
         },
         {
           "key": "Content-Type",
@@ -32,7 +32,7 @@
       "queryParameters": [
         {
           "key": "q",
-          "value": "artist={{searchArtist.text.length > 0 ? searchArtist.text : '%'}}track={{trackName.text.length > 0 ? trackName.text : '%'}}"
+          "value": "artist={{searchArtist.text.length > 0 ? searchArtist.text : '%'}}track={{searchTrack.text.length > 0 ? searchTrack.text : '%'}}"
         },
         {
           "key": "type",
@@ -61,9 +61,9 @@
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "requestToken.responseMeta.statusCode === 200 ? requestToken.data.access_token : refreshToken.data.access_token",
+      "appsmith.store.authToken",
       "searchArtist.text.length > 0 ? searchArtist.text : '%'",
-      "trackName.text.length > 0 ? trackName.text : '%'"
+      "searchTrack.text.length > 0 ? searchTrack.text : '%'"
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,

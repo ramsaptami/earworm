@@ -21,7 +21,7 @@
       "headers": [
         {
           "key": "Authorization",
-          "value": "Bearer {{requestToken.responseMeta.statusCode == 200 ? requestToken.data.access_token : refreshToken.data.access_token}}"
+          "value": "Bearer {{appsmith.store.authToken}}"
         }
       ],
       "encodeParamsToggle": true,
@@ -42,7 +42,7 @@
     "messages": [],
     "jsonPathKeys": [
       "appsmith.store.artistCode",
-      "requestToken.responseMeta.statusCode == 200 ? requestToken.data.access_token : refreshToken.data.access_token"
+      "appsmith.store.authToken"
     ],
     "userSetOnLoad": true,
     "confirmBeforeExecute": false,

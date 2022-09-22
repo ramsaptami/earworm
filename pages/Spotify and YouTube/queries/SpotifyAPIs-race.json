@@ -2,8 +2,8 @@
   "pluginType": "JS",
   "pluginId": "js-plugin",
   "unpublishedAction": {
-    "name": "albums",
-    "fullyQualifiedName": "Promises.albums",
+    "name": "race",
+    "fullyQualifiedName": "SpotifyAPIs.race",
     "datasource": {
       "name": "UNUSED_DATASOURCE",
       "pluginId": "js-plugin",
@@ -15,12 +15,12 @@
       "userPermissions": []
     },
     "pageId": "Spotify and YouTube",
-    "collectionId": "Spotify and YouTube_Promises",
+    "collectionId": "Spotify and YouTube_SpotifyAPIs",
     "actionConfiguration": {
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "() => {\n  return fetchAlbums.run().then(() => showAlert(\"Showing top tracks of \" + Promises.artist)).catch(() => showAlert(\"Unable to show top tracks of \" + Promises.artist));\n}",
+      "body": "() => {\n  return Promise.race([fetchAlbums.run(), fetchAlbumTracks.run(), fetchTopTracks.run(), searchAnyArtist.run()]).then(result => showAlert(result.args)).catch(e => showAlert('hello ' + e.toString()));\n}",
       "jsArguments": [],
       "isAsync": true
     },
@@ -34,14 +34,14 @@
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "() => {\n  return fetchAlbums.run().then(() => showAlert(\"Showing top tracks of \" + Promises.artist)).catch(() => showAlert(\"Unable to show top tracks of \" + Promises.artist));\n}"
+      "() => {\n  return Promise.race([fetchAlbums.run(), fetchAlbumTracks.run(), fetchTopTracks.run(), searchAnyArtist.run()]).then(result => showAlert(result.args)).catch(e => showAlert('hello ' + e.toString()));\n}"
     ],
-    "userSetOnLoad": false,
+    "userSetOnLoad": true,
     "confirmBeforeExecute": false,
     "policies": [],
     "userPermissions": []
   },
-  "id": "Spotify and YouTube_Promises.albums",
+  "id": "Spotify and YouTube_SpotifyAPIs.race",
   "deleted": false,
-  "gitSyncId": "61ea4a44361846772cfb117d_61ea4e3b361846772cfb12d5"
+  "gitSyncId": "61ea4a44361846772cfb117d_61ea4e14361846772cfb12c0"
 }

@@ -2,8 +2,8 @@
   "pluginType": "JS",
   "pluginId": "js-plugin",
   "unpublishedAction": {
-    "name": "fetchSongArtists",
-    "fullyQualifiedName": "SpotifyManager.fetchSongArtists",
+    "name": "myFun2",
+    "fullyQualifiedName": "JSObject1.myFun2",
     "datasource": {
       "name": "UNUSED_DATASOURCE",
       "pluginId": "js-plugin",
@@ -13,15 +13,15 @@
       "policies": [],
       "userPermissions": []
     },
-    "pageId": "Spotify and YouTube",
-    "collectionId": "Spotify and YouTube_SpotifyManager",
+    "pageId": "Page1",
+    "collectionId": "Page1_JSObject1",
     "actionConfiguration": {
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "() => {\n  if (fetchTopTracks.data != null) {}\n}",
+      "body": "() => {\n  Query2.run(() => {\n    const uStatus = Query2.data.users.map(s => ({\n      label: s.name,\n      value: s.avatar\n    }));\n    return uStatus;\n  });\n}",
       "jsArguments": [],
-      "isAsync": false
+      "isAsync": true
     },
     "executeOnLoad": false,
     "dynamicBindingPathList": [
@@ -33,14 +33,14 @@
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "() => {\n  if (fetchTopTracks.data != null) {}\n}"
+      "() => {\n  Query2.run(() => {\n    const uStatus = Query2.data.users.map(s => ({\n      label: s.name,\n      value: s.avatar\n    }));\n    return uStatus;\n  });\n}"
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
     "policies": [],
     "userPermissions": []
   },
-  "id": "Spotify and YouTube_SpotifyManager.fetchSongArtists",
+  "id": "Page1_JSObject1.myFun2",
   "deleted": false,
-  "gitSyncId": "61ea4a44361846772cfb117d_62b0650e6b9e4a636e38844f"
+  "gitSyncId": "61ea4a44361846772cfb117d_63203c29cce3fe1b5f449981"
 }

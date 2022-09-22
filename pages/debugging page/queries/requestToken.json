@@ -42,7 +42,7 @@
         },
         {
           "key": "redirect_uri",
-          "value": "https://release.app.appsmith.com/app/earworm/debugging-page-62a32578f4e3980741ff56e2/edit"
+          "value": "https://appsmith-git-feat-identifier-dependency-get-appsmith.vercel.app/app/earworm/debugging-page-62a32578f4e3980741ff56e2/edit?branch=master"
         }
       ],
       "httpMethod": "POST",

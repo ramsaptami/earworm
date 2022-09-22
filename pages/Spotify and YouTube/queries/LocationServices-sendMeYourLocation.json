@@ -22,7 +22,7 @@
       "encodeParamsToggle": true,
       "body": "() => {\n  return locationPermissionSwitch.isSwitchedOn ? LocationServices.locationSpotter() : LocationServices.clearLocationWatch();\n}",
       "jsArguments": [],
-      "isAsync": false
+      "isAsync": true
     },
     "executeOnLoad": false,
     "dynamicBindingPathList": [
@@ -36,8 +36,8 @@
     "jsonPathKeys": [
       "() => {\n  return locationPermissionSwitch.isSwitchedOn ? LocationServices.locationSpotter() : LocationServices.clearLocationWatch();\n}"
     ],
-    "userSetOnLoad": true,
-    "confirmBeforeExecute": true,
+    "userSetOnLoad": false,
+    "confirmBeforeExecute": false,
     "policies": [],
     "userPermissions": []
   },

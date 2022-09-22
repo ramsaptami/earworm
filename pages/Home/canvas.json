@@ -19,7 +19,7 @@
           "parentRowSpace": 1,
           "type": "CANVAS_WIDGET",
           "canExtend": true,
-          "version": 59,
+          "version": 63,
           "minHeight": 670,
           "parentColumnSpace": 1,
           "dynamicBindingPathList": [],
@@ -28,7 +28,7 @@
             {
               "boxShadow": "none",
               "widgetName": "Image1",
-              "onClick": "{{navigateTo(\"https://accounts.spotify.com/authorize?client_id=6ff9274520cd4d5aa5a19fe75894aa90&response_type=code&redirect_uri=https://release.app.appsmith.com/app/earworm/spotify-and-youtube-61ea4a44361846772cfb1180/edit?branch=master&show_dialog=true\")}}",
+              "onClick": "{{navigateTo(\"https://accounts.spotify.com/authorize?client_id=6ff9274520cd4d5aa5a19fe75894aa90&response_type=code&redirect_uri=https://appsmith-git-feat-identifier-dependency-get-appsmith.vercel.app/app/earworm/spotify-and-youtube-61ea4a44361846772cfb1180/edit?branch=master&show_dialog=true\")}}",
               "submitButtonStyles": {
                 "borderRadius": "0px",
                 "boxShadow": "none"
@@ -70,11 +70,11 @@
               "isLoading": false,
               "maxZoomLevel": 1,
               "enableDownload": false,
-              "borderRadius": "0px",
+              "borderRadius": "1.5rem",
               "enableRotation": false
             },
             {
-              "boxShadow": "0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06)",
+              "boxShadow": "0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05)",
               "widgetName": "ButtonGroup2",
               "isCanvas": false,
               "displayName": "Button Group",
@@ -176,6 +176,9 @@
                 },
                 {
                   "key": "groupButtons.groupButton3.buttonColor"
+                },
+                {
+                  "key": "borderRadius"
                 }
               ],
               "key": "bxoj018z65",
@@ -193,7 +196,7 @@
                   "buttonColor": "{{appsmith.theme.colors.primaryColor}}"
                 }
               },
-              "borderRadius": "1.5rem",
+              "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
               "buttonVariant": "TERTIARY"
             },
             {

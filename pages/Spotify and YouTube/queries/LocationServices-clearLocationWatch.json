@@ -22,7 +22,7 @@
       "encodeParamsToggle": true,
       "body": "() => {\n  if (appsmith.geolocation.currentPosition != null) {\n    appsmith.geolocation.clearWatch();\n  }\n}",
       "jsArguments": [],
-      "isAsync": false
+      "isAsync": true
     },
     "executeOnLoad": false,
     "dynamicBindingPathList": [

@@ -1,0 +1,20 @@
+{
+  "unpublishedCollection": {
+    "name": "StoredValuesUtils",
+    "pageId": "Spotify and YouTube",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "body": "export default {\n\tartist: searchArtist.text ?? selectArtist.selectedOptionLabel,\n\t\n\tclearStorage: () => {\n\t\tObject.keys(appsmith.store).forEach((eachKey) => {\n\t\t\tstoreValue(eachKey, undefined)\t\n\t\t\tshowAlert(eachKey)\n\t\t})\n\t},\n\n\tclearAuthCode: () => {\n\t\tstoreValue('authToken', 'undefined')\n\t\tshowAlert(appsmith.store.authToken)\n\t}\n}",
+    "variables": [
+      {
+        "name": "artist",
+        "value": "searchArtist.text ?? selectArtist.selectedOptionLabel"
+      }
+    ]
+  },
+  "id": "Spotify and YouTube_StoredValuesUtils",
+  "deleted": false,
+  "gitSyncId": "612332edfe755a38b6e6a9c2_61bb7741cd5d704509533747"
+}

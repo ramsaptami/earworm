@@ -17,11 +17,11 @@
     "actionConfiguration": {
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
-      "path": "/v1/albums/39McjovZ3M6n5SFtNmWTdp/tracks",
+      "path": "/v1/albums/{{selectAlbums.selectedOptionValue}}/tracks",
       "headers": [
         {
           "key": "Authorization",
-          "value": "Bearer {{requestToken.responseMeta.statusCode === 200 ? requestToken.data.access_token : refreshToken.data.access_token}}"
+          "value": "Bearer {{appsmith.store.authToken}}"
         }
       ],
       "encodeParamsToggle": true,
@@ -33,7 +33,7 @@
       ],
       "httpMethod": "GET"
     },
-    "executeOnLoad": false,
+    "executeOnLoad": true,
     "dynamicBindingPathList": [
       {
         "key": "path"
@@ -46,7 +46,8 @@
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "requestToken.responseMeta.statusCode === 200 ? requestToken.data.access_token : refreshToken.data.access_token"
+      "appsmith.store.authToken",
+      "selectAlbums.selectedOptionValue"
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,

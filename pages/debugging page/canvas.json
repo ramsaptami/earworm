@@ -19,7 +19,7 @@
           "parentRowSpace": 1,
           "type": "CANVAS_WIDGET",
           "canExtend": true,
-          "version": 59,
+          "version": 61,
           "minHeight": 640,
           "parentColumnSpace": 1,
           "dynamicBindingPathList": [],
@@ -498,7 +498,7 @@
             {
               "boxShadow": "none",
               "widgetName": "appIcon",
-              "onClick": "{{navigateTo(\"https://accounts.spotify.com/authorize?client_id=6ff9274520cd4d5aa5a19fe75894aa90&response_type=code&redirect_uri=https://release.app.appsmith.com/app/earworm/debugging-page-62a32578f4e3980741ff56e2/edit&show_dialog=true\")}}",
+              "onClick": "{{navigateTo(\"https://accounts.spotify.com/authorize?client_id=6ff9274520cd4d5aa5a19fe75894aa90&response_type=code&redirect_uri=https://appsmith-git-feat-identifier-dependency-get-appsmith.vercel.app/app/earworm/debugging-page-62a32578f4e3980741ff56e2/edit?branch=master&show_dialog=true\")}}",
               "submitButtonStyles": {
                 "borderRadius": "0px",
                 "boxShadow": "none"
@@ -3078,13 +3078,7 @@
                 }
               ],
               "privateWidgets": {
-                "topTracksPlayerCopy": true,
-                "Image1": true,
-                "Text6": true,
-                "Text7": true,
-                "Audio1": true,
-                "Statbox1": true,
-                "Text11": true
+                "undefined": true
               },
               "key": "zj4olaxw7x",
               "backgroundColor": "transparent",
@@ -3345,19 +3339,6 @@
               "pluginType": "JS",
               "jsonPathKeys": [
                 "() => {\n  console.log(\"Step 1: Calling SpotifyAuthOp after page load\");\n  return SpotifySettings.authTPP().then(() => {\n    console.log(\"Step 5: Coming back to onPageLoad flow - app has been authorized from nested calls. Next is to run all Spotify API's\");\n    return RaceCondition.runAllSpotifyAPIs();\n  }).catch(error => {\n    showAlert(\"There's an issue connecting Spotify to your app 💔 \\\\n \" + error.toString(), 'error');\n    console.log(\"Abandoning all steps since something went wrong\");\n  });\n}"
-              ],
-              "timeoutInMillisecond": 10000
-            }
-          ],
-          [
-            {
-              "id": "debugging page_refreshToken",
-              "name": "refreshToken",
-              "confirmBeforeExecute": false,
-              "pluginType": "API",
-              "jsonPathKeys": [
-                "appsmith.store.refreshToken",
-                "btoa(\"6ff9274520cd4d5aa5a19fe75894aa90:f44e22bcd9d14ef09480b39ae3aad59e\")"
               ],
               "timeoutInMillisecond": 10000
             }

@@ -20,7 +20,7 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "() => {\n  return appsmith.geolocation.getCurrentPosition().then(() => {\n    showModal(\"showUserLocation\");\n    return appsmith.geolocation.currentPosition;\n    locationSong.play();\n  }).catch(() => showAlert(\"Failed to spot you on the map\", 'error'));\n}",
+      "body": "() => {\n  return appsmith.geolocation.getCurrentPosition().then(() => {\n    showModal(\"showUserLocation\");\n    return appsmith.geolocation.currentPosition;\n  }).catch(() => showAlert(\"Failed to spot you on the map\", 'error'));\n}",
       "jsArguments": [],
       "isAsync": true
     },
@@ -34,7 +34,7 @@
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "() => {\n  return appsmith.geolocation.getCurrentPosition().then(() => {\n    showModal(\"showUserLocation\");\n    return appsmith.geolocation.currentPosition;\n    locationSong.play();\n  }).catch(() => showAlert(\"Failed to spot you on the map\", 'error'));\n}"
+      "() => {\n  return appsmith.geolocation.getCurrentPosition().then(() => {\n    showModal(\"showUserLocation\");\n    return appsmith.geolocation.currentPosition;\n  }).catch(() => showAlert(\"Failed to spot you on the map\", 'error'));\n}"
     ],
     "userSetOnLoad": true,
     "confirmBeforeExecute": true,

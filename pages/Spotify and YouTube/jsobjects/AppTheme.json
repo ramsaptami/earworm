@@ -6,7 +6,7 @@
     "pluginType": "JS",
     "actions": [],
     "archivedActions": [],
-    "body": "export default {\n\tcolours: () => {\n\t\t//https://www.youtube.com/watch?v=vlx8TEuep5I//\n\t} //new loine\n}",
+    "body": "export default {\n\tcolours: () => {\n\t\t//https://www.youtube.com/watch?v=vlx8TEuep5I//\n\t} \n}",
     "variables": []
   },
   "id": "Spotify and YouTube_AppTheme",
