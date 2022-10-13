@@ -17,7 +17,7 @@
     "actionConfiguration": {
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
-      "path": "/v1/albums/{{selectAlbums.selectedOptionValue}}/tracks",
+      "path": "/v1/albums/{{selectAlbums.selectedOptionValue ?? '382ObEPsp2rxGrnsizN5TX'}}/tracks",
       "headers": [
         {
           "key": "Authorization",
@@ -31,9 +31,14 @@
           "value": "IN"
         }
       ],
-      "httpMethod": "GET"
+      "bodyFormData": [],
+      "httpMethod": "GET",
+      "selfReferencingDataPaths": [],
+      "formData": {
+        "apiContentType": "application/x-www-form-urlencoded"
+      }
     },
-    "executeOnLoad": true,
+    "executeOnLoad": false,
     "dynamicBindingPathList": [
       {
         "key": "path"
@@ -47,9 +52,9 @@
     "messages": [],
     "jsonPathKeys": [
       "appsmith.store.authToken",
-      "selectAlbums.selectedOptionValue"
+      "selectAlbums.selectedOptionValue ?? '382ObEPsp2rxGrnsizN5TX'"
     ],
-    "userSetOnLoad": false,
+    "userSetOnLoad": true,
     "confirmBeforeExecute": false,
     "policies": [],
     "userPermissions": []

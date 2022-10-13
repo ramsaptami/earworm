@@ -21,6 +21,7 @@
       "paginationType": "NONE",
       "encodeParamsToggle": true,
       "body": "async () => {\n  const searchValue = searchArtist?.text?.length > 2 ? searchArtist.text : selectArtist.selectedOptionLabel;\n  if (searchValue.length > 0) {\n    showAlert(searchValue);\n    await searchAnyArtist.run();\n    return searchAnyArtist.data.tracks;\n  } else {\n    showAlert(appsmith.store.searchValue);\n    await fetchTopTracks.run();\n    return fetchTopTracks.data.tracks;\n  }\n}",
+      "selfReferencingDataPaths": [],
       "jsArguments": [],
       "isAsync": true
     },

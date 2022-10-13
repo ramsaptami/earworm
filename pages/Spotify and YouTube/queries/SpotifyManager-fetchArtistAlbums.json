@@ -20,6 +20,7 @@
       "paginationType": "NONE",
       "encodeParamsToggle": true,
       "body": "() => {\n  const albums = fetchAlbums.data.items.map(item => ({\n    label: item.name,\n    value: item.id\n  }));\n  return _.filter(albums);\n}",
+      "selfReferencingDataPaths": [],
       "jsArguments": [],
       "isAsync": false
     },

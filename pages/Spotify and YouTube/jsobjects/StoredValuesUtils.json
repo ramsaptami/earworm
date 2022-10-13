@@ -6,7 +6,7 @@
     "pluginType": "JS",
     "actions": [],
     "archivedActions": [],
-    "body": "export default {\n\tartist: searchArtist.text ?? selectArtist.selectedOptionLabel,\n\t\n\tclearStorage: () => {\n\t\tObject.keys(appsmith.store).forEach((eachKey) => {\n\t\t\tstoreValue(eachKey, undefined)\t\n\t\t\tshowAlert(eachKey)\n\t\t})\n\t},\n\n\tclearAuthCode: () => {\n\t\tstoreValue('authToken', 'undefined')\n\t\tshowAlert(appsmith.store.authToken)\n\t}\n}",
+    "body": "export default {\n\tartist: searchArtist.text ?? selectArtist.selectedOptionLabel,\n\t\n\tclearStorage: async () => {\n\t\tObject.keys(appsmith.store).forEach((eachKey) => {\n\t\t\tstoreValue(eachKey, undefined)\t\n\t\t\tshowAlert(eachKey)\n\t\t})\n\t\tawait console.log(appsmith.store)\n\t},\n\n\tclearAuthCode: () => {\n\t\tstoreValue('authToken', 'undefined')\n\t\tshowAlert(appsmith.store.authToken)\n\t},\n\t\n\tdisplayStoredValues: () => {\n\t\tconsole.log(appsmith.store)\n\t}\n}",
     "variables": [
       {
         "name": "artist",

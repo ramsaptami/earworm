@@ -46,6 +46,7 @@
         }
       ],
       "httpMethod": "POST",
+      "selfReferencingDataPaths": [],
       "pluginSpecifiedTemplates": [
         {
           "value": true

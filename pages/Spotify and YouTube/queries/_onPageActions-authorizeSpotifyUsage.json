@@ -19,11 +19,12 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "async () => {\n  console.log(\"Step 1: Calling SpotifyAuthOp after page load\");\n  console.log(appsmith.URL.queryParams.code ?? 'No auth code found in the URL');\n  if (appsmith.URL.queryParams.code != null) {\n    console.log('Step 2: URL returned an auth code');\n    return SpotifySettings.requestCall();\n  } else {\n    return SpotifySettings.refreshCall();\n  }\n}",
+      "body": "async function () {\n  try {\n    console.log(\"Step 1: Starting to authorize your app. \\\\n Checking for valid/available auth codes\");\n    console.log(appsmith.URL.queryParams.code ?? 'No auth code found in the URL');\n    appsmith.URL.queryParams.code ? SpotifySettings.requestCall() : SpotifySettings.refreshCall();\n    await _onPageActions.runAllSpotifyAPIs();\n  } catch (error) {\n    console.log(\"You'll need to authorize from the start\");\n    showAlert(\"App can't be authorized unless done from the home page\");\n  }\n}",
+      "selfReferencingDataPaths": [],
       "jsArguments": [],
       "isAsync": true
     },
-    "executeOnLoad": false,
+    "executeOnLoad": true,
     "dynamicBindingPathList": [
       {
         "key": "body"
@@ -33,14 +34,14 @@
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "async () => {\n  console.log(\"Step 1: Calling SpotifyAuthOp after page load\");\n  console.log(appsmith.URL.queryParams.code ?? 'No auth code found in the URL');\n  if (appsmith.URL.queryParams.code != null) {\n    console.log('Step 2: URL returned an auth code');\n    return SpotifySettings.requestCall();\n  } else {\n    return SpotifySettings.refreshCall();\n  }\n}"
+      "async function () {\n  try {\n    console.log(\"Step 1: Starting to authorize your app. \\\\n Checking for valid/available auth codes\");\n    console.log(appsmith.URL.queryParams.code ?? 'No auth code found in the URL');\n    appsmith.URL.queryParams.code ? SpotifySettings.requestCall() : SpotifySettings.refreshCall();\n    await _onPageActions.runAllSpotifyAPIs();\n  } catch (error) {\n    console.log(\"You'll need to authorize from the start\");\n    showAlert(\"App can't be authorized unless done from the home page\");\n  }\n}"
     ],
-    "userSetOnLoad": false,
+    "userSetOnLoad": true,
     "confirmBeforeExecute": false,
     "policies": [],
     "userPermissions": []
   },
   "id": "Spotify and YouTube__onPageActions.authorizeSpotifyUsage",
   "deleted": false,
-  "gitSyncId": "61ea4a44361846772cfb117d_63236786d945b72ee5699523"
+  "gitSyncId": "61ea4a44361846772cfb117d_633ac139264f3e7496391efe"
 }

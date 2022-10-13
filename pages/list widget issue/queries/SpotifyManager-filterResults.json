@@ -21,6 +21,7 @@
       "paginationType": "NONE",
       "encodeParamsToggle": true,
       "body": "(data = SpotifySearch.data) => {\n  let results = data;\n  return results;\n}",
+      "selfReferencingDataPaths": [],
       "jsArguments": [
         {
           "name": "data"

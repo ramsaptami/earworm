@@ -21,6 +21,7 @@
       "paginationType": "NONE",
       "encodeParamsToggle": true,
       "body": "() => {\n  console.log(\"Step 1: Calling SpotifyAuthOp after page load\");\n  return SpotifySettings.authTPP().then(() => {\n    console.log(\"Step 5: Coming back to onPageLoad flow - app has been authorized from nested calls. \\\\n Next is to run all Spotify API's\");\n    return RaceCondition.runAllSpotifyAPIs();\n  }).catch(error => {\n    showAlert(\"There's an issue connecting Spotify to your app 💔 \\\\n \" + error.toString(), 'error');\n    console.log(\"Abandoning all steps since something went wrong\");\n  });\n}",
+      "selfReferencingDataPaths": [],
       "jsArguments": [],
       "isAsync": true
     },

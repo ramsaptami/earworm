@@ -17,7 +17,7 @@
     "actionConfiguration": {
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
-      "path": "/v1/artists/{{appsmith.store.artistCode}}/albums",
+      "path": "/v1/artists/{{appsmith.store.artistCode ?? '246dkjvS1zLTtiykXe5h60'}}/albums",
       "headers": [
         {
           "key": "Authorization",
@@ -33,6 +33,7 @@
         }
       ],
       "httpMethod": "GET",
+      "selfReferencingDataPaths": [],
       "formData": {
         "apiContentType": "application/x-www-form-urlencoded"
       }
@@ -50,7 +51,7 @@
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "appsmith.store.artistCode",
+      "appsmith.store.artistCode ?? '246dkjvS1zLTtiykXe5h60'",
       "appsmith.store.authToken"
     ],
     "userSetOnLoad": true,

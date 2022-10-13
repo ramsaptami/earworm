@@ -20,7 +20,8 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "() => {\n  console.log(\"STEP 2: Attempting to refresh token\");\n  console.log(\"*REFRESH CALL* Auth code before refresh is \\\\n\" + appsmith.store.authToken);\n  return refreshToken.run().then(refreshResponse => {\n    return storeValue('authToken', refreshResponse.access_token).then(() => console.log(\"STEP 3: *REFRESH CALL* Auth code after refresh is \\\\n\" + appsmith.store.authToken)).catch(() => console.log(\"Failed to update auth code from refresh call\"));\n  }).catch(() => {\n    return null;\n  });\n}",
+      "body": "async () => {\n  try {\n    appsmith.store.refreshToken ? console.log(\"STEP 4: *REFRESH CALL* Code before refresh is \\\\n\" + appsmith.store.authToken) : console.log('Refresh token has expired');\n    const refreshResponse = await refreshToken.run();\n    console.log(\"STEP 3: Trying to get auth code using refreshToken\");\n    storeValue('authToken', refreshResponse.access_token);\n    await console.log(\"STEP 4: *REFRESH CALL* Code after refresh is \\\\n\" + appsmith.store.authToken);\n    console.log(\"Step 5: Going back to onPageLoad flow since app has been authorized. \\\\n Next is to run all Spotify API's\");\n  } catch (error) {\n    console.log(error.message + \" & returned a \" + refreshToken.responseMeta.statusCode);\n  }\n}",
+      "selfReferencingDataPaths": [],
       "jsArguments": [],
       "isAsync": true
     },
@@ -34,7 +35,7 @@
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "() => {\n  console.log(\"STEP 2: Attempting to refresh token\");\n  console.log(\"*REFRESH CALL* Auth code before refresh is \\\\n\" + appsmith.store.authToken);\n  return refreshToken.run().then(refreshResponse => {\n    return storeValue('authToken', refreshResponse.access_token).then(() => console.log(\"STEP 3: *REFRESH CALL* Auth code after refresh is \\\\n\" + appsmith.store.authToken)).catch(() => console.log(\"Failed to update auth code from refresh call\"));\n  }).catch(() => {\n    return null;\n  });\n}"
+      "async () => {\n  try {\n    appsmith.store.refreshToken ? console.log(\"STEP 4: *REFRESH CALL* Code before refresh is \\\\n\" + appsmith.store.authToken) : console.log('Refresh token has expired');\n    const refreshResponse = await refreshToken.run();\n    console.log(\"STEP 3: Trying to get auth code using refreshToken\");\n    storeValue('authToken', refreshResponse.access_token);\n    await console.log(\"STEP 4: *REFRESH CALL* Code after refresh is \\\\n\" + appsmith.store.authToken);\n    console.log(\"Step 5: Going back to onPageLoad flow since app has been authorized. \\\\n Next is to run all Spotify API's\");\n  } catch (error) {\n    console.log(error.message + \" & returned a \" + refreshToken.responseMeta.statusCode);\n  }\n}"
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
@@ -43,5 +44,5 @@
   },
   "id": "Spotify and YouTube_SpotifySettings.refreshCall",
   "deleted": false,
-  "gitSyncId": "61ea4a44361846772cfb117d_6266b803cb603a05f907ff6d"
+  "gitSyncId": "61ea4a44361846772cfb117d_633addf0b6737802223ee52c"
 }

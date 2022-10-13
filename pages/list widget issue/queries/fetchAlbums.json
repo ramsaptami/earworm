@@ -26,7 +26,8 @@
       ],
       "encodeParamsToggle": true,
       "queryParameters": [],
-      "httpMethod": "GET"
+      "httpMethod": "GET",
+      "selfReferencingDataPaths": []
     },
     "executeOnLoad": false,
     "dynamicBindingPathList": [

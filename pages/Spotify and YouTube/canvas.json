@@ -13,13 +13,13 @@
           "detachFromLayout": true,
           "widgetId": "0",
           "topRow": 0,
-          "bottomRow": 2030,
+          "bottomRow": 1300,
           "containerStyle": "none",
           "snapRows": 63,
           "parentRowSpace": 1,
           "type": "CANVAS_WIDGET",
           "canExtend": true,
-          "version": 63,
+          "version": 64,
           "minHeight": 640,
           "parentColumnSpace": 1,
           "dynamicBindingPathList": [],
@@ -119,13 +119,13 @@
               },
               "isVisible": false,
               "version": 1,
-              "url": "https://www.youtube.com/embed/JpGKWUdRnXE?start=10&end=46",
+              "url": "https://www.youtube.com/embed/wtHra9tFISY?start=10&end=46",
               "parentId": "0",
               "renderMode": "CANVAS",
               "isLoading": false,
               "onEnd": "",
               "borderRadius": "0px",
-              "autoPlay": false
+              "autoPlay": true
             },
             {
               "tabId": "",
@@ -498,7 +498,7 @@
             {
               "boxShadow": "none",
               "widgetName": "appIcon",
-              "onClick": "{{SpotifySettings.refreshCall()}}",
+              "onClick": "{{_onPageActions.authorizeSpotifyUsage()}}",
               "submitButtonStyles": {
                 "borderRadius": "0px",
                 "boxShadow": "none"
@@ -594,74 +594,6 @@
               "isLoading": false,
               "borderRadius": "0px",
               "fontSize": "0.875rem"
-            },
-            {
-              "boxShadow": "none",
-              "widgetName": "selectArtist",
-              "isFilterable": false,
-              "submitButtonStyles": {
-                "borderRadius": "0px",
-                "boxShadow": "none"
-              },
-              "dynamicPropertyPathList": [
-                {
-                  "key": "isDisabled"
-                }
-              ],
-              "displayName": "Select",
-              "iconSVG": "/static/media/icon.bd99caba.svg",
-              "labelText": "",
-              "topRow": 18,
-              "bottomRow": 22,
-              "primaryColor": "{{appsmith.theme.colors.primaryColor}}",
-              "parentRowSpace": 10,
-              "type": "DROP_DOWN_WIDGET",
-              "serverSideFiltering": false,
-              "hideCard": false,
-              "defaultOptionValue": "{{artistCodes.artist[0].value}}",
-              "selectionType": "SINGLE_SELECT",
-              "parentColumnSpace": 16.5361328125,
-              "dynamicTriggerPathList": [
-                {
-                  "key": "onOptionChange"
-                }
-              ],
-              "leftColumn": 24,
-              "dynamicBindingPathList": [
-                {
-                  "key": "options"
-                },
-                {
-                  "key": "defaultOptionValue"
-                },
-                {
-                  "key": "primaryColor"
-                },
-                {
-                  "key": "accentColor"
-                }
-              ],
-              "options": "{{artistCodes.artist}}",
-              "placeholderText": "",
-              "isDisabled": "false",
-              "key": "ptjbds65n5",
-              "labelTextSize": "0.875rem",
-              "isRequired": false,
-              "rightColumn": 37,
-              "textSize": "0.875rem",
-              "widgetId": "qlo60cxd34",
-              "accentColor": "{{appsmith.theme.colors.primaryColor}}",
-              "resetButtonStyles": {
-                "borderRadius": "0px",
-                "boxShadow": "none"
-              },
-              "isVisible": true,
-              "version": 1,
-              "parentId": "0",
-              "renderMode": "CANVAS",
-              "isLoading": false,
-              "borderRadius": "0px",
-              "onOptionChange": "{{SpotifyManager.processArtist(selectArtist.selectedOptionValue)}}"
             },
             {
               "boxShadow": "none",
@@ -912,14 +844,14 @@
               "dynamicPropertyPathList": [],
               "displayName": "Container",
               "iconSVG": "/static/media/icon.1977dca3.svg",
-              "topRow": 165,
-              "bottomRow": 201,
+              "topRow": 92,
+              "bottomRow": 128,
               "parentRowSpace": 10,
               "type": "CONTAINER_WIDGET",
               "hideCard": false,
               "parentColumnSpace": 14.66180419921875,
               "dynamicTriggerPathList": [],
-              "leftColumn": 1,
+              "leftColumn": 18,
               "dynamicBindingPathList": [],
               "children": [
                 {
@@ -1598,7 +1530,7 @@
               "key": "7bejspdk1p",
               "labelTextSize": "0.875rem",
               "backgroundColor": "#FFFFFF",
-              "rightColumn": 30,
+              "rightColumn": 47,
               "textSize": "0.875rem",
               "widgetId": "vng69o7j2y",
               "containerStyle": "card",
@@ -1666,8 +1598,8 @@
               "displayName": "Input",
               "iconSVG": "/static/media/icon.9f505595.svg",
               "onSubmit": "{{searchAnyArtist.run(async() =>{ \n\tawait fetchAlbums.run().then(() => { SpotifyManager.processArtist(searchAnyArtist.data.artists.items[0].id)}) }, () => showAlert('Unable to fetch artist ID','warning'))}}",
-              "topRow": 22,
-              "bottomRow": 29,
+              "topRow": 24,
+              "bottomRow": 28,
               "parentRowSpace": 10,
               "labelWidth": 5,
               "autoFocus": true,
@@ -1681,7 +1613,7 @@
                 }
               ],
               "resetOnSubmit": false,
-              "leftColumn": 2,
+              "leftColumn": 3,
               "dynamicBindingPathList": [
                 {
                   "key": "accentColor"
@@ -2559,7 +2491,7 @@
               "displayName": "List",
               "iconSVG": "/static/media/icon.9925ee17.svg",
               "topRow": 33,
-              "bottomRow": 164,
+              "bottomRow": 89,
               "parentRowSpace": 10,
               "type": "LIST_WIDGET",
               "hideCard": false,
@@ -2647,6 +2579,12 @@
                 },
                 {
                   "key": "template.Image2.defaultImage"
+                },
+                {
+                  "key": "itemBackgroundColor"
+                },
+                {
+                  "key": "backgroundColor"
                 }
               ],
               "gridType": "vertical",
@@ -2756,7 +2694,7 @@
                               "borderWidth": "4",
                               "key": "zvcwglah5m",
                               "labelTextSize": "0.875rem",
-                              "rightColumn": 63,
+                              "rightColumn": 64,
                               "textSize": "0.875rem",
                               "widgetId": "j0dg1ycnrf",
                               "resetButtonStyles": {
@@ -3742,11 +3680,11 @@
                 "undefined": true
               },
               "key": "zj4olaxw7x",
-              "backgroundColor": "transparent",
+              "backgroundColor": "{{appsmith.theme.colors.backgroundColor}}",
               "isDeprecated": false,
-              "rightColumn": 48,
+              "rightColumn": 44,
               "onListItemClick": "{{youTubeCustomSearch.run()}}",
-              "itemBackgroundColor": "#cfd65e",
+              "itemBackgroundColor": "{{appsmith.theme.colors.primaryColor}}",
               "widgetId": "bqcinlz1fn",
               "accentColor": "{{appsmith.theme.colors.primaryColor}}",
               "isVisible": true,
@@ -3983,8 +3921,8 @@
               "searchTags": [
                 "dropdown"
               ],
-              "topRow": 22,
-              "bottomRow": 29,
+              "topRow": 24,
+              "bottomRow": 28,
               "parentRowSpace": 10,
               "labelWidth": 5,
               "type": "MULTI_SELECT_TREE_WIDGET",
@@ -3996,7 +3934,7 @@
               "animateLoading": true,
               "parentColumnSpace": 17.9375,
               "dynamicTriggerPathList": [],
-              "leftColumn": 19,
+              "leftColumn": 32,
               "dynamicBindingPathList": [
                 {
                   "key": "accentColor"
@@ -4016,7 +3954,7 @@
               "labelTextSize": "0.875rem",
               "isRequired": false,
               "isDeprecated": false,
-              "rightColumn": 35,
+              "rightColumn": 46,
               "widgetId": "z5raeui5g1",
               "accentColor": "{{appsmith.theme.colors.primaryColor}}",
               "isVisible": true,
@@ -4040,8 +3978,8 @@
                 "dropdown",
                 "tags"
               ],
-              "topRow": 22,
-              "bottomRow": 26,
+              "topRow": 24,
+              "bottomRow": 28,
               "parentRowSpace": 10,
               "labelWidth": 5,
               "type": "MULTI_SELECT_WIDGET_V2",
@@ -4051,7 +3989,7 @@
               "animateLoading": true,
               "parentColumnSpace": 17.9375,
               "dynamicTriggerPathList": [],
-              "leftColumn": 38,
+              "leftColumn": 47,
               "dynamicBindingPathList": [
                 {
                   "key": "accentColor"
@@ -4064,14 +4002,14 @@
                 }
               ],
               "labelPosition": "Left",
-              "options": "{{SpotifyManager.fetchArtistTracks()()}}",
+              "options": "{{SpotifyManager.fetchArtistTracks()}}",
               "placeholderText": "Pick a song - maybe a couple!",
               "isDisabled": false,
               "key": "t6sjurhygq",
               "labelTextSize": "0.875rem",
               "isRequired": false,
               "isDeprecated": false,
-              "rightColumn": 52,
+              "rightColumn": 61,
               "widgetId": "8ru8pdhpe2",
               "accentColor": "{{appsmith.theme.colors.primaryColor}}",
               "isVisible": true,
@@ -4081,24 +4019,86 @@
               "renderMode": "CANVAS",
               "isLoading": false,
               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}"
+            },
+            {
+              "boxShadow": "none",
+              "widgetName": "selectArtist",
+              "isFilterable": true,
+              "dynamicPropertyPathList": [],
+              "displayName": "Select",
+              "iconSVG": "/static/media/icon.bd99caba5853ad71e4b3d8daffacb3a2.svg",
+              "labelText": "",
+              "searchTags": [
+                "dropdown"
+              ],
+              "topRow": 24,
+              "bottomRow": 28,
+              "parentRowSpace": 10,
+              "labelWidth": 5,
+              "type": "SELECT_WIDGET",
+              "serverSideFiltering": false,
+              "hideCard": false,
+              "defaultOptionValue": "{{ ((options, serverSideFiltering) => ( artistCodes.artist[0].value))(selectArtist.options, selectArtist.serverSideFiltering) }}",
+              "animateLoading": true,
+              "parentColumnSpace": 18.0625,
+              "dynamicTriggerPathList": [
+                {
+                  "key": "onOptionChange"
+                }
+              ],
+              "leftColumn": 18,
+              "dynamicBindingPathList": [
+                {
+                  "key": "accentColor"
+                },
+                {
+                  "key": "borderRadius"
+                },
+                {
+                  "key": "options"
+                },
+                {
+                  "key": "defaultOptionValue"
+                }
+              ],
+              "labelPosition": "Left",
+              "options": "{{artistCodes.artist}}",
+              "placeholderText": "Select option",
+              "isDisabled": false,
+              "key": "szcb972n6g",
+              "labelTextSize": "0.875rem",
+              "isRequired": false,
+              "isDeprecated": false,
+              "rightColumn": 31,
+              "widgetId": "pxpayqv75n",
+              "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+              "isVisible": true,
+              "version": 1,
+              "parentId": "0",
+              "labelAlignment": "left",
+              "renderMode": "CANVAS",
+              "isLoading": false,
+              "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+              "onOptionChange": "{{SpotifyManager.processArtist(selectArtist.selectedOptionValue)}}"
             }
           ]
         },
         "layoutOnLoadActions": [
           [
             {
-              "id": "Spotify and YouTube_fetchAlbumTracks",
-              "name": "fetchAlbumTracks",
+              "id": "Spotify and YouTube__onPageActions.authorizeSpotifyUsage",
+              "name": "_onPageActions.authorizeSpotifyUsage",
+              "collectionId": "Spotify and YouTube__onPageActions",
               "confirmBeforeExecute": false,
-              "pluginType": "API",
+              "pluginType": "JS",
               "jsonPathKeys": [
-                "selectAlbums.selectedOptionValue",
-                "appsmith.store.authToken"
+                "async function () {\n  try {\n    console.log(\"Step 1: Starting to authorize your app. \\\\n Checking for valid/available auth codes\");\n    console.log(appsmith.URL.queryParams.code ?? 'No auth code found in the URL');\n    appsmith.URL.queryParams.code ? SpotifySettings.requestCall() : SpotifySettings.refreshCall();\n    await _onPageActions.runAllSpotifyAPIs();\n  } catch (error) {\n    console.log(\"You'll need to authorize from the start\");\n    showAlert(\"App can't be authorized unless done from the home page\");\n  }\n}"
               ],
               "timeoutInMillisecond": 10000
             }
           ]
         ],
+        "layoutOnLoadActionErrors": [],
         "validOnPageLoadActions": true,
         "id": "Spotify and YouTube",
         "deleted": false,

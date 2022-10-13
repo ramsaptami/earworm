@@ -21,6 +21,7 @@
       "paginationType": "NONE",
       "encodeParamsToggle": true,
       "body": "() => {\n\t\t\n\t}",
+      "selfReferencingDataPaths": [],
       "jsArguments": [],
       "isAsync": false
     },

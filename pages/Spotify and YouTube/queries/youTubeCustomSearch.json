@@ -41,7 +41,7 @@
         },
         {
           "key": "q",
-          "value": "{{List1.selectedItem.artists[0].name + List1.selectedItem.name}}"
+          "value": "{{(List1.selectedItem.artists[0].name + List1.selectedItem.name)}}"
         },
         {
           "key": "type",
@@ -54,6 +54,7 @@
       ],
       "bodyFormData": [],
       "httpMethod": "GET",
+      "selfReferencingDataPaths": [],
       "pluginSpecifiedTemplates": [
         {
           "value": true
@@ -76,7 +77,7 @@
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "List1.selectedItem.artists[0].name + List1.selectedItem.name"
+      "(List1.selectedItem.artists[0].name + List1.selectedItem.name)"
     ],
     "userSetOnLoad": true,
     "confirmBeforeExecute": false,

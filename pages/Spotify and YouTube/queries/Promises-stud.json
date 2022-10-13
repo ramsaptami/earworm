@@ -23,6 +23,7 @@
       "paginationType": "NONE",
       "encodeParamsToggle": true,
       "body": "() => {\n\t\tlet artist = \"Sam Smith\"\n\t\tshowAlert(\"inside promotionalSingles call\")\n\t\treturn singlesFetchQuery.run()\n\t\t.then(() => {\n\t\t\tshowAlert(\"Showing Singles of \" + artist)\n\t\t\tconsole.log(\"Showing Singles of \" + artist)\n\t\t})\n\t\t.catch(() => showAlert(\"Unable to show Singles of \" + artist))\n\t}",
+      "selfReferencingDataPaths": [],
       "jsArguments": [],
       "isAsync": false
     },

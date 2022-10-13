@@ -2,8 +2,8 @@
   "pluginType": "JS",
   "pluginId": "js-plugin",
   "unpublishedAction": {
-    "name": "retih",
-    "fullyQualifiedName": "_onPageActions.retih",
+    "name": "race",
+    "fullyQualifiedName": "_onPageActions.race",
     "datasource": {
       "name": "UNUSED_DATASOURCE",
       "pluginId": "js-plugin",
@@ -19,9 +19,10 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "() => {\n  return appsmith.URL.queryParams;\n}",
+      "body": "() => {\n  return Promise.race([fetchAlbums.run(), fetchAlbumTracks.run(), fetchTopTracks.run(), searchAnyArtist.run()]).then(result => console.log(result.args)).catch(e => showAlert('hello ' + e.toString()));\n}",
+      "selfReferencingDataPaths": [],
       "jsArguments": [],
-      "isAsync": false
+      "isAsync": true
     },
     "executeOnLoad": false,
     "dynamicBindingPathList": [
@@ -33,14 +34,14 @@
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "() => {\n  return appsmith.URL.queryParams;\n}"
+      "() => {\n  return Promise.race([fetchAlbums.run(), fetchAlbumTracks.run(), fetchTopTracks.run(), searchAnyArtist.run()]).then(result => console.log(result.args)).catch(e => showAlert('hello ' + e.toString()));\n}"
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
     "policies": [],
     "userPermissions": []
   },
-  "id": "Spotify and YouTube__onPageActions.retih",
+  "id": "Spotify and YouTube__onPageActions.race",
   "deleted": false,
-  "gitSyncId": "61ea4a44361846772cfb117d_63237745ebe71a0c89c7bd92"
+  "gitSyncId": "61ea4a44361846772cfb117d_633b1e3779441105c4fbc473"
 }

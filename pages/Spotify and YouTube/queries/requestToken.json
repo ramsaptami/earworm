@@ -42,10 +42,11 @@
         },
         {
           "key": "redirect_uri",
-          "value": "https://appsmith-git-feat-identifier-dependency-get-appsmith.vercel.app/app/earworm/spotify-and-youtube-61ea4a44361846772cfb1180/edit?branch=master"
+          "value": "https://release.app.appsmith.com/app/earworm/spotify-and-youtube-61ea4a44361846772cfb1180/edit?branch=master"
         }
       ],
       "httpMethod": "POST",
+      "selfReferencingDataPaths": [],
       "pluginSpecifiedTemplates": [
         {
           "value": true

@@ -21,6 +21,7 @@
       "paginationType": "NONE",
       "encodeParamsToggle": true,
       "body": "() => {\n  console.log(\"STEP 4: *REQUEST CALL* Successfully ran requestToken API query\");\n  return requestToken.run();\n  let tokens = [storeValue('authToken', requestToken.data.access_token), storeValue('refreshToken', requestToken.data.refresh_token)];\n  return Promise.all(tokens).then(() => {\n    console.log(\"Auth code in store is \" + appsmith.store.authToken);\n    console.log(\"Refresh token in store is \" + appsmith.store.refreshToken);\n  }).catch(err => {\n    return showAlert('Could not store tokens in store ' + err.toString());\n  });\n}",
+      "selfReferencingDataPaths": [],
       "jsArguments": [],
       "isAsync": true
     },

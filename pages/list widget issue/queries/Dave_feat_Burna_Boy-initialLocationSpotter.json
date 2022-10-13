@@ -23,6 +23,7 @@
       "paginationType": "NONE",
       "encodeParamsToggle": true,
       "body": "() => {\n\t\tappsmith.geolocation.getCurrentPosition().then(() => {\n\t\tshowModal(\"showUserLocation\")})\n\t}",
+      "selfReferencingDataPaths": [],
       "jsArguments": [],
       "isAsync": false
     },

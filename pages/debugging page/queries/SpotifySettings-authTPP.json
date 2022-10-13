@@ -21,6 +21,7 @@
       "paginationType": "NONE",
       "encodeParamsToggle": true,
       "body": "async () => {\n  console.log(\"STEP 2: Requesting either request or refresh token based on token validity\");\n  return SpotifySettings.requestCall().then(s => console.log(s)).catch(e => {\n    console.log(e.message);\n    if (requestToken.responseMeta.statusCode != '200') {\n      return SpotifySettings.refreshCall();\n    }\n  });\n}",
+      "selfReferencingDataPaths": [],
       "jsArguments": [],
       "isAsync": true
     },

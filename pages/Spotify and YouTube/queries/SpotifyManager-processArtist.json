@@ -20,6 +20,7 @@
       "paginationType": "NONE",
       "encodeParamsToggle": true,
       "body": "artistCode => {\n  storeValue('artistCode', artistCode).then(() => {\n    fetchTopTracks.run(() => {\n      youTubeCustomSearch.run();\n      showAlert('♬ ♩ 𝅘𝅥𝅰 ♩ 𝅘𝅥𝅰 ♬');\n    }, () => showAlert('Uh uh! :( Looks like auth token has expired', 'warning'));\n  });\n}",
+      "selfReferencingDataPaths": [],
       "jsArguments": [
         {
           "name": "'artistCode'"

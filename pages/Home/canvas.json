@@ -19,7 +19,7 @@
           "parentRowSpace": 1,
           "type": "CANVAS_WIDGET",
           "canExtend": true,
-          "version": 63,
+          "version": 64,
           "minHeight": 670,
           "parentColumnSpace": 1,
           "dynamicBindingPathList": [],
@@ -28,7 +28,7 @@
             {
               "boxShadow": "none",
               "widgetName": "Image1",
-              "onClick": "{{navigateTo(\"https://accounts.spotify.com/authorize?client_id=6ff9274520cd4d5aa5a19fe75894aa90&response_type=code&redirect_uri=https://appsmith-git-feat-identifier-dependency-get-appsmith.vercel.app/app/earworm/spotify-and-youtube-61ea4a44361846772cfb1180/edit?branch=master&show_dialog=true\")}}",
+              "onClick": "{{navigateTo(\"https://accounts.spotify.com/authorize?client_id=6ff9274520cd4d5aa5a19fe75894aa90&response_type=code&redirect_uri=https://release.app.appsmith.com/app/earworm/spotify-and-youtube-61ea4a44361846772cfb1180/edit?branch=master&show_dialog=true\")}}",
               "submitButtonStyles": {
                 "borderRadius": "0px",
                 "boxShadow": "none"
@@ -244,6 +244,7 @@
           ]
         },
         "layoutOnLoadActions": [],
+        "layoutOnLoadActionErrors": [],
         "validOnPageLoadActions": true,
         "id": "Home",
         "deleted": false,

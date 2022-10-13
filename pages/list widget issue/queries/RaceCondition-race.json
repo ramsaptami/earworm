@@ -21,6 +21,7 @@
       "paginationType": "NONE",
       "encodeParamsToggle": true,
       "body": "() => {\n  return Promise.race([fetchAlbums.run(), fetchAlbumTracks.run(), fetchTopTracks.run(), searchAnyArtist.run()]).then(result => showAlert(result.args)).catch(e => showAlert('hello ' + e.toString()));\n}",
+      "selfReferencingDataPaths": [],
       "jsArguments": [],
       "isAsync": true
     },

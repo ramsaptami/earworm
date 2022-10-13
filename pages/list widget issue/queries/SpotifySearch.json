@@ -43,7 +43,8 @@
           "value": "IN"
         }
       ],
-      "httpMethod": "GET"
+      "httpMethod": "GET",
+      "selfReferencingDataPaths": []
     },
     "executeOnLoad": false,
     "dynamicBindingPathList": [

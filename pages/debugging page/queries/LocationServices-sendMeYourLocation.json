@@ -21,8 +21,9 @@
       "paginationType": "NONE",
       "encodeParamsToggle": true,
       "body": "() => {\n  return locationPermissionSwitch.isSwitchedOn ? LocationServices.locationSpotter() : LocationServices.clearLocationWatch();\n}",
+      "selfReferencingDataPaths": [],
       "jsArguments": [],
-      "isAsync": false
+      "isAsync": true
     },
     "executeOnLoad": false,
     "dynamicBindingPathList": [

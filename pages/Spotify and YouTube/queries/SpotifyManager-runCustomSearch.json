@@ -20,6 +20,7 @@
       "paginationType": "NONE",
       "encodeParamsToggle": true,
       "body": "async () => {\n  const searchValue = searchArtist.text ?? selectArtist.selectedOptionLabel;\n  return searchValue;\n}",
+      "selfReferencingDataPaths": [],
       "jsArguments": [],
       "isAsync": true
     },

@@ -23,6 +23,7 @@
       "paginationType": "NONE",
       "encodeParamsToggle": true,
       "body": "() => {\n\t\t fetchTopTracks.run()\n\t\t.then(() => showAlert(\"Showing studio albums of \" + Sam_Smith_feat_Calvin_Harris.artist))\n\t\t.catch(() => showAlert(\"Unable to show Singles of \" + Sam_Smith_feat_Calvin_Harris.artist))\n\t}",
+      "selfReferencingDataPaths": [],
       "jsArguments": [],
       "isAsync": false
     },
