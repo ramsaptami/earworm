@@ -16,7 +16,7 @@
     "pageId": "Spotify and YouTube",
     "collectionId": "62d7b18d00523971c3c5fc00",
     "actionConfiguration": {
-      "timeoutInMillisecond": 0,
+      "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
       "body": "() => {}",
