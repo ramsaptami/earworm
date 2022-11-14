@@ -7,7 +7,8 @@
     "actions": [],
     "archivedActions": [],
     "body": "export default {\n\trunAllSpotifyAPIs: () => {\n\t\tlet funcToRun = [\n\t\t\tfetchAlbumTracks.run(),\n\t\t\tfetchTopTracks.run(),\n\t\t\tfetchAlbums.run() //accesses token directly from query, not store\n\t\t\t]\n\t\t\treturn Promise.all(funcToRun)\n\t\t\t\t.then ( async () => {\n\t\t\t\t\tshowAlert(\"You are now connected to Spotify 🎉\")\n\t\t\t\t\tconsole.log(\"Step 6: All Spotify & YouTube API calls have been successfully executed\")\n\t\t\t\t\tyouTubeCustomSearch.run()\n\t\t\t\t\tawait console.log(\"You're app is now ready to play some music 🎉\")\n\t\t\t\t})\n\t},\n\t\n\trunGSheets: () => {\n\t\treturn Promise.race([\n\t\t\tstudioAlbumsFetchQuery.run(),\n\t\t\tpromotionalSingles.run(),\n\t\t\tsinglesFetchQuery.run()\n\t\t]).then((res) => {\n\t\t\tshowAlert(\"Running GSheets queries\"+ res.toString())\n\t\t\t.catch(() => {\n\t\t\t\tshowAlert(\"Not running GSheets queries\")\n\t\t\t})\n\t\t})\n\t},\n\n\trace: () => {\n\t\treturn Promise.race([\n\t\t\tfetchAlbums.run(),\n\t\t\tfetchAlbumTracks.run(),\n\t\t\tfetchTopTracks.run(),\n\t\t\tsearchAnyArtist.run()\n\t\t]).then((result) => showAlert(result.args))\n\t\t\t.catch((e) => showAlert('hello '+e.toString()))\n\t}\n}",
-    "variables": []
+    "variables": [],
+    "userPermissions": []
   },
   "id": "list widget issue_RaceCondition",
   "deleted": false,

@@ -7,7 +7,8 @@
     "actions": [],
     "archivedActions": [],
     "body": "export default {\n\n\tclearLocationWatch: () => {\n\t\tif (appsmith.geolocation.currentPosition != null) {\n\t\t\tappsmith.geolocation.clearWatch()\n\t\t}\n\t},\n\t\n\tlocationSpotter: () => {\n\t//set to run on page load\n\t\treturn appsmith.geolocation.getCurrentPosition()\n\t\t.then(() => {\n\t\t\t\tshowModal(\"showUserLocation\")\n\t\t\t\treturn appsmith.geolocation.currentPosition\n\t\t\t\t//locationSong.play()\n\t\t})\n\t\t.catch (() => showAlert(\"Failed to spot you on the map\", 'error'))\n\t},\n\t\n\tsendMeYourLocation: () => {\n\t//!need user confirmation before running\n\t\treturn locationPermissionSwitch.isSwitchedOn ? this.locationSpotter() : this.clearLocationWatch()\n\t}\n}",
-    "variables": []
+    "variables": [],
+    "userPermissions": []
   },
   "id": "Spotify and YouTube_LocationServices",
   "deleted": false,

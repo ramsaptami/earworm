@@ -7,7 +7,8 @@
     "actions": [],
     "archivedActions": [],
     "body": "export default {\n\tmyFun2: () => {\n\t\tQuery2.run(() => {\n\t\t\tconst uStatus = Query2.data.users.map((s) => ({\n\t\t\t\tlabel: s.name, value:s.avatar\n\t\t\t}))\n\t\t\treturn uStatus\n\t\t})\n\t}\n}",
-    "variables": []
+    "variables": [],
+    "userPermissions": []
   },
   "id": "Page1_JSObject1",
   "deleted": false,

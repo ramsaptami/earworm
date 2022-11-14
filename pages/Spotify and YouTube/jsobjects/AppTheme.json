@@ -7,7 +7,8 @@
     "actions": [],
     "archivedActions": [],
     "body": "export default {\n\tcolours: () => {\n\t\t//https://www.youtube.com/watch?v=vlx8TEuep5I//\n\t} \n}",
-    "variables": []
+    "variables": [],
+    "userPermissions": []
   },
   "id": "Spotify and YouTube_AppTheme",
   "deleted": false,

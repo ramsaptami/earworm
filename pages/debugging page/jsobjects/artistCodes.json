@@ -12,7 +12,8 @@
         "name": "artist",
         "value": "[{\n  \"label\": \"Coldplay\",\n  \"value\": \"4gzpq5DPGxSnKTe4SA8HAU\"\n}, {\n  \"label\": \"Post Malone\",\n  \"value\": \"246dkjvS1zLTtiykXe5h60\"\n}, {\n  \"label\": \"Sam Smith\",\n  \"value\": \"2wY79sveU1sp5g7SokKOiI\"\n}, {\n  \"label\": \"John Mayer\",\n  \"value\": \"0hEurMDQu99nJRq8pTxO14\"\n}, {\n  \"label\": \"Jay-Z\",\n  \"value\": \"3nFkdlSjzX9mRTtwJOzDYB\"\n}, {\n  \"label\": \"Hans Zimmer\",\n  \"value\": \"0YC192cP3KPCRWx8zr8MfZ\"\n}]"
       }
-    ]
+    ],
+    "userPermissions": []
   },
   "id": "debugging page_artistCodes",
   "deleted": false,

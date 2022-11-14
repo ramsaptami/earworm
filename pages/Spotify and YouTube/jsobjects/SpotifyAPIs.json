@@ -7,7 +7,8 @@
     "actions": [],
     "archivedActions": [],
     "body": "export default {\n\t\n}",
-    "variables": []
+    "variables": [],
+    "userPermissions": []
   },
   "id": "Spotify and YouTube_SpotifyAPIs",
   "deleted": false,
