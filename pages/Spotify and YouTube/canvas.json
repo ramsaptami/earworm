@@ -19,7 +19,7 @@
           "parentRowSpace": 1,
           "type": "CANVAS_WIDGET",
           "canExtend": true,
-          "version": 64,
+          "version": 67,
           "minHeight": 640,
           "parentColumnSpace": 1,
           "dynamicBindingPathList": [],
@@ -3933,7 +3933,11 @@
               ],
               "animateLoading": true,
               "parentColumnSpace": 17.9375,
-              "dynamicTriggerPathList": [],
+              "dynamicTriggerPathList": [
+                {
+                  "key": "onOptionChange"
+                }
+              ],
               "leftColumn": 32,
               "dynamicBindingPathList": [
                 {
@@ -3965,6 +3969,7 @@
               "renderMode": "CANVAS",
               "isLoading": false,
               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+              "onOptionChange": "{{navigateTo('', {}, 'SAME_WINDOW')}}",
               "allowClear": false
             },
             {

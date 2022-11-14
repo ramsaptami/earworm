@@ -12,7 +12,8 @@
         "name": "artist",
         "value": "searchArtist.text ?? selectArtist.selectedOptionLabel"
       }
-    ]
+    ],
+    "userPermissions": []
   },
   "id": "Spotify and YouTube_StoredValuesUtils",
   "deleted": false,

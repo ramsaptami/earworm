@@ -16,7 +16,8 @@
         "name": "PostMalone",
         "value": "[]"
       }
-    ]
+    ],
+    "userPermissions": []
   },
   "id": "list widget issue_albumCodes",
   "deleted": false,

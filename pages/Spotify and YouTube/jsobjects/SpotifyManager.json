@@ -7,7 +7,8 @@
     "actions": [],
     "archivedActions": [],
     "body": "export default {\n\tfetchArtistAlbums: () => {\n\t\tconst albums = fetchAlbums.data.items.map((item) => ({\n\t\t\tlabel:item.name , value: item.id\n\t\t}))\n\t\treturn _.filter(albums)\n\t},\n\t\n\tfetchArtistTracks: () => {\n\t\tconst tracks = fetchAlbumTracks.data.items.map((item) => ({\n\t\t\tlabel: item.name, value:item.preview_url\n\t\t}))\n\t\treturn _.uniq(tracks)\n\t\t},\n\t\n\tseudh: () => { return fetchAlbumTracks.data},\n\t\n\t//-----Custom search artists on Spotify-----//\n\trunCustomSearch: async () => {\n\t\tconst searchValue = searchArtist.text ?? selectArtist.selectedOptionLabel;\n\t\treturn searchValue\n\t},\n\t\n\tprocessArtist: (artistCode) => {\n\t\tstoreValue('artistCode', artistCode)\n\t\t\t.then(() => {\n\t\t\t\tfetchTopTracks.run(() => {\n\t\t\t\t\tyouTubeCustomSearch.run();\n\t\t\t\t\tshowAlert('♬ ♩ 𝅘𝅥𝅰 ♩ 𝅘𝅥𝅰 ♬')}, \n\t\t\t() => showAlert('Uh uh! :( Looks like auth token has expired','warning') )\n\t\t})\n\t}\n}",
-    "variables": []
+    "variables": [],
+    "userPermissions": []
   },
   "id": "Spotify and YouTube_SpotifyManager",
   "deleted": false,

@@ -12,7 +12,8 @@
         "name": "searchValue",
         "value": "searchArtist?.text?.length > 2 ? searchArtist.text : selectArtist.selectedOptionLabel"
       }
-    ]
+    ],
+    "userPermissions": []
   },
   "id": "debugging page_SpotifySettings",
   "deleted": false,

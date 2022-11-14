@@ -12,7 +12,8 @@
         "name": "artist",
         "value": "selectArtist.selectedOptionLabel"
       }
-    ]
+    ],
+    "userPermissions": []
   },
   "id": "list widget issue_Promises",
   "deleted": false,

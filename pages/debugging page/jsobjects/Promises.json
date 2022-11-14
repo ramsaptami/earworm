@@ -12,7 +12,8 @@
         "name": "artist",
         "value": "selectArtist.selectedOptionValue"
       }
-    ]
+    ],
+    "userPermissions": []
   },
   "id": "debugging page_Promises",
   "deleted": false,
