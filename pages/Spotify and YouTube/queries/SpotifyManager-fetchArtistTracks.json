@@ -19,7 +19,7 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "() => {\n  const tracks = fetchAlbumTracks.data.items.map(item => ({\n    label: item.name,\n    value: item.preview_url\n  }));\n  return _.uniq(tracks);\n}",
+      "body": "() => {\n  let tracks = fetchAlbumTracks.data.items.map(item => ({\n    label: item.name,\n    value: item.preview_url\n  }));\n  return _.uniq(tracks);\n}",
       "selfReferencingDataPaths": [],
       "jsArguments": [],
       "isAsync": false
@@ -34,7 +34,7 @@
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "() => {\n  const tracks = fetchAlbumTracks.data.items.map(item => ({\n    label: item.name,\n    value: item.preview_url\n  }));\n  return _.uniq(tracks);\n}"
+      "() => {\n  let tracks = fetchAlbumTracks.data.items.map(item => ({\n    label: item.name,\n    value: item.preview_url\n  }));\n  return _.uniq(tracks);\n}"
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,

@@ -1590,14 +1590,10 @@
             {
               "boxShadow": "none",
               "widgetName": "searchArtist",
-              "dynamicPropertyPathList": [
-                {
-                  "key": "onSubmit"
-                }
-              ],
+              "dynamicPropertyPathList": [],
               "displayName": "Input",
               "iconSVG": "/static/media/icon.9f505595.svg",
-              "onSubmit": "{{searchAnyArtist.run(async() =>{ \n\tawait fetchAlbums.run().then(() => { SpotifyManager.processArtist(searchAnyArtist.data.artists.items[0].id)}) }, () => showAlert('Unable to fetch artist ID','warning'))}}",
+              "onSubmit": "{{SpotifyManager.mainSearch()}}",
               "topRow": 24,
               "bottomRow": 28,
               "parentRowSpace": 10,

@@ -2,8 +2,8 @@
   "pluginType": "JS",
   "pluginId": "js-plugin",
   "unpublishedAction": {
-    "name": "clearStorage",
-    "fullyQualifiedName": "StoredValuesUtils.clearStorage",
+    "name": "mainSearch",
+    "fullyQualifiedName": "SpotifyManager.mainSearch",
     "datasource": {
       "name": "UNUSED_DATASOURCE",
       "pluginId": "js-plugin",
@@ -14,12 +14,12 @@
       "userPermissions": []
     },
     "pageId": "Spotify and YouTube",
-    "collectionId": "Spotify and YouTube_StoredValuesUtils",
+    "collectionId": "Spotify and YouTube_SpotifyManager",
     "actionConfiguration": {
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "async () => {\n  Object.keys(appsmith.store).forEach(eachKey => {\n    storeValue(eachKey, undefined);\n    showAlert(eachKey);\n  });\n  await console.log(appsmith.store);\n}",
+      "body": "() => {\n  searchAnyArtist.run(async () => {\n    await fetchAlbums.run().then(() => {\n      SpotifyManager.processArtist(searchAnyArtist.data.artists.items[0].id);\n    });\n  }, () => showAlert('Unable to fetch artist ID', 'warning'));\n}",
       "selfReferencingDataPaths": [],
       "jsArguments": [],
       "isAsync": true
@@ -34,14 +34,14 @@
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "async () => {\n  Object.keys(appsmith.store).forEach(eachKey => {\n    storeValue(eachKey, undefined);\n    showAlert(eachKey);\n  });\n  await console.log(appsmith.store);\n}"
+      "() => {\n  searchAnyArtist.run(async () => {\n    await fetchAlbums.run().then(() => {\n      SpotifyManager.processArtist(searchAnyArtist.data.artists.items[0].id);\n    });\n  }, () => showAlert('Unable to fetch artist ID', 'warning'));\n}"
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
     "policies": [],
     "userPermissions": []
   },
-  "id": "Spotify and YouTube_StoredValuesUtils.clearStorage",
+  "id": "Spotify and YouTube_SpotifyManager.mainSearch",
   "deleted": false,
-  "gitSyncId": "61ea4a44361846772cfb117d_6323482be53baa40cc678fa1"
+  "gitSyncId": "61ea4a44361846772cfb117d_6384fe761f0dde2a9a575d84"
 }
