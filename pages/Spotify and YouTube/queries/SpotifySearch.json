@@ -32,7 +32,7 @@
       "queryParameters": [
         {
           "key": "q",
-          "value": "artist={{searchArtist.text.length > 0 ? searchArtist.text : '%'}}track={{searchTrack.text.length > 0 ? searchTrack.text : '%'}}"
+          "value": "artist={{searchArtist.text.length > 0 ? searchArtist.text : '%'}}track={{searchTracks.text.length > 0 ? searchTracks.text : '%'}}"
         },
         {
           "key": "type",
@@ -64,7 +64,7 @@
     "jsonPathKeys": [
       "appsmith.store.authToken",
       "searchArtist.text.length > 0 ? searchArtist.text : '%'",
-      "searchTrack.text.length > 0 ? searchTrack.text : '%'"
+      "searchTracks.text.length > 0 ? searchTracks.text : '%'"
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
