@@ -19,7 +19,7 @@
           "parentRowSpace": 1,
           "type": "CANVAS_WIDGET",
           "canExtend": true,
-          "version": 69,
+          "version": 70,
           "minHeight": 640,
           "parentColumnSpace": 1,
           "dynamicBindingPathList": [],
@@ -4252,21 +4252,7 @@
             }
           ]
         },
-        "layoutOnLoadActions": [
-          [
-            {
-              "id": "Spotify and YouTube__onPageActions.authorizeSpotifyUsage",
-              "name": "_onPageActions.authorizeSpotifyUsage",
-              "collectionId": "Spotify and YouTube__onPageActions",
-              "confirmBeforeExecute": false,
-              "pluginType": "JS",
-              "jsonPathKeys": [
-                "async function () {\n  try {\n    console.log(\"Step 1: Starting to authorize your app. \\\\n Checking for valid/available auth codes\");\n    console.log(appsmith.URL.queryParams.code ?? 'No auth code found in the URL');\n    appsmith.URL.queryParams.code ? SpotifySettings.requestCall() : SpotifySettings.refreshCall();\n    await _onPageActions.runAllSpotifyAPIs();\n  } catch (error) {\n    console.log(\"You'll need to authorize from the start\");\n    showAlert(\"App can't be authorized unless done from the home page\");\n  }\n}"
-              ],
-              "timeoutInMillisecond": 10000
-            }
-          ]
-        ],
+        "layoutOnLoadActions": [],
         "layoutOnLoadActionErrors": [],
         "validOnPageLoadActions": true,
         "id": "Spotify and YouTube",
