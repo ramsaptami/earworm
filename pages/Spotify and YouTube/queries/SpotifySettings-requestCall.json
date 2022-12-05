@@ -16,7 +16,7 @@
     "pageId": "Spotify and YouTube",
     "collectionId": "Spotify and YouTube_SpotifySettings",
     "actionConfiguration": {
-      "timeoutInMillisecond": 0,
+      "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
       "body": "async () => {\n  try {\n    console.log('STEP 2: Query param contains auth code so proceeding with request flow');\n    const requestResponse = await requestToken.run();\n    console.log(\"STEP 3: *REQUEST CALL* Successfully ran requestToken query \");\n    let tokens = [storeValue('authToken', requestResponse.access_token), storeValue('refreshToken', requestResponse.refresh_token)];\n    await Promise.all(tokens);\n    console.log(\"Auth code in store is \" + appsmith.store.authToken);\n    console.log(\"Refresh token in store is \" + appsmith.store.refreshToken);\n  } catch (err) {\n    console.log(err.message + \" & returned a \" + requestToken.responseMeta.statusCode);\n    SpotifySettings.refreshCall();\n  }\n}",
