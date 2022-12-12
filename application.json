@@ -27,7 +27,7 @@
     "type": "TABLET_LARGE"
   },
   "publishedAppLayout": {
-    "type": "DESKTOP"
+    "type": "TABLET_LARGE"
   },
   "applicationVersion": 2,
   "isManualUpdate": false,
