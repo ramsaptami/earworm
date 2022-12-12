@@ -19,7 +19,7 @@
           "parentRowSpace": 1,
           "type": "CANVAS_WIDGET",
           "canExtend": true,
-          "version": 70,
+          "version": 71,
           "minHeight": 670,
           "parentColumnSpace": 1,
           "dynamicBindingPathList": [],
@@ -165,9 +165,6 @@
               "dynamicTriggerPathList": [],
               "leftColumn": 5,
               "dynamicBindingPathList": [
-                {
-                  "key": "childStylesheet.button.buttonColor"
-                },
                 {
                   "key": "groupButtons.groupButton1.buttonColor"
                 },

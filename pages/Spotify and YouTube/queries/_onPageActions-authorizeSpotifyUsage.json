@@ -24,7 +24,7 @@
       "jsArguments": [],
       "isAsync": true
     },
-    "executeOnLoad": false,
+    "executeOnLoad": true,
     "dynamicBindingPathList": [
       {
         "key": "body"
@@ -36,7 +36,7 @@
     "jsonPathKeys": [
       "async function () {\n  try {\n    console.log(\"Step 1: Starting to authorize your app. \\\\n Checking for valid/available auth codes\");\n    console.log(appsmith.URL.queryParams.code ?? 'No auth code found in the URL');\n    appsmith.URL.queryParams.code ? SpotifySettings.requestCall() : SpotifySettings.refreshCall();\n    await _onPageActions.runAllSpotifyAPIs();\n  } catch (error) {\n    console.log(\"You'll need to authorize from the start\");\n    showAlert(\"App can't be authorized unless done from the home page\");\n  }\n}"
     ],
-    "userSetOnLoad": false,
+    "userSetOnLoad": true,
     "confirmBeforeExecute": false,
     "policies": [],
     "userPermissions": []
