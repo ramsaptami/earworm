@@ -17,7 +17,7 @@
     "actionConfiguration": {
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
-      "path": "/v1/artists/{{appsmith.store.artistCode ?? '246dkjvS1zLTtiykXe5h60'}}/albums",
+      "path": "/v1/artists/{{appsmith.store.artistId ?? '246dkjvS1zLTtiykXe5h60'}}/albums",
       "headers": [
         {
           "key": "Authorization",
@@ -25,7 +25,12 @@
         }
       ],
       "encodeParamsToggle": true,
-      "queryParameters": [],
+      "queryParameters": [
+        {
+          "key": "market",
+          "value": "IN"
+        }
+      ],
       "bodyFormData": [
         {
           "key": "market",
@@ -51,7 +56,7 @@
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "appsmith.store.artistCode ?? '246dkjvS1zLTtiykXe5h60'",
+      "appsmith.store.artistId ?? '246dkjvS1zLTtiykXe5h60'",
       "appsmith.store.authToken"
     ],
     "userSetOnLoad": true,

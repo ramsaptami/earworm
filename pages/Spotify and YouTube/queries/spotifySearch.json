@@ -2,7 +2,7 @@
   "pluginType": "API",
   "pluginId": "restapi-plugin",
   "unpublishedAction": {
-    "name": "SpotifySearch",
+    "name": "spotifySearch",
     "datasource": {
       "name": "Spotify API",
       "pluginId": "restapi-plugin",
@@ -36,7 +36,7 @@
         },
         {
           "key": "type",
-          "value": "album"
+          "value": "track,artist,album"
         },
         {
           "key": "market",
@@ -71,7 +71,7 @@
     "policies": [],
     "userPermissions": []
   },
-  "id": "Spotify and YouTube_SpotifySearch",
+  "id": "Spotify and YouTube_spotifySearch",
   "deleted": false,
   "gitSyncId": "61ea4a44361846772cfb117d_626aad907e182b25891337b3"
 }

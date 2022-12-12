@@ -21,10 +21,13 @@
       "headers": [],
       "encodeParamsToggle": true,
       "queryParameters": [],
-      "body": "{\n  \"name\": {{fetchTopTracks.data.}},\n  \"description\": \"New playlist description\",\n  \"public\": false\n}",
+      "body": "{\n  \"name\": {{fetchTopTracks.data}},\n  \"description\": \"New playlist description\",\n  \"public\": false\n}",
       "bodyFormData": [],
       "httpMethod": "POST",
-      "selfReferencingDataPaths": []
+      "selfReferencingDataPaths": [],
+      "formData": {
+        "apiContentType": "application/json"
+      }
     },
     "executeOnLoad": false,
     "dynamicBindingPathList": [
@@ -36,7 +39,7 @@
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "fetchTopTracks.data."
+      "fetchTopTracks.data"
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
