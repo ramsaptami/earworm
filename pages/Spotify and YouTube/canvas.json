@@ -13,13 +13,13 @@
           "detachFromLayout": true,
           "widgetId": "0",
           "topRow": 0,
-          "bottomRow": 2030,
+          "bottomRow": 1580,
           "containerStyle": "none",
           "snapRows": 63,
           "parentRowSpace": 1,
           "type": "CANVAS_WIDGET",
           "canExtend": true,
-          "version": 71,
+          "version": 74,
           "minHeight": 640,
           "parentColumnSpace": 1,
           "dynamicBindingPathList": [],
@@ -926,14 +926,14 @@
               "dynamicPropertyPathList": [],
               "displayName": "Container",
               "iconSVG": "/static/media/icon.1977dca3.svg",
-              "topRow": 159,
-              "bottomRow": 195,
+              "topRow": 114,
+              "bottomRow": 150,
               "parentRowSpace": 10,
               "type": "CONTAINER_WIDGET",
               "hideCard": false,
               "parentColumnSpace": 14.66180419921875,
               "dynamicTriggerPathList": [],
-              "leftColumn": 18,
+              "leftColumn": 1,
               "dynamicBindingPathList": [],
               "children": [
                 {
@@ -1615,7 +1615,7 @@
               "key": "7bejspdk1p",
               "labelTextSize": "0.875rem",
               "backgroundColor": "#FFFFFF",
-              "rightColumn": 47,
+              "rightColumn": 30,
               "textSize": "0.875rem",
               "dynamicHeight": "FIXED",
               "widgetId": "vng69o7j2y",
@@ -1916,7 +1916,7 @@
               "version": 1,
               "expandAll": false,
               "parentId": "0",
-              "onDropdownOpen": "{{fetchAlbums.run()}}",
+              "onDropdownOpen": "{{SpotifyManager.artistSearch()}}",
               "labelAlignment": "left",
               "renderMode": "CANVAS",
               "isLoading": false,
@@ -1937,8 +1937,8 @@
                 "dropdown",
                 "tags"
               ],
-              "topRow": 34,
-              "bottomRow": 38,
+              "topRow": 27,
+              "bottomRow": 31,
               "parentRowSpace": 10,
               "labelWidth": 5,
               "type": "MULTI_SELECT_WIDGET_V2",
@@ -1948,7 +1948,7 @@
               "animateLoading": true,
               "parentColumnSpace": 17.9375,
               "dynamicTriggerPathList": [],
-              "leftColumn": 47,
+              "leftColumn": 33,
               "dynamicBindingPathList": [
                 {
                   "key": "accentColor"
@@ -1968,7 +1968,7 @@
               "labelTextSize": "0.875rem",
               "isRequired": false,
               "isDeprecated": false,
-              "rightColumn": 61,
+              "rightColumn": 51,
               "dynamicHeight": "FIXED",
               "widgetId": "8ru8pdhpe2",
               "accentColor": "{{appsmith.theme.colors.primaryColor}}",
@@ -1986,7 +1986,11 @@
               "boxShadow": "none",
               "widgetName": "selectArtist",
               "isFilterable": true,
-              "dynamicPropertyPathList": [],
+              "dynamicPropertyPathList": [
+                {
+                  "key": "onOptionChange"
+                }
+              ],
               "displayName": "Select",
               "iconSVG": "/static/media/icon.bd99caba5853ad71e4b3d8daffacb3a2.svg",
               "labelText": "",
@@ -2043,7 +2047,7 @@
               "isLoading": false,
               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
               "maxDynamicHeight": 9000,
-              "onOptionChange": "{{SpotifyManager.feth(selectArtist.selectedOptionValue)}}",
+              "onOptionChange": "{{SpotifyManager.fetchArtistTopTracks(selectArtist.selectedOptionValue)}}",
               "minDynamicHeight": 4
             },
             {
@@ -2325,52 +2329,6 @@
                             "parentId": true,
                             "dynamicBindingPathList": true
                           }
-                        },
-                        "topTracksPlayerCopy": {
-                          "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
-                          "widgetName": "topTracksPlayerCopy",
-                          "borderColor": "",
-                          "submitButtonStyles": {
-                            "borderRadius": "0px",
-                            "boxShadow": "none"
-                          },
-                          "displayName": "Iframe",
-                          "iconSVG": "/static/media/icon.34169b6a.svg",
-                          "topRow": 6,
-                          "bottomRow": 69,
-                          "parentRowSpace": 10,
-                          "source": "{{List1.listData.map((currentItem, currentIndex) => {\n              return (function(){\n                return  (function() {\nlet text = currentItem.external_urls.spotify\nlet result = text.replace(\"https://open.spotify.com/\",\"https://open.spotify.com/embed/\");\nreturn result\n}) () ;\n              })();\n            })}}",
-                          "type": "IFRAME_WIDGET",
-                          "hideCard": false,
-                          "borderOpacity": 100,
-                          "animateLoading": true,
-                          "parentColumnSpace": 17.9375,
-                          "dynamicTriggerPathList": [],
-                          "leftColumn": 30,
-                          "dynamicBindingPathList": [
-                            {
-                              "key": "source"
-                            },
-                            {
-                              "key": "boxShadow"
-                            }
-                          ],
-                          "borderWidth": "4",
-                          "key": "zvcwglah5m",
-                          "labelTextSize": "0.875rem",
-                          "rightColumn": 64,
-                          "textSize": "0.875rem",
-                          "widgetId": "j0dg1ycnrf",
-                          "resetButtonStyles": {
-                            "borderRadius": "0px",
-                            "boxShadow": "none"
-                          },
-                          "isVisible": true,
-                          "version": 1,
-                          "parentId": "ytg0h45m3w",
-                          "renderMode": "CANVAS",
-                          "isLoading": false,
-                          "borderRadius": "1.5rem"
                         },
                         "Text11": {
                           "isVisible": true,
@@ -2969,6 +2927,52 @@
                             "dynamicBindingPathList": true
                           },
                           "onClick": "{{showModal('YouTube_video_display')}}"
+                        },
+                        "topTracksPlayer": {
+                          "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
+                          "widgetName": "topTracksPlayer",
+                          "borderColor": "",
+                          "submitButtonStyles": {
+                            "borderRadius": "0px",
+                            "boxShadow": "none"
+                          },
+                          "displayName": "Iframe",
+                          "iconSVG": "/static/media/icon.34169b6a.svg",
+                          "topRow": 6,
+                          "bottomRow": 69,
+                          "parentRowSpace": 10,
+                          "source": "{{List1.listData.map((currentItem, currentIndex) => {\n              return (function(){\n                return  (function() {\nlet text = currentItem.external_urls.spotify\nlet result = text.replace(\"https://open.spotify.com/\",\"https://open.spotify.com/embed/\");\nreturn result\n}) () ;\n              })();\n            })}}",
+                          "type": "IFRAME_WIDGET",
+                          "hideCard": false,
+                          "borderOpacity": 100,
+                          "animateLoading": true,
+                          "parentColumnSpace": 17.9375,
+                          "dynamicTriggerPathList": [],
+                          "leftColumn": 30,
+                          "dynamicBindingPathList": [
+                            {
+                              "key": "source"
+                            },
+                            {
+                              "key": "boxShadow"
+                            }
+                          ],
+                          "borderWidth": "4",
+                          "key": "zvcwglah5m",
+                          "labelTextSize": "0.875rem",
+                          "rightColumn": 64,
+                          "textSize": "0.875rem",
+                          "widgetId": "j0dg1ycnrf",
+                          "resetButtonStyles": {
+                            "borderRadius": "0px",
+                            "boxShadow": "none"
+                          },
+                          "isVisible": true,
+                          "version": 1,
+                          "parentId": "ytg0h45m3w",
+                          "renderMode": "CANVAS",
+                          "isLoading": false,
+                          "borderRadius": "1.5rem"
                         }
                       },
                       "boxShadow": "0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05)",
@@ -3014,7 +3018,7 @@
                           "key": "template.Audio1.url"
                         },
                         {
-                          "key": "template.topTracksPlayerCopy.source"
+                          "key": "template.topTracksPlayer.source"
                         },
                         {
                           "key": "template.Text11.text"
@@ -3151,7 +3155,7 @@
                                   "children": [
                                     {
                                       "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
-                                      "widgetName": "topTracksPlayerCopy",
+                                      "widgetName": "topTracksPlayer",
                                       "borderColor": "",
                                       "submitButtonStyles": {
                                         "borderRadius": "0px",
@@ -3183,6 +3187,7 @@
                                       "labelTextSize": "0.875rem",
                                       "rightColumn": 64,
                                       "textSize": "0.875rem",
+                                      "dynamicHeight": "FIXED",
                                       "widgetId": "j0dg1ycnrf",
                                       "resetButtonStyles": {
                                         "borderRadius": "0px",
@@ -3222,6 +3227,7 @@
                                       "isDeprecated": false,
                                       "rightColumn": 19,
                                       "objectFit": "cover",
+                                      "dynamicHeight": "FIXED",
                                       "widgetId": "vypo90xmx0",
                                       "logBlackList": {
                                         "isVisible": true,
@@ -3466,6 +3472,7 @@
                                       "key": "60s2zyjewb",
                                       "isDeprecated": false,
                                       "rightColumn": 44,
+                                      "dynamicHeight": "FIXED",
                                       "widgetId": "p7znmrn3vc",
                                       "accentColor": "{{appsmith.theme.colors.primaryColor}}",
                                       "logBlackList": {
@@ -3708,6 +3715,7 @@
                                       "isDeprecated": false,
                                       "rightColumn": 21,
                                       "iconName": "person",
+                                      "dynamicHeight": "FIXED",
                                       "widgetId": "oq2loie9iy",
                                       "logBlackList": {
                                         "isVisible": true,
@@ -3781,6 +3789,7 @@
                                       "isDeprecated": false,
                                       "rightColumn": 21,
                                       "iconName": "music",
+                                      "dynamicHeight": "FIXED",
                                       "widgetId": "fideu0s5q4",
                                       "logBlackList": {
                                         "isVisible": true,
@@ -3854,6 +3863,7 @@
                                       "isDeprecated": false,
                                       "rightColumn": 21,
                                       "iconName": "play",
+                                      "dynamicHeight": "FIXED",
                                       "widgetId": "w7q8gyauf3",
                                       "logBlackList": {
                                         "isVisible": true,
@@ -3927,6 +3937,7 @@
                                       "isDeprecated": false,
                                       "rightColumn": 21,
                                       "iconName": "calendar",
+                                      "dynamicHeight": "FIXED",
                                       "widgetId": "ppor7yufe9",
                                       "logBlackList": {
                                         "isVisible": true,
@@ -4086,6 +4097,7 @@
                                       "isDeprecated": false,
                                       "rightColumn": 56,
                                       "objectFit": "contain",
+                                      "dynamicHeight": "FIXED",
                                       "widgetId": "fff8k74tzo",
                                       "logBlackList": {
                                         "isVisible": true,
@@ -4218,7 +4230,7 @@
                   "tabId": "tab2",
                   "widgetName": "Canvas17",
                   "displayName": "Canvas",
-                  "bottomRow": 680,
+                  "bottomRow": 710,
                   "topRow": 0,
                   "parentRowSpace": 1,
                   "type": "CANVAS_WIDGET",
@@ -4241,7 +4253,7 @@
                           "enableRotation": true,
                           "enableDownload": false,
                           "objectFit": "cover",
-                          "image": "{{List2.listData.map((currentItem) => currentItem.img)}}",
+                          "image": "{{List2.listData.map((currentItem, currentIndex) => {\n              return (function(){\n                return  currentItem.images[0].url;\n              })();\n            })}}",
                           "widgetName": "Image3",
                           "version": 1,
                           "animateLoading": true,
@@ -4389,7 +4401,7 @@
                       "displayName": "List",
                       "iconSVG": "/static/media/icon.9925ee17dee37bf1ba7374412563a8a7.svg",
                       "topRow": 1,
-                      "bottomRow": 59,
+                      "bottomRow": 69,
                       "parentRowSpace": 10,
                       "type": "LIST_WIDGET",
                       "hideCard": false,
@@ -4428,14 +4440,14 @@
                           "widgetName": "Canvas18",
                           "displayName": "Canvas",
                           "topRow": 0,
-                          "bottomRow": 580,
+                          "bottomRow": 680,
                           "parentRowSpace": 1,
                           "type": "CANVAS_WIDGET",
                           "canExtend": false,
                           "hideCard": true,
                           "dropDisabled": true,
                           "openParentPropertyPane": true,
-                          "minHeight": 580,
+                          "minHeight": 680,
                           "noPad": true,
                           "parentColumnSpace": 1,
                           "leftColumn": 0,
@@ -4519,10 +4531,11 @@
                                       "leftColumn": 0,
                                       "defaultImage": "https://assets.appsmith.com/widgets/default.png",
                                       "key": "d71vuhnq85",
-                                      "image": "{{currentItem.img}}",
+                                      "image": "{{currentItem.images[0].url}}",
                                       "isDeprecated": false,
                                       "rightColumn": 16,
                                       "objectFit": "cover",
+                                      "dynamicHeight": "FIXED",
                                       "widgetId": "yok4r63m6l",
                                       "logBlackList": {
                                         "isVisible": true,
@@ -4611,7 +4624,7 @@
                                       "isDeprecated": false,
                                       "rightColumn": 28,
                                       "textAlign": "LEFT",
-                                      "dynamicHeight": "AUTO_HEIGHT",
+                                      "dynamicHeight": "FIXED",
                                       "widgetId": "lsctfhmwab",
                                       "logBlackList": {
                                         "isVisible": true,
@@ -4709,7 +4722,7 @@
                                       "isDeprecated": false,
                                       "rightColumn": 24,
                                       "textAlign": "LEFT",
-                                      "dynamicHeight": "AUTO_HEIGHT",
+                                      "dynamicHeight": "FIXED",
                                       "widgetId": "o1izpihqv7",
                                       "logBlackList": {
                                         "isVisible": true,
@@ -4764,7 +4777,7 @@
                                       "originalTopRow": 4,
                                       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
                                       "maxDynamicHeight": 9000,
-                                      "originalBottomRow": 8,
+                                      "originalBottomRow": 9,
                                       "fontSize": "1rem",
                                       "textStyle": "BODY",
                                       "minDynamicHeight": 4
