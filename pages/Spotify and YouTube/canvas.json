@@ -241,11 +241,7 @@
                         "boxShadow": "none"
                       },
                       "buttonColor": "#9dc2b8",
-                      "dynamicPropertyPathList": [
-                        {
-                          "key": "onClick"
-                        }
-                      ],
+                      "dynamicPropertyPathList": [],
                       "displayName": "Icon Button",
                       "iconSVG": "/static/media/icon.1a0c634a.svg",
                       "topRow": 0,
@@ -2979,6 +2975,7 @@
                       "widgetName": "List1",
                       "listData": "{{fetchTopTracks.data.tracks }}",
                       "isCanvas": true,
+                      "dynamicPropertyPathList": [],
                       "displayName": "List",
                       "iconSVG": "/static/media/icon.9925ee17.svg",
                       "topRow": 0,

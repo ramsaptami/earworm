@@ -13,13 +13,13 @@
           "detachFromLayout": true,
           "widgetId": "0",
           "topRow": 0,
-          "bottomRow": 2700,
+          "bottomRow": 2760,
           "containerStyle": "none",
           "snapRows": 63,
           "parentRowSpace": 1,
           "type": "CANVAS_WIDGET",
           "canExtend": true,
-          "version": 71,
+          "version": 74,
           "minHeight": 640,
           "parentColumnSpace": 1,
           "dynamicBindingPathList": [],
@@ -2420,6 +2420,7 @@
                               "labelTextSize": "0.875rem",
                               "rightColumn": 63,
                               "textSize": "0.875rem",
+                              "dynamicHeight": "FIXED",
                               "widgetId": "wvq2tb45or",
                               "resetButtonStyles": {
                                 "borderRadius": "0px",
@@ -2459,6 +2460,7 @@
                               "isDeprecated": false,
                               "rightColumn": 21,
                               "objectFit": "cover",
+                              "dynamicHeight": "FIXED",
                               "widgetId": "vypo90xmx0",
                               "logBlackList": {
                                 "isVisible": true,
@@ -2703,6 +2705,7 @@
                               "key": "60s2zyjewb",
                               "isDeprecated": false,
                               "rightColumn": 44,
+                              "dynamicHeight": "FIXED",
                               "widgetId": "p7znmrn3vc",
                               "accentColor": "{{appsmith.theme.colors.primaryColor}}",
                               "logBlackList": {
@@ -2937,6 +2940,7 @@
                                       "isDeprecated": false,
                                       "rightColumn": 59,
                                       "iconName": "arrow-top-right",
+                                      "dynamicHeight": "FIXED",
                                       "widgetId": "sy0hj0avlz",
                                       "buttonStyle": "PRIMARY",
                                       "isVisible": true,
@@ -3152,53 +3156,6 @@
               "renderMode": "CANVAS",
               "isLoading": false,
               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}"
-            },
-            {
-              "widgetName": "Text12",
-              "displayName": "Text",
-              "iconSVG": "/static/media/icon.97c59b52.svg",
-              "topRow": 102,
-              "bottomRow": 128,
-              "parentRowSpace": 10,
-              "type": "TEXT_WIDGET",
-              "hideCard": false,
-              "animateLoading": true,
-              "overflow": "NONE",
-              "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
-              "parentColumnSpace": 17.9375,
-              "dynamicTriggerPathList": [],
-              "leftColumn": 6,
-              "dynamicBindingPathList": [
-                {
-                  "key": "fontFamily"
-                },
-                {
-                  "key": "borderRadius"
-                },
-                {
-                  "key": "text"
-                }
-              ],
-              "shouldTruncate": false,
-              "truncateButtonColor": "#FFC13D",
-              "text": "{{List1.template.topTracksPlayerCopy.source}}",
-              "key": "1asiu5ho3w",
-              "isDeprecated": false,
-              "rightColumn": 38,
-              "textAlign": "LEFT",
-              "dynamicHeight": "FIXED",
-              "widgetId": "bx4wvh3fob",
-              "isVisible": true,
-              "fontStyle": "BOLD",
-              "textColor": "#231F20",
-              "version": 1,
-              "parentId": "0",
-              "renderMode": "CANVAS",
-              "isLoading": false,
-              "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-              "maxDynamicHeight": 9000,
-              "fontSize": "1rem",
-              "minDynamicHeight": 4
             },
             {
               "widgetName": "Text13",
