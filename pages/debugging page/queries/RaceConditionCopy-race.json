@@ -2,8 +2,8 @@
   "pluginType": "JS",
   "pluginId": "js-plugin",
   "unpublishedAction": {
-    "name": "clearStorage",
-    "fullyQualifiedName": "SpotifySettingsCopy.clearStorage",
+    "name": "race",
+    "fullyQualifiedName": "RaceConditionCopy.race",
     "datasource": {
       "name": "UNUSED_DATASOURCE",
       "pluginId": "js-plugin",
@@ -15,12 +15,12 @@
       "userPermissions": []
     },
     "pageId": "debugging page",
-    "collectionId": "debugging page_SpotifySettingsCopy",
+    "collectionId": "debugging page_RaceConditionCopy",
     "actionConfiguration": {
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "() => {\n  Object.keys(appsmith.store).forEach(eachKey => {\n    storeValue(eachKey, undefined);\n    showAlert(eachKey);\n  });\n}",
+      "body": "() => {\n  return Promise.race([fetchAlbums.run(), fetchAlbumTracks.run(), fetchTopTracks.run(), searchAnyArtist.run()]).then(result => showAlert(result.args)).catch(e => showAlert('hello ' + e.toString()));\n}",
       "selfReferencingDataPaths": [],
       "jsArguments": [],
       "isAsync": true
@@ -35,14 +35,14 @@
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "() => {\n  Object.keys(appsmith.store).forEach(eachKey => {\n    storeValue(eachKey, undefined);\n    showAlert(eachKey);\n  });\n}"
+      "() => {\n  return Promise.race([fetchAlbums.run(), fetchAlbumTracks.run(), fetchTopTracks.run(), searchAnyArtist.run()]).then(result => showAlert(result.args)).catch(e => showAlert('hello ' + e.toString()));\n}"
     ],
     "userSetOnLoad": false,
-    "confirmBeforeExecute": false,
+    "confirmBeforeExecute": true,
     "policies": [],
     "userPermissions": []
   },
-  "id": "debugging page_SpotifySettingsCopy.clearStorage",
+  "id": "debugging page_RaceConditionCopy.race",
   "deleted": false,
-  "gitSyncId": "61ea4a44361846772cfb117d_62a32578f4e3980741ff570e"
+  "gitSyncId": "61ea4a44361846772cfb117d_63aec67de00bee14fb48c301"
 }
