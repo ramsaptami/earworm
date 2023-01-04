@@ -23,7 +23,7 @@
       "body": "() => {\n  Object.keys(appsmith.store).forEach(eachKey => {\n    storeValue(eachKey, undefined);\n    showAlert(eachKey);\n  });\n}",
       "selfReferencingDataPaths": [],
       "jsArguments": [],
-      "isAsync": false
+      "isAsync": true
     },
     "executeOnLoad": false,
     "dynamicBindingPathList": [

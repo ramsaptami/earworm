@@ -111,6 +111,9 @@
           "viewType": "component",
           "componentData": "ROWS"
         },
+        "range": {
+          "data": ""
+        },
         "rowIndex": {
           "data": "0",
           "viewType": "component",

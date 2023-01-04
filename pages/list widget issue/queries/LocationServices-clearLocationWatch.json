@@ -23,7 +23,7 @@
       "body": "() => {\n  if (appsmith.geolocation.currentPosition != null) {\n    appsmith.geolocation.clearWatch();\n  }\n}",
       "selfReferencingDataPaths": [],
       "jsArguments": [],
-      "isAsync": true
+      "isAsync": false
     },
     "executeOnLoad": false,
     "dynamicBindingPathList": [
