@@ -1,0 +1,15 @@
+{
+  "unpublishedCollection": {
+    "name": "RaceConditionCopy",
+    "pageId": "debugging page",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "variables": [],
+    "userPermissions": []
+  },
+  "id": "debugging page_RaceConditionCopy",
+  "deleted": false,
+  "gitSyncId": "61ea4a44361846772cfb117d_63aec67de00bee14fb48c304"
+}

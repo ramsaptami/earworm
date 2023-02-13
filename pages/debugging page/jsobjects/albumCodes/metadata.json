@@ -1,0 +1,20 @@
+{
+  "unpublishedCollection": {
+    "name": "albumCodes",
+    "pageId": "debugging page",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "variables": [
+      {
+        "name": "Coldplay",
+        "value": "[{\n  \"label\": \"Music of the Spheres\",\n  \"value\": \"06mXfvDsRZNfnsGZvX2zpb\"\n}, {\n  \"label\": \"Sam Smith\",\n  \"value\": \"2wY79sveU1sp5g7SokKOiI\"\n}, {\n  \"label\": \"Post Malone\",\n  \"value\": \"246dkjvS1zLTtiykXe5h60\"\n}]"
+      }
+    ],
+    "userPermissions": []
+  },
+  "id": "debugging page_albumCodes",
+  "deleted": false,
+  "gitSyncId": "61ea4a44361846772cfb117d_62a32578f4e3980741ff5755"
+}

@@ -44,7 +44,10 @@
         }
       ],
       "httpMethod": "GET",
-      "selfReferencingDataPaths": []
+      "selfReferencingDataPaths": [],
+      "formData": {
+        "apiContentType": "application/json"
+      }
     },
     "executeOnLoad": false,
     "dynamicBindingPathList": [

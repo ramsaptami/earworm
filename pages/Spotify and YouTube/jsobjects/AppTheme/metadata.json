@@ -1,0 +1,15 @@
+{
+  "unpublishedCollection": {
+    "name": "AppTheme",
+    "pageId": "Spotify and YouTube",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "variables": [],
+    "userPermissions": []
+  },
+  "id": "Spotify and YouTube_AppTheme",
+  "deleted": false,
+  "gitSyncId": "61ea4a44361846772cfb117d_6221b6b5c48234070f8ac862"
+}

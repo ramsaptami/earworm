@@ -29,6 +29,8 @@
   "publishedAppLayout": {
     "type": "TABLET_LARGE"
   },
+  "unpublishedCustomJSLibs": [],
+  "publishedCustomJSLibs": [],
   "applicationVersion": 2,
   "isManualUpdate": false,
   "deleted": false

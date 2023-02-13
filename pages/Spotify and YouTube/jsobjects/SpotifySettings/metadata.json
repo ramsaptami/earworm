@@ -1,0 +1,15 @@
+{
+  "unpublishedCollection": {
+    "name": "SpotifySettings",
+    "pageId": "Spotify and YouTube",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "variables": [],
+    "userPermissions": []
+  },
+  "id": "Spotify and YouTube_SpotifySettings",
+  "deleted": false,
+  "gitSyncId": "61ea4a44361846772cfb117d_633addf1b6737802223ee530"
+}
