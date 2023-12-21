@@ -1,4 +1,5 @@
 {
+  "invalids": [],
   "name": "Spotify Account",
   "pluginId": "restapi-plugin",
   "messages": [],

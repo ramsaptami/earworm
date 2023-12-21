@@ -1,0 +1,43 @@
+{
+    "boxShadow": "none",
+    "widgetName": "appIcon",
+    "onClick": "{{navigateTo(\"https://accounts.spotify.com/authorize?client_id=6ff9274520cd4d5aa5a19fe75894aa90&response_type=code&redirect_uri=https://appsmith-git-feat-identifier-dependency-get-appsmith.vercel.app/app/earworm/debugging-page-62a32578f4e3980741ff56e2/edit?branch=master&show_dialog=true\")}}",
+    "submitButtonStyles": {
+        "boxShadow": "none",
+        "borderRadius": "0px"
+    },
+    "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+    "dynamicPropertyPathList": [],
+    "displayName": "Icon Button",
+    "iconSVG": "/static/media/icon.1a0c634a.svg",
+    "topRow": 0,
+    "bottomRow": 4,
+    "tooltip": "Authorize the app here to start seeing some data",
+    "parentRowSpace": 10,
+    "type": "ICON_BUTTON_WIDGET",
+    "hideCard": false,
+    "animateLoading": true,
+    "parentColumnSpace": 17.9375,
+    "dynamicTriggerPathList": [{"key": "onClick"}],
+    "leftColumn": 29,
+    "dynamicBindingPathList": [{"key": "buttonColor"}],
+    "isDisabled": false,
+    "key": "8xxsuhv9ci",
+    "labelTextSize": "0.875rem",
+    "rightColumn": 36,
+    "textSize": "0.875rem",
+    "iconName": "music",
+    "widgetId": "n2fnqh1as2",
+    "resetButtonStyles": {
+        "boxShadow": "none",
+        "borderRadius": "0px"
+    },
+    "isVisible": true,
+    "version": 1,
+    "parentId": "0",
+    "renderMode": "CANVAS",
+    "isLoading": false,
+    "borderRadius": "0px",
+    "buttonVariant": "TERTIARY",
+    "boxShadowColor": "#73906C"
+}

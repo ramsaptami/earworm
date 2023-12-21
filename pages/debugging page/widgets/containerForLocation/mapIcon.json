@@ -1,0 +1,41 @@
+{
+    "boxShadow": "none",
+    "widgetName": "mapIcon",
+    "onClick": "{{\nappsmith.geolocation.getCurrentPosition().then(() => {\nshowModal(\"showUserLocation\")})\n}}",
+    "submitButtonStyles": {
+        "boxShadow": "none",
+        "borderRadius": "0px"
+    },
+    "buttonColor": "#da9830",
+    "dynamicPropertyPathList": [{"key": "onClick"}],
+    "displayName": "Icon Button",
+    "iconSVG": "/static/media/icon.1a0c634a.svg",
+    "topRow": 0,
+    "bottomRow": 4,
+    "parentRowSpace": 10,
+    "type": "ICON_BUTTON_WIDGET",
+    "hideCard": false,
+    "animateLoading": false,
+    "parentColumnSpace": 0.5767822265625,
+    "dynamicTriggerPathList": [{"key": "onClick"}],
+    "leftColumn": 0,
+    "dynamicBindingPathList": [],
+    "isDisabled": false,
+    "key": "8xxsuhv9ci",
+    "labelTextSize": "0.875rem",
+    "rightColumn": 10,
+    "textSize": "0.875rem",
+    "iconName": "path-search",
+    "widgetId": "qx33jsn2g4",
+    "resetButtonStyles": {
+        "boxShadow": "none",
+        "borderRadius": "0px"
+    },
+    "isVisible": true,
+    "version": 1,
+    "parentId": "yvh50rdi7e",
+    "renderMode": "CANVAS",
+    "isLoading": false,
+    "borderRadius": "0px",
+    "buttonVariant": "TERTIARY"
+}

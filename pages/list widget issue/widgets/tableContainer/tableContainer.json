@@ -1,0 +1,83 @@
+{
+    "tabId": "",
+    "boxShadow": "none",
+    "widgetName": "tableContainer",
+    "borderColor": "#DA8930",
+    "submitButtonStyles": {
+        "boxShadow": "none",
+        "borderRadius": "0px"
+    },
+    "isCanvas": true,
+    "dynamicPropertyPathList": [],
+    "displayName": "Container",
+    "iconSVG": "/static/media/icon.1977dca3.svg",
+    "topRow": 38,
+    "bottomRow": 74,
+    "parentRowSpace": 10,
+    "type": "CONTAINER_WIDGET",
+    "hideCard": false,
+    "parentColumnSpace": 14.66180419921875,
+    "dynamicTriggerPathList": [],
+    "leftColumn": 0,
+    "dynamicBindingPathList": [],
+    "children": [{
+        "boxShadow": "none",
+        "widgetName": "Canvas4",
+        "submitButtonStyles": {
+            "boxShadow": "none",
+            "borderRadius": "0px"
+        },
+        "bottomRow": 1090,
+        "topRow": 0,
+        "parentRowSpace": 1,
+        "type": "CANVAS_WIDGET",
+        "canExtend": false,
+        "minHeight": 1094.1875,
+        "parentColumnSpace": 1,
+        "leftColumn": 0,
+        "labelTextSize": "0.875rem",
+        "rightColumn": 968.625,
+        "textSize": "0.875rem",
+        "detachFromLayout": true,
+        "widgetId": "rkqyt3vjmv",
+        "containerStyle": "none",
+        "resetButtonStyles": {
+            "boxShadow": "none",
+            "borderRadius": "0px"
+        },
+        "isVisible": true,
+        "version": 1,
+        "parentId": "vng69o7j2y",
+        "props": {
+            "detachFromLayout": true,
+            "children": [],
+            "containerStyle": "none",
+            "canExtend": false
+        },
+        "isLoading": false,
+        "renderMode": "CANVAS",
+        "borderRadius": "0px"
+    }],
+    "borderWidth": "2",
+    "key": "7bejspdk1p",
+    "labelTextSize": "0.875rem",
+    "backgroundColor": "#FFFFFF",
+    "rightColumn": 30,
+    "textSize": "0.875rem",
+    "dynamicHeight": "FIXED",
+    "widgetId": "vng69o7j2y",
+    "containerStyle": "card",
+    "resetButtonStyles": {
+        "boxShadow": "none",
+        "borderRadius": "0px"
+    },
+    "isVisible": true,
+    "version": 1,
+    "parentId": "0",
+    "renderMode": "CANVAS",
+    "isLoading": false,
+    "borderRadius": "1.5rem",
+    "maxDynamicHeight": 9000,
+    "boxShadowColor": "#DA8930",
+    "minDynamicHeight": 4
+}

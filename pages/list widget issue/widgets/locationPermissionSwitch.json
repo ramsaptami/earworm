@@ -1,0 +1,50 @@
+{
+    "boxShadow": "none",
+    "widgetName": "locationPermissionSwitch",
+    "submitButtonStyles": {
+        "boxShadow": "none",
+        "borderRadius": "0px"
+    },
+    "dynamicPropertyPathList": [
+        {"key": "onChange"},
+        {"key": "labelTextSize"}
+    ],
+    "displayName": "Switch",
+    "iconSVG": "/static/media/icon.a3115bc1.svg",
+    "topRow": 2,
+    "bottomRow": 6,
+    "parentRowSpace": 10,
+    "type": "SWITCH_WIDGET",
+    "alignWidget": "LEFT",
+    "hideCard": false,
+    "animateLoading": true,
+    "parentColumnSpace": 14.0625,
+    "dynamicTriggerPathList": [{"key": "onChange"}],
+    "leftColumn": 0,
+    "dynamicBindingPathList": [],
+    "labelPosition": "Right",
+    "isDisabled": false,
+    "key": "ik52461209",
+    "labelTextSize": "0.75rem",
+    "rightColumn": 8,
+    "backgroundColor": "#73906c",
+    "textSize": "0.875rem",
+    "onChange": "{{LocationServices.sendMeYourLocation()}}",
+    "dynamicHeight": "FIXED",
+    "widgetId": "1rriiu59xj",
+    "accentColor": "#9dc2b8",
+    "resetButtonStyles": {
+        "boxShadow": "none",
+        "borderRadius": "0px"
+    },
+    "isVisible": true,
+    "label": "Share location?",
+    "defaultSwitchState": true,
+    "version": 1,
+    "parentId": "0",
+    "renderMode": "CANVAS",
+    "isLoading": false,
+    "borderRadius": "0px",
+    "maxDynamicHeight": 9000,
+    "minDynamicHeight": 4
+}

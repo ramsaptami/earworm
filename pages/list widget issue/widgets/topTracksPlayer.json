@@ -1,0 +1,42 @@
+{
+    "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
+    "widgetName": "topTracksPlayer",
+    "borderColor": "",
+    "submitButtonStyles": {
+        "boxShadow": "none",
+        "borderRadius": "0px"
+    },
+    "displayName": "Iframe",
+    "iconSVG": "/static/media/icon.34169b6a.svg",
+    "topRow": 38,
+    "bottomRow": 108,
+    "parentRowSpace": 10,
+    "source": "{{(function() {\nlet text = topTracksDisplay.selectedRow.external_urls\nlet result = text.replace(\"https://open.spotify.com/\",\"https://open.spotify.com/embed/\");\nreturn result\n})()\n}}",
+    "type": "IFRAME_WIDGET",
+    "hideCard": false,
+    "borderOpacity": 100,
+    "animateLoading": true,
+    "parentColumnSpace": 17.9375,
+    "dynamicTriggerPathList": [],
+    "leftColumn": 30,
+    "dynamicBindingPathList": [
+        {"key": "source"},
+        {"key": "boxShadow"}
+    ],
+    "borderWidth": "4",
+    "key": "zvcwglah5m",
+    "labelTextSize": "0.875rem",
+    "rightColumn": 64,
+    "textSize": "0.875rem",
+    "widgetId": "bl38oglv08",
+    "resetButtonStyles": {
+        "boxShadow": "none",
+        "borderRadius": "0px"
+    },
+    "isVisible": true,
+    "version": 1,
+    "parentId": "0",
+    "renderMode": "CANVAS",
+    "isLoading": false,
+    "borderRadius": "1.5rem"
+}

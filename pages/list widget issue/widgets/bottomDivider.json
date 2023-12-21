@@ -1,0 +1,42 @@
+{
+    "boxShadow": "none",
+    "widgetName": "bottomDivider",
+    "submitButtonStyles": {
+        "boxShadow": "none",
+        "borderRadius": "0px"
+    },
+    "thickness": "2",
+    "dynamicPropertyPathList": [],
+    "displayName": "Divider",
+    "iconSVG": "/static/media/icon.cbe8f608.svg",
+    "topRow": 34,
+    "bottomRow": 38,
+    "parentRowSpace": 10,
+    "type": "DIVIDER_WIDGET",
+    "capType": "nc",
+    "hideCard": false,
+    "animateLoading": true,
+    "parentColumnSpace": 17.9375,
+    "dynamicTriggerPathList": [],
+    "leftColumn": 0,
+    "dynamicBindingPathList": [],
+    "key": "qp11l9cepp",
+    "dividerColor": "#73906c",
+    "labelTextSize": "0.875rem",
+    "orientation": "horizontal",
+    "strokeStyle": "solid",
+    "rightColumn": 64,
+    "textSize": "0.875rem",
+    "widgetId": "tszd5kjlu4",
+    "capSide": -1,
+    "resetButtonStyles": {
+        "boxShadow": "none",
+        "borderRadius": "0px"
+    },
+    "isVisible": true,
+    "version": 1,
+    "parentId": "0",
+    "renderMode": "CANVAS",
+    "isLoading": false,
+    "borderRadius": "0px"
+}

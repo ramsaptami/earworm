@@ -1,0 +1,55 @@
+{
+    "boxShadow": "none",
+    "widgetName": "selectArtist",
+    "isFilterable": false,
+    "submitButtonStyles": {
+        "boxShadow": "none",
+        "borderRadius": "0px"
+    },
+    "dynamicPropertyPathList": [
+        {"key": "isDisabled"},
+        {"key": "onOptionChange"}
+    ],
+    "displayName": "Select",
+    "iconSVG": "/static/media/icon.bd99caba.svg",
+    "labelText": "",
+    "topRow": 29,
+    "bottomRow": 33,
+    "primaryColor": "{{appsmith.theme.colors.primaryColor}}",
+    "parentRowSpace": 10,
+    "type": "DROP_DOWN_WIDGET",
+    "serverSideFiltering": false,
+    "hideCard": false,
+    "defaultOptionValue": "{{artistCodes.artist[0].value}}",
+    "selectionType": "SINGLE_SELECT",
+    "parentColumnSpace": 16.5361328125,
+    "dynamicTriggerPathList": [{"key": "onOptionChange"}],
+    "leftColumn": 3,
+    "dynamicBindingPathList": [
+        {"key": "options"},
+        {"key": "defaultOptionValue"},
+        {"key": "primaryColor"},
+        {"key": "accentColor"}
+    ],
+    "options": "{{artistCodes.artist}}",
+    "placeholderText": "",
+    "isDisabled": "false",
+    "key": "ptjbds65n5",
+    "labelTextSize": "0.875rem",
+    "isRequired": false,
+    "rightColumn": 16,
+    "textSize": "0.875rem",
+    "widgetId": "qlo60cxd34",
+    "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+    "resetButtonStyles": {
+        "boxShadow": "none",
+        "borderRadius": "0px"
+    },
+    "isVisible": true,
+    "version": 1,
+    "parentId": "0",
+    "renderMode": "CANVAS",
+    "isLoading": false,
+    "borderRadius": "0px",
+    "onOptionChange": "{{fetchTopTracks.run(() => \n{youTubeCustomSearch.run();\nshowAlert('♬ ♩ 𝅘𝅥𝅰 ♩ 𝅘𝅥𝅰 ♬')}, () => showAlert('Uh uh! :( Looks like auth token has expired','warning'))}}"
+}
