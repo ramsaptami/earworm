@@ -1,7 +1,7 @@
 {
     "boxShadow": "none",
     "widgetName": "appIcon",
-    "onClick": "{{navigateTo(\"https://accounts.spotify.com/authorize?client_id=6ff9274520cd4d5aa5a19fe75894aa90&response_type=code&redirect_uri=https://appsmith-git-feat-identifier-dependency-get-appsmith.vercel.app/app/earworm/debugging-page-62a32578f4e3980741ff56e2/edit?branch=master&show_dialog=true\")}}",
+    "onClick": "{{navigateTo(\"https://release.app.appsmith.com/app/earworm/debugging-page-62a32578f4e3980741ff56e2/edit?branch=master&show_dialog=true\")}}",
     "submitButtonStyles": {
         "boxShadow": "none",
         "borderRadius": "0px"

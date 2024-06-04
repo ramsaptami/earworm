@@ -7,7 +7,7 @@ export default {
 			fetchAlbums.run()
 				.then(() => { 
 				this.fetchArtistTopTracks(spotifySearch.data.artists.items[0].id)}) }, 
-		() => showAlert('Unable to fetch artist ID','warning'))
+											() => showAlert('Unable to fetch artist ID','warning'))
 	},
 
 
@@ -34,5 +34,9 @@ export default {
 				() => { showAlert('Uh uh! :( Looks like auth token has expired','warning'), console.log('cannot process artist') })
 		})
 			.catch(() => console.log('failure'))
+	},
+
+	mapAlbums: function () {
+	fetchAlbumTracks.data.items.map(item => ({ name: item.name, external_urls: item.external_urls }))
 	}
 }

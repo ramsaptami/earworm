@@ -28,7 +28,7 @@
             "boxShadow": "none",
             "borderRadius": "0px"
         },
-        "bottomRow": 60,
+        "bottomRow": 40,
         "topRow": 0,
         "parentRowSpace": 1,
         "type": "CANVAS_WIDGET",

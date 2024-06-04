@@ -1,7 +1,7 @@
 {
   "pages": [
     {
-      "id": "Home",
+      "id": "Home_14646",
       "isDefault": true
     },
     {
@@ -13,7 +13,11 @@
       "isDefault": false
     },
     {
-      "id": "list widget issue",
+      "id": "Page1",
+      "isDefault": false
+    },
+    {
+      "id": "toBeDeleted",
       "isDefault": false
     }
   ],
@@ -29,7 +33,11 @@
   "publishedAppLayout": {
     "type": "TABLET_LARGE"
   },
-  "unpublishedCustomJSLibs": [],
+  "unpublishedCustomJSLibs": [
+    {
+      "uidString": "xmlParser_https://cdnjs.cloudflare.com/ajax/libs/fast-xml-parser/3.17.5/parser.min.js"
+    }
+  ],
   "publishedCustomJSLibs": [],
   "applicationVersion": 2,
   "isManualUpdate": false,

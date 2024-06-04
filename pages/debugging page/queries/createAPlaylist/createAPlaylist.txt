@@ -1,0 +1,5 @@
+{
+  "name": {{fetchTopTracks.data.}},
+  "description": "New playlist description",
+  "public": false
+}
