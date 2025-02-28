@@ -1,15 +1,11 @@
 {
+  "gitSyncId": "61ea4a44361846772cfb117d_62acb62078c5ed4cdfd8da19",
+  "id": "list widget issue_LocationServices",
   "unpublishedCollection": {
     "name": "LocationServices",
     "pageId": "list widget issue",
     "pluginId": "js-plugin",
     "pluginType": "JS",
-    "actions": [],
-    "archivedActions": [],
-    "variables": [],
-    "userPermissions": []
-  },
-  "id": "list widget issue_LocationServices",
-  "deleted": false,
-  "gitSyncId": "61ea4a44361846772cfb117d_62acb62078c5ed4cdfd8da19"
+    "variables": []
+  }
 }

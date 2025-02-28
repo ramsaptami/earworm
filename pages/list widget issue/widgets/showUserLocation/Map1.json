@@ -1,47 +1,55 @@
 {
-    "zoomLevel": 20,
-    "boxShadow": "0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05)",
-    "widgetName": "Map1",
-    "defaultMarkers": "[\n  {\n    \"lat\": {{appsmith.geolocation.currentPosition.coords.latitude}},\n    \"long\": {{appsmith.geolocation.currentPosition.coords.longitude}},\n    \"title\": {{appsmith.geolocation.currentPosition.coords.heading}},\n    \"color\": \"green\"\n  }\n]",
-    "submitButtonStyles": {
-        "boxShadow": "none",
-        "borderRadius": "0px"
+  "allowZoom": true,
+  "animateLoading": true,
+  "borderRadius": "1.5rem",
+  "bottomRow": 33,
+  "boxShadow": "0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05)",
+  "defaultMarkers": "[\n  {\n    \"lat\": {{appsmith.geolocation.currentPosition.coords.latitude}},\n    \"long\": {{appsmith.geolocation.currentPosition.coords.longitude}},\n    \"title\": {{appsmith.geolocation.currentPosition.coords.heading}},\n    \"color\": \"green\"\n  }\n]",
+  "displayName": "Map",
+  "dynamicBindingPathList": [
+    {
+      "key": "defaultMarkers"
     },
-    "dynamicPropertyPathList": [{"key": "mapCenter"}],
-    "displayName": "Map",
-    "iconSVG": "/static/media/icon.ddde7d1b.svg",
-    "topRow": 9,
-    "bottomRow": 33,
-    "parentRowSpace": 10,
-    "type": "MAP_WIDGET",
-    "hideCard": false,
-    "animateLoading": true,
-    "allowZoom": true,
-    "parentColumnSpace": 14.0625,
-    "dynamicTriggerPathList": [],
-    "leftColumn": 1,
-    "dynamicBindingPathList": [
-        {"key": "defaultMarkers"},
-        {"key": "mapCenter"}
-    ],
-    "enablePickLocation": false,
-    "mapCenter": "{\n  \"lat\": {{appsmith.geolocation.currentPosition.coords.latitude}},\n  \"long\": {{appsmith.geolocation.currentPosition.coords.longitude}}\n}",
-    "isClickedMarkerCentered": true,
-    "isDisabled": false,
-    "enableSearch": false,
-    "key": "zf7skmp1w6",
-    "labelTextSize": "0.875rem",
-    "rightColumn": 63,
-    "textSize": "0.875rem",
-    "widgetId": "kq1j21xx7e",
-    "resetButtonStyles": {
-        "boxShadow": "none",
-        "borderRadius": "0px"
-    },
-    "isVisible": true,
-    "version": 1,
-    "parentId": "x8c61h4e79",
-    "renderMode": "CANVAS",
-    "isLoading": false,
-    "borderRadius": "1.5rem"
+    {
+      "key": "mapCenter"
+    }
+  ],
+  "dynamicPropertyPathList": [
+    {
+      "key": "mapCenter"
+    }
+  ],
+  "dynamicTriggerPathList": [],
+  "enablePickLocation": false,
+  "enableSearch": false,
+  "hideCard": false,
+  "iconSVG": "/static/media/icon.ddde7d1b.svg",
+  "isClickedMarkerCentered": true,
+  "isDisabled": false,
+  "isLoading": false,
+  "isVisible": true,
+  "key": "zf7skmp1w6",
+  "labelTextSize": "0.875rem",
+  "leftColumn": 1,
+  "mapCenter": "{\n  \"lat\": {{appsmith.geolocation.currentPosition.coords.latitude}},\n  \"long\": {{appsmith.geolocation.currentPosition.coords.longitude}}\n}",
+  "parentColumnSpace": 14.0625,
+  "parentId": "x8c61h4e79",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "resetButtonStyles": {
+    "borderRadius": "0px",
+    "boxShadow": "none"
+  },
+  "rightColumn": 63,
+  "submitButtonStyles": {
+    "borderRadius": "0px",
+    "boxShadow": "none"
+  },
+  "textSize": "0.875rem",
+  "topRow": 9,
+  "type": "MAP_WIDGET",
+  "version": 1,
+  "widgetId": "kq1j21xx7e",
+  "widgetName": "Map1",
+  "zoomLevel": 20
 }

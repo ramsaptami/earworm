@@ -1,53 +1,65 @@
 {
-    "boxShadow": "none",
-    "widgetName": "selectAlbums",
-    "displayName": "Multi TreeSelect",
-    "iconSVG": "/static/media/icon.b3e28afbbceae59d6fe826fa409a4b4c.svg",
-    "labelText": "",
-    "searchTags": ["dropdown"],
-    "topRow": 27,
-    "bottomRow": 31,
-    "parentRowSpace": 10,
-    "labelWidth": 5,
-    "type": "MULTI_SELECT_TREE_WIDGET",
-    "hideCard": false,
-    "mode": "SHOW_ALL",
-    "defaultOptionValue": "",
-    "animateLoading": true,
-    "parentColumnSpace": 17.9375,
-    "dynamicTriggerPathList": [
-        {"key": "onOptionChange"},
-        {"key": "onDropdownOpen"}
-    ],
-    "leftColumn": 17,
-    "dynamicBindingPathList": [
-        {"key": "accentColor"},
-        {"key": "borderRadius"},
-        {"key": "options"}
-    ],
-    "labelPosition": "Left",
-    "options": "{{SpotifyManager.fetchArtistAlbums()}}",
-    "placeholderText": "Select option(s)",
-    "isDisabled": false,
-    "key": "ugn0lm9xtb",
-    "labelTextSize": "0.875rem",
-    "isRequired": false,
-    "isDeprecated": false,
-    "rightColumn": 31,
-    "dynamicHeight": "FIXED",
-    "widgetId": "z5raeui5g1",
-    "accentColor": "{{appsmith.theme.colors.primaryColor}}",
-    "isVisible": true,
-    "version": 1,
-    "expandAll": false,
-    "parentId": "0",
-    "onDropdownOpen": "{{SpotifyManager.artistSearch()}}",
-    "labelAlignment": "left",
-    "renderMode": "CANVAS",
-    "isLoading": false,
-    "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-    "maxDynamicHeight": 9000,
-    "onOptionChange": "",
-    "allowClear": false,
-    "minDynamicHeight": 4
+  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+  "allowClear": false,
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 31,
+  "boxShadow": "none",
+  "defaultOptionValue": "",
+  "displayName": "Multi TreeSelect",
+  "dynamicBindingPathList": [
+    {
+      "key": "accentColor"
+    },
+    {
+      "key": "borderRadius"
+    },
+    {
+      "key": "options"
+    }
+  ],
+  "dynamicHeight": "FIXED",
+  "dynamicTriggerPathList": [
+    {
+      "key": "onOptionChange"
+    },
+    {
+      "key": "onDropdownOpen"
+    }
+  ],
+  "expandAll": false,
+  "hideCard": false,
+  "iconSVG": "/static/media/icon.b3e28afbbceae59d6fe826fa409a4b4c.svg",
+  "isDeprecated": false,
+  "isDisabled": false,
+  "isLoading": false,
+  "isRequired": false,
+  "isVisible": true,
+  "key": "ugn0lm9xtb",
+  "labelAlignment": "left",
+  "labelPosition": "Left",
+  "labelText": "",
+  "labelTextSize": "0.875rem",
+  "labelWidth": 5,
+  "leftColumn": 17,
+  "maxDynamicHeight": 9000,
+  "minDynamicHeight": 4,
+  "mode": "SHOW_ALL",
+  "onDropdownOpen": "{{SpotifyManager.artistSearch()}}",
+  "onOptionChange": "",
+  "options": "{{SpotifyManager.fetchArtistAlbums()}}",
+  "parentColumnSpace": 17.9375,
+  "parentId": "0",
+  "parentRowSpace": 10,
+  "placeholderText": "Select option(s)",
+  "renderMode": "CANVAS",
+  "rightColumn": 31,
+  "searchTags": [
+    "dropdown"
+  ],
+  "topRow": 27,
+  "type": "MULTI_SELECT_TREE_WIDGET",
+  "version": 1,
+  "widgetId": "z5raeui5g1",
+  "widgetName": "selectAlbums"
 }

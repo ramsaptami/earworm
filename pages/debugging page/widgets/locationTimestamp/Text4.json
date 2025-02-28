@@ -1,45 +1,53 @@
 {
-    "boxShadow": "none",
-    "widgetName": "Text4",
-    "submitButtonStyles": {
-        "boxShadow": "none",
-        "borderRadius": "0px"
-    },
-    "dynamicPropertyPathList": [{"key": "fontSize"}],
-    "displayName": "Text",
-    "iconSVG": "/static/media/icon.97c59b52.svg",
-    "topRow": 0,
-    "bottomRow": 4,
-    "parentRowSpace": 10,
-    "type": "TEXT_WIDGET",
-    "hideCard": false,
-    "parentColumnSpace": 0.24805068969726562,
-    "dynamicTriggerPathList": [],
-    "overflow": "NONE",
-    "fontFamily": "Noto Sans",
-    "leftColumn": 7,
-    "dynamicBindingPathList": [{"key": "text"}],
-    "text": "{{moment(appsmith.geolocation.currentPosition).format('dddd, MMMM Do YYYY,  h:mm:ss a')}}",
-    "key": "fzita3dgtm",
-    "labelTextSize": "0.875rem",
-    "rightColumn": 64,
-    "textSize": "0.875rem",
-    "textAlign": "LEFT",
-    "dynamicHeight": "FIXED",
-    "widgetId": "ttltd1gw36",
-    "resetButtonStyles": {
-        "boxShadow": "none",
-        "borderRadius": "0px"
-    },
-    "isVisible": true,
-    "fontStyle": "BOLD",
-    "textColor": "#102019",
-    "version": 1,
-    "parentId": "3o54sd9tkg",
-    "renderMode": "CANVAS",
-    "isLoading": false,
+  "borderRadius": "0px",
+  "bottomRow": 4,
+  "boxShadow": "none",
+  "displayName": "Text",
+  "dynamicBindingPathList": [
+    {
+      "key": "text"
+    }
+  ],
+  "dynamicHeight": "FIXED",
+  "dynamicPropertyPathList": [
+    {
+      "key": "fontSize"
+    }
+  ],
+  "dynamicTriggerPathList": [],
+  "fontFamily": "Noto Sans",
+  "fontSize": "0.75rem",
+  "fontStyle": "BOLD",
+  "hideCard": false,
+  "iconSVG": "/static/media/icon.97c59b52.svg",
+  "isLoading": false,
+  "isVisible": true,
+  "key": "fzita3dgtm",
+  "labelTextSize": "0.875rem",
+  "leftColumn": 7,
+  "maxDynamicHeight": 9000,
+  "minDynamicHeight": 4,
+  "overflow": "NONE",
+  "parentColumnSpace": 0.24805068969726562,
+  "parentId": "3o54sd9tkg",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "resetButtonStyles": {
     "borderRadius": "0px",
-    "maxDynamicHeight": 9000,
-    "fontSize": "0.75rem",
-    "minDynamicHeight": 4
+    "boxShadow": "none"
+  },
+  "rightColumn": 64,
+  "submitButtonStyles": {
+    "borderRadius": "0px",
+    "boxShadow": "none"
+  },
+  "text": "{{moment(appsmith.geolocation.currentPosition).format('dddd, MMMM Do YYYY,  h:mm:ss a')}}",
+  "textAlign": "LEFT",
+  "textColor": "#102019",
+  "textSize": "0.875rem",
+  "topRow": 0,
+  "type": "TEXT_WIDGET",
+  "version": 1,
+  "widgetId": "ttltd1gw36",
+  "widgetName": "Text4"
 }

@@ -1,164 +1,180 @@
 {
-    "boxShadow": "none",
-    "widgetName": "Table2",
-    "submitButtonStyles": {
-        "boxShadow": "none",
-        "borderRadius": "0px"
+  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+  "borderRadius": "0px",
+  "bottomRow": 28,
+  "boxShadow": "none",
+  "childStylesheet": {
+    "button": {
+      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+      "boxShadow": "none",
+      "buttonColor": "{{appsmith.theme.colors.primaryColor}}"
     },
-    "defaultPageSize": 0,
-    "columnOrder": [
-        "step",
-        "task",
-        "action",
-        "status"
-    ],
-    "isVisibleDownload": true,
-    "dynamicPropertyPathList": [{"key": "tableData"}],
-    "iconSVG": "/static/media/icon.db8a9cbd.svg",
-    "displayName": "Table",
-    "topRow": 0,
-    "bottomRow": 28,
-    "primaryColor": "{{appsmith.theme.colors.primaryColor}}",
-    "isSortable": true,
-    "parentRowSpace": 10,
-    "type": "TABLE_WIDGET",
-    "defaultSelectedRow": "0",
-    "hideCard": false,
-    "parentColumnSpace": 15.6854248046875,
-    "dynamicTriggerPathList": [],
-    "dynamicBindingPathList": [
-        {"key": "primaryColumns.step.computedValue"},
-        {"key": "primaryColumns.task.computedValue"},
-        {"key": "primaryColumns.status.computedValue"},
-        {"key": "primaryColumns.action.computedValue"},
-        {"key": "primaryColor"},
-        {"key": "accentColor"}
-    ],
-    "leftColumn": 1,
-    "delimiter": ",",
-    "primaryColumns": {
-        "task": {
-            "isCellVisible": true,
-            "boxShadow": "none",
-            "isDerived": false,
-            "computedValue": "{{Table2.sanitizedTableData.map((currentRow) => ( currentRow.task))}}",
-            "textSize": "0.875rem",
-            "index": 1,
-            "isVisible": true,
-            "label": "task",
-            "columnType": "text",
-            "horizontalAlignment": "LEFT",
-            "borderRadius": "0px",
-            "width": 150,
-            "enableFilter": true,
-            "enableSort": true,
-            "id": "task",
-            "verticalAlignment": "CENTER"
-        },
-        "action": {
-            "isCellVisible": true,
-            "boxShadow": "none",
-            "isDerived": false,
-            "onClick": "{{currentRow.step === '#1' ? showAlert('Done', 'success') : currentRow.step === '#2' ? navigateTo('https://docs.appsmith.com/core-concepts/connecting-to-data-sources/querying-a-database',undefined,'NEW_WINDOW') : navigateTo('https://docs.appsmith.com/core-concepts/displaying-data-read/display-data-tables',undefined,'NEW_WINDOW')}}",
-            "computedValue": "{{Table2.sanitizedTableData.map((currentRow) => ( currentRow.action))}}",
-            "textSize": "0.875rem",
-            "index": 3,
-            "isVisible": true,
-            "label": "action",
-            "columnType": "button",
-            "horizontalAlignment": "LEFT",
-            "borderRadius": "0px",
-            "width": 150,
-            "enableFilter": true,
-            "enableSort": true,
-            "id": "action",
-            "isDisabled": false,
-            "verticalAlignment": "CENTER"
-        },
-        "step": {
-            "isCellVisible": true,
-            "boxShadow": "none",
-            "isDerived": false,
-            "computedValue": "{{Table2.sanitizedTableData.map((currentRow) => ( currentRow.step))}}",
-            "textSize": "0.875rem",
-            "index": 0,
-            "isVisible": true,
-            "label": "step",
-            "columnType": "text",
-            "horizontalAlignment": "LEFT",
-            "borderRadius": "0px",
-            "width": 150,
-            "enableFilter": true,
-            "enableSort": true,
-            "id": "step",
-            "verticalAlignment": "CENTER"
-        },
-        "status": {
-            "isCellVisible": true,
-            "boxShadow": "none",
-            "isDerived": false,
-            "computedValue": "{{Table2.sanitizedTableData.map((currentRow) => ( currentRow.status))}}",
-            "textSize": "0.875rem",
-            "index": 2,
-            "isVisible": true,
-            "label": "status",
-            "columnType": "text",
-            "horizontalAlignment": "LEFT",
-            "borderRadius": "0px",
-            "width": 150,
-            "enableFilter": true,
-            "enableSort": true,
-            "id": "status",
-            "verticalAlignment": "CENTER"
-        }
+    "iconButton": {
+      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+      "boxShadow": "none",
+      "menuColor": "{{appsmith.theme.colors.primaryColor}}"
     },
-    "key": "mw63xy69s4",
-    "derivedColumns": {},
-    "labelTextSize": "0.875rem",
-    "rightColumn": 35,
-    "textSize": "0.875rem",
-    "accentColor": "{{appsmith.theme.colors.primaryColor}}",
-    "widgetId": "tgw11dtxly",
-    "isVisibleFilters": true,
-    "resetButtonStyles": {
-        "boxShadow": "none",
-        "borderRadius": "0px"
+    "menuButton": {
+      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+      "boxShadow": "none",
+      "menuColor": "{{appsmith.theme.colors.primaryColor}}"
+    }
+  },
+  "columnOrder": [
+    "step",
+    "task",
+    "action",
+    "status"
+  ],
+  "columnSizeMap": {
+    "action": 211,
+    "status": 75,
+    "step": 69.00000000000003,
+    "task": 60
+  },
+  "defaultPageSize": 0,
+  "defaultSelectedRow": "0",
+  "delimiter": ",",
+  "derivedColumns": {},
+  "displayName": "Table",
+  "dynamicBindingPathList": [
+    {
+      "key": "primaryColumns.step.computedValue"
     },
-    "tableData": "",
-    "isVisible": true,
-    "label": "Data",
-    "searchKey": "",
-    "version": 3,
-    "totalRecordsCount": 0,
-    "parentId": "mo5yngoh4u",
-    "isLoading": false,
-    "renderMode": "CANVAS",
-    "horizontalAlignment": "LEFT",
-    "isVisibleSearch": true,
-    "childStylesheet": {
-        "button": {
-            "boxShadow": "none",
-            "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-            "buttonColor": "{{appsmith.theme.colors.primaryColor}}"
-        },
-        "iconButton": {
-            "boxShadow": "none",
-            "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-            "menuColor": "{{appsmith.theme.colors.primaryColor}}"
-        },
-        "menuButton": {
-            "boxShadow": "none",
-            "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-            "menuColor": "{{appsmith.theme.colors.primaryColor}}"
-        }
+    {
+      "key": "primaryColumns.task.computedValue"
     },
+    {
+      "key": "primaryColumns.status.computedValue"
+    },
+    {
+      "key": "primaryColumns.action.computedValue"
+    },
+    {
+      "key": "primaryColor"
+    },
+    {
+      "key": "accentColor"
+    }
+  ],
+  "dynamicPropertyPathList": [
+    {
+      "key": "tableData"
+    }
+  ],
+  "dynamicTriggerPathList": [],
+  "hideCard": false,
+  "horizontalAlignment": "LEFT",
+  "iconSVG": "/static/media/icon.db8a9cbd.svg",
+  "isLoading": false,
+  "isSortable": true,
+  "isVisible": true,
+  "isVisibleDownload": true,
+  "isVisibleFilters": true,
+  "isVisiblePagination": true,
+  "isVisibleSearch": true,
+  "key": "mw63xy69s4",
+  "label": "Data",
+  "labelTextSize": "0.875rem",
+  "leftColumn": 1,
+  "parentColumnSpace": 15.6854248046875,
+  "parentId": "mo5yngoh4u",
+  "parentRowSpace": 10,
+  "primaryColor": "{{appsmith.theme.colors.primaryColor}}",
+  "primaryColumns": {
+    "action": {
+      "borderRadius": "0px",
+      "boxShadow": "none",
+      "columnType": "button",
+      "computedValue": "{{Table2.sanitizedTableData.map((currentRow) => ( currentRow.action))}}",
+      "enableFilter": true,
+      "enableSort": true,
+      "horizontalAlignment": "LEFT",
+      "id": "action",
+      "index": 3,
+      "isCellVisible": true,
+      "isDerived": false,
+      "isDisabled": false,
+      "isVisible": true,
+      "label": "action",
+      "onClick": "{{currentRow.step === '#1' ? showAlert('Done', 'success') : currentRow.step === '#2' ? navigateTo('https://docs.appsmith.com/core-concepts/connecting-to-data-sources/querying-a-database',undefined,'NEW_WINDOW') : navigateTo('https://docs.appsmith.com/core-concepts/displaying-data-read/display-data-tables',undefined,'NEW_WINDOW')}}",
+      "textSize": "0.875rem",
+      "verticalAlignment": "CENTER",
+      "width": 150
+    },
+    "status": {
+      "borderRadius": "0px",
+      "boxShadow": "none",
+      "columnType": "text",
+      "computedValue": "{{Table2.sanitizedTableData.map((currentRow) => ( currentRow.status))}}",
+      "enableFilter": true,
+      "enableSort": true,
+      "horizontalAlignment": "LEFT",
+      "id": "status",
+      "index": 2,
+      "isCellVisible": true,
+      "isDerived": false,
+      "isVisible": true,
+      "label": "status",
+      "textSize": "0.875rem",
+      "verticalAlignment": "CENTER",
+      "width": 150
+    },
+    "step": {
+      "borderRadius": "0px",
+      "boxShadow": "none",
+      "columnType": "text",
+      "computedValue": "{{Table2.sanitizedTableData.map((currentRow) => ( currentRow.step))}}",
+      "enableFilter": true,
+      "enableSort": true,
+      "horizontalAlignment": "LEFT",
+      "id": "step",
+      "index": 0,
+      "isCellVisible": true,
+      "isDerived": false,
+      "isVisible": true,
+      "label": "step",
+      "textSize": "0.875rem",
+      "verticalAlignment": "CENTER",
+      "width": 150
+    },
+    "task": {
+      "borderRadius": "0px",
+      "boxShadow": "none",
+      "columnType": "text",
+      "computedValue": "{{Table2.sanitizedTableData.map((currentRow) => ( currentRow.task))}}",
+      "enableFilter": true,
+      "enableSort": true,
+      "horizontalAlignment": "LEFT",
+      "id": "task",
+      "index": 1,
+      "isCellVisible": true,
+      "isDerived": false,
+      "isVisible": true,
+      "label": "task",
+      "textSize": "0.875rem",
+      "verticalAlignment": "CENTER",
+      "width": 150
+    }
+  },
+  "renderMode": "CANVAS",
+  "resetButtonStyles": {
     "borderRadius": "0px",
-    "isVisiblePagination": true,
-    "columnSizeMap": {
-        "task": 60,
-        "action": 211,
-        "step": 69.00000000000003,
-        "status": 75
-    },
-    "verticalAlignment": "CENTER"
+    "boxShadow": "none"
+  },
+  "rightColumn": 35,
+  "searchKey": "",
+  "submitButtonStyles": {
+    "borderRadius": "0px",
+    "boxShadow": "none"
+  },
+  "tableData": "",
+  "textSize": "0.875rem",
+  "topRow": 0,
+  "totalRecordsCount": 0,
+  "type": "TABLE_WIDGET",
+  "version": 3,
+  "verticalAlignment": "CENTER",
+  "widgetId": "tgw11dtxly",
+  "widgetName": "Table2"
 }

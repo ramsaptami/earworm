@@ -1,15 +1,11 @@
 {
+  "gitSyncId": "612332edfe755a38b6e6a9c2_61bb7741cd5d70450953370c",
+  "id": "Spotify and YouTube_SpotifyAPIs",
   "unpublishedCollection": {
     "name": "SpotifyAPIs",
     "pageId": "Spotify and YouTube",
     "pluginId": "js-plugin",
     "pluginType": "JS",
-    "actions": [],
-    "archivedActions": [],
-    "variables": [],
-    "userPermissions": []
-  },
-  "id": "Spotify and YouTube_SpotifyAPIs",
-  "deleted": false,
-  "gitSyncId": "612332edfe755a38b6e6a9c2_61bb7741cd5d70450953370c"
+    "variables": []
+  }
 }

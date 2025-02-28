@@ -1,32 +1,36 @@
 {
-    "boxShadow": "none",
-    "widgetName": "IconButton4",
-    "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
-    "displayName": "Icon Button",
-    "iconSVG": "/static/media/icon.1a0c634a.svg",
-    "topRow": 3,
-    "bottomRow": 8,
-    "type": "ICON_BUTTON_WIDGET",
-    "hideCard": false,
-    "animateLoading": true,
-    "leftColumn": 43,
-    "dynamicBindingPathList": [
-        {"key": "buttonColor"},
-        {"key": "borderRadius"}
-    ],
-    "isDisabled": false,
-    "key": "zixst3dids",
-    "isDeprecated": false,
-    "rightColumn": 59,
-    "iconName": "arrow-top-right",
-    "dynamicHeight": "FIXED",
-    "widgetId": "sy0hj0avlz",
-    "buttonStyle": "PRIMARY",
-    "isVisible": true,
-    "version": 1,
-    "parentId": "iuxdvxpriv",
-    "renderMode": "CANVAS",
-    "isLoading": false,
-    "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-    "buttonVariant": "PRIMARY"
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 8,
+  "boxShadow": "none",
+  "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+  "buttonStyle": "PRIMARY",
+  "buttonVariant": "PRIMARY",
+  "displayName": "Icon Button",
+  "dynamicBindingPathList": [
+    {
+      "key": "buttonColor"
+    },
+    {
+      "key": "borderRadius"
+    }
+  ],
+  "dynamicHeight": "FIXED",
+  "hideCard": false,
+  "iconName": "arrow-top-right",
+  "iconSVG": "/static/media/icon.1a0c634a.svg",
+  "isDeprecated": false,
+  "isDisabled": false,
+  "isLoading": false,
+  "isVisible": true,
+  "key": "zixst3dids",
+  "leftColumn": 43,
+  "parentId": "iuxdvxpriv",
+  "renderMode": "CANVAS",
+  "rightColumn": 59,
+  "topRow": 3,
+  "type": "ICON_BUTTON_WIDGET",
+  "version": 1,
+  "widgetId": "sy0hj0avlz",
+  "widgetName": "IconButton4"
 }

@@ -1,50 +1,58 @@
 {
-    "boxShadow": "none",
-    "widgetName": "locationPermissionSwitch",
-    "submitButtonStyles": {
-        "boxShadow": "none",
-        "borderRadius": "0px"
+  "accentColor": "#cfd65e",
+  "alignWidget": "LEFT",
+  "animateLoading": true,
+  "backgroundColor": "#73906c",
+  "borderRadius": "0px",
+  "bottomRow": 6,
+  "boxShadow": "none",
+  "defaultSwitchState": true,
+  "displayName": "Switch",
+  "dynamicBindingPathList": [],
+  "dynamicHeight": "FIXED",
+  "dynamicPropertyPathList": [
+    {
+      "key": "onChange"
     },
-    "dynamicPropertyPathList": [
-        {"key": "onChange"},
-        {"key": "labelTextSize"}
-    ],
-    "displayName": "Switch",
-    "iconSVG": "/static/media/icon.a3115bc1.svg",
-    "topRow": 2,
-    "bottomRow": 6,
-    "parentRowSpace": 10,
-    "type": "SWITCH_WIDGET",
-    "alignWidget": "LEFT",
-    "hideCard": false,
-    "animateLoading": true,
-    "parentColumnSpace": 14.0625,
-    "dynamicTriggerPathList": [{"key": "onChange"}],
-    "leftColumn": 0,
-    "dynamicBindingPathList": [],
-    "labelPosition": "Right",
-    "isDisabled": false,
-    "key": "ik52461209",
-    "labelTextSize": "0.75rem",
-    "rightColumn": 8,
-    "backgroundColor": "#73906c",
-    "textSize": "0.875rem",
-    "onChange": "{{LocationServices.sendMeYourLocation()}}",
-    "dynamicHeight": "FIXED",
-    "widgetId": "1rriiu59xj",
-    "accentColor": "#cfd65e",
-    "resetButtonStyles": {
-        "boxShadow": "none",
-        "borderRadius": "0px"
-    },
-    "isVisible": true,
-    "label": "Share location?",
-    "defaultSwitchState": true,
-    "version": 1,
-    "parentId": "0",
-    "renderMode": "CANVAS",
-    "isLoading": false,
+    {
+      "key": "labelTextSize"
+    }
+  ],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onChange"
+    }
+  ],
+  "hideCard": false,
+  "iconSVG": "/static/media/icon.a3115bc1.svg",
+  "isDisabled": false,
+  "isLoading": false,
+  "isVisible": true,
+  "key": "ik52461209",
+  "label": "Share location?",
+  "labelPosition": "Right",
+  "labelTextSize": "0.75rem",
+  "leftColumn": 0,
+  "maxDynamicHeight": 9000,
+  "minDynamicHeight": 4,
+  "onChange": "{{LocationServices.sendMeYourLocation()}}",
+  "parentColumnSpace": 14.0625,
+  "parentId": "0",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "resetButtonStyles": {
     "borderRadius": "0px",
-    "maxDynamicHeight": 9000,
-    "minDynamicHeight": 4
+    "boxShadow": "none"
+  },
+  "rightColumn": 8,
+  "submitButtonStyles": {
+    "borderRadius": "0px",
+    "boxShadow": "none"
+  },
+  "textSize": "0.875rem",
+  "topRow": 2,
+  "type": "SWITCH_WIDGET",
+  "version": 1,
+  "widgetId": "1rriiu59xj",
+  "widgetName": "locationPermissionSwitch"
 }

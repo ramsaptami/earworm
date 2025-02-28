@@ -1,20 +1,16 @@
 {
+  "gitSyncId": "61ea4a44361846772cfb117d_62a32578f4e3980741ff575f",
+  "id": "debugging page_SpotifySettings",
   "unpublishedCollection": {
     "name": "SpotifySettings",
     "pageId": "debugging page",
     "pluginId": "js-plugin",
     "pluginType": "JS",
-    "actions": [],
-    "archivedActions": [],
     "variables": [
       {
         "name": "searchValue",
         "value": "searchArtist?.text?.length > 2 ? searchArtist.text : selectArtist.selectedOptionLabel"
       }
-    ],
-    "userPermissions": []
-  },
-  "id": "debugging page_SpotifySettings",
-  "deleted": false,
-  "gitSyncId": "61ea4a44361846772cfb117d_62a32578f4e3980741ff575f"
+    ]
+  }
 }

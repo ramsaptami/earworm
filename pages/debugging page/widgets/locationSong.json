@@ -1,43 +1,47 @@
 {
-    "boxShadow": "none",
-    "widgetName": "locationSong",
-    "submitButtonStyles": {
-        "boxShadow": "none",
-        "borderRadius": "0px"
+  "animateLoading": false,
+  "autoPlay": false,
+  "borderRadius": "0px",
+  "bottomRow": 4,
+  "boxShadow": "none",
+  "displayName": "Audio",
+  "dynamicBindingPathList": [],
+  "dynamicPropertyPathList": [],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onPause"
     },
-    "dynamicPropertyPathList": [],
-    "displayName": "Audio",
-    "iconSVG": "/static/media/icon.cb54df7a.svg",
-    "topRow": 0,
-    "bottomRow": 4,
-    "parentRowSpace": 10,
-    "onPause": "",
-    "type": "AUDIO_WIDGET",
-    "hideCard": false,
-    "animateLoading": false,
-    "parentColumnSpace": 17.9375,
-    "dynamicTriggerPathList": [
-        {"key": "onPause"},
-        {"key": "onEnd"}
-    ],
-    "leftColumn": 42,
-    "dynamicBindingPathList": [],
-    "key": "pe37ygn0si",
-    "labelTextSize": "0.875rem",
-    "rightColumn": 46,
-    "textSize": "0.875rem",
-    "widgetId": "cfizh3ivgv",
-    "resetButtonStyles": {
-        "boxShadow": "none",
-        "borderRadius": "0px"
-    },
-    "isVisible": false,
-    "version": 1,
-    "url": "https://www.youtube.com/embed/JpGKWUdRnXE?start=10&end=46",
-    "parentId": "0",
-    "renderMode": "CANVAS",
-    "isLoading": false,
-    "onEnd": "",
+    {
+      "key": "onEnd"
+    }
+  ],
+  "hideCard": false,
+  "iconSVG": "/static/media/icon.cb54df7a.svg",
+  "isLoading": false,
+  "isVisible": false,
+  "key": "pe37ygn0si",
+  "labelTextSize": "0.875rem",
+  "leftColumn": 42,
+  "onEnd": "",
+  "onPause": "",
+  "parentColumnSpace": 17.9375,
+  "parentId": "0",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "resetButtonStyles": {
     "borderRadius": "0px",
-    "autoPlay": false
+    "boxShadow": "none"
+  },
+  "rightColumn": 46,
+  "submitButtonStyles": {
+    "borderRadius": "0px",
+    "boxShadow": "none"
+  },
+  "textSize": "0.875rem",
+  "topRow": 0,
+  "type": "AUDIO_WIDGET",
+  "url": "https://www.youtube.com/embed/JpGKWUdRnXE?start=10&end=46",
+  "version": 1,
+  "widgetId": "cfizh3ivgv",
+  "widgetName": "locationSong"
 }

@@ -1,37 +1,41 @@
 {
-    "boxShadow": "none",
-    "widgetName": "selectedSongVideo",
-    "submitButtonStyles": {
-        "boxShadow": "none",
-        "borderRadius": "0px"
-    },
-    "displayName": "Video",
-    "iconSVG": "/static/media/icon.39c2d696.svg",
-    "topRow": 74,
-    "bottomRow": 108,
-    "parentRowSpace": 10,
-    "type": "VIDEO_WIDGET",
-    "hideCard": false,
-    "animateLoading": true,
-    "parentColumnSpace": 17.9375,
-    "dynamicTriggerPathList": [],
-    "leftColumn": 0,
-    "dynamicBindingPathList": [{"key": "url"}],
-    "key": "1n1cg6byye",
-    "labelTextSize": "0.875rem",
-    "rightColumn": 30,
-    "textSize": "0.875rem",
-    "widgetId": "705kyh22bv",
-    "resetButtonStyles": {
-        "boxShadow": "none",
-        "borderRadius": "0px"
-    },
-    "isVisible": true,
-    "version": 1,
-    "url": "{{(function() {\nlet id = youTubeCustomSearch.data.items[0].id.videoId\n\nlet youTubeEmbedLink = \"https://www.youtube.com/oembed?url=https://www.youtube.com/watch?v=\" + id + \"&format=json\"\n\nreturn youTubeEmbedLink\n})()\n\n}}",
-    "parentId": "0",
-    "renderMode": "CANVAS",
-    "isLoading": false,
-    "borderRadius": "1.5rem",
-    "autoPlay": false
+  "animateLoading": true,
+  "autoPlay": false,
+  "borderRadius": "1.5rem",
+  "bottomRow": 108,
+  "boxShadow": "none",
+  "displayName": "Video",
+  "dynamicBindingPathList": [
+    {
+      "key": "url"
+    }
+  ],
+  "dynamicTriggerPathList": [],
+  "hideCard": false,
+  "iconSVG": "/static/media/icon.39c2d696.svg",
+  "isLoading": false,
+  "isVisible": true,
+  "key": "1n1cg6byye",
+  "labelTextSize": "0.875rem",
+  "leftColumn": 0,
+  "parentColumnSpace": 17.9375,
+  "parentId": "0",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "resetButtonStyles": {
+    "borderRadius": "0px",
+    "boxShadow": "none"
+  },
+  "rightColumn": 30,
+  "submitButtonStyles": {
+    "borderRadius": "0px",
+    "boxShadow": "none"
+  },
+  "textSize": "0.875rem",
+  "topRow": 74,
+  "type": "VIDEO_WIDGET",
+  "url": "{{(function() {\nlet id = youTubeCustomSearch.data.items[0].id.videoId\n\nlet youTubeEmbedLink = \"https://www.youtube.com/oembed?url=https://www.youtube.com/watch?v=\" + id + \"&format=json\"\n\nreturn youTubeEmbedLink\n})()\n\n}}",
+  "version": 1,
+  "widgetId": "705kyh22bv",
+  "widgetName": "selectedSongVideo"
 }

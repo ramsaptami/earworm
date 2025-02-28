@@ -1,81 +1,32 @@
 {
+  "gitSyncId": "61ea4a44361846772cfb117d_62acb61f78c5ed4cdfd8d99f",
   "unpublishedPage": {
-    "name": "list widget issue",
-    "slug": "list-widget-issue",
+    "isHidden": true,
     "layouts": [
       {
-        "viewMode": false,
         "dsl": {
-          "widgetName": "MainContainer",
           "backgroundColor": "none",
-          "rightColumn": 1160,
-          "snapColumns": 64,
-          "detachFromLayout": true,
-          "widgetId": "0",
-          "topRow": 0,
           "bottomRow": 2170,
-          "containerStyle": "none",
-          "snapRows": 63,
-          "parentRowSpace": 1,
-          "type": "CANVAS_WIDGET",
           "canExtend": true,
-          "version": 89,
+          "containerStyle": "none",
+          "detachFromLayout": true,
+          "dynamicBindingPathList": [],
+          "leftColumn": 0,
           "minHeight": 640,
           "parentColumnSpace": 1,
-          "dynamicBindingPathList": [],
-          "leftColumn": 0
-        },
-        "layoutOnLoadActions": [
-          [
-            {
-              "id": "list widget issue_refreshToken",
-              "name": "refreshToken",
-              "confirmBeforeExecute": false,
-              "pluginType": "API",
-              "jsonPathKeys": [
-                "appsmith.store.refreshToken",
-                "btoa(\"6ff9274520cd4d5aa5a19fe75894aa90:f44e22bcd9d14ef09480b39ae3aad59e\")"
-              ],
-              "timeoutInMillisecond": 10000
-            }
-          ],
-          [
-            {
-              "id": "list widget issue__onPageActions.authorizeSpotifyUsage",
-              "name": "_onPageActions.authorizeSpotifyUsage",
-              "collectionId": "list widget issue__onPageActions",
-              "confirmBeforeExecute": false,
-              "pluginType": "JS",
-              "jsonPathKeys": [
-                "() => {\n  console.log(\"Step 1: Calling SpotifyAuthOp after page load\");\n  return SpotifySettings.authTPP().then(() => {\n    console.log(\"Step 5: Coming back to onPageLoad flow - app has been authorized from nested calls. \\\\n Next is to run all Spotify API's\");\n    return RaceCondition.runAllSpotifyAPIs();\n  }).catch(error => {\n    showAlert(\"There's an issue connecting Spotify to your app 💔 \\\\n \" + error.toString(), 'error');\n    console.log(\"Abandoning all steps since something went wrong\");\n  });\n}"
-              ],
-              "timeoutInMillisecond": 10000
-            },
-            {
-              "id": "list widget issue_requestToken",
-              "name": "requestToken",
-              "confirmBeforeExecute": false,
-              "pluginType": "API",
-              "jsonPathKeys": [
-                "appsmith.URL.queryParams.code",
-                "btoa(\"6ff9274520cd4d5aa5a19fe75894aa90:f44e22bcd9d14ef09480b39ae3aad59e\")"
-              ],
-              "timeoutInMillisecond": 10000
-            }
-          ]
-        ],
-        "layoutOnLoadActionErrors": [],
-        "validOnPageLoadActions": true,
-        "id": "list widget issue",
-        "deleted": false,
-        "policies": [],
-        "userPermissions": []
+          "parentRowSpace": 1,
+          "rightColumn": 1160,
+          "snapColumns": 64,
+          "snapRows": 63,
+          "topRow": 0,
+          "type": "CANVAS_WIDGET",
+          "version": 92,
+          "widgetId": "0",
+          "widgetName": "MainContainer"
+        }
       }
     ],
-    "userPermissions": [],
-    "policies": [],
-    "isHidden": true
-  },
-  "deleted": false,
-  "gitSyncId": "61ea4a44361846772cfb117d_62acb61f78c5ed4cdfd8d99f"
+    "name": "list widget issue",
+    "slug": "list-widget-issue"
+  }
 }

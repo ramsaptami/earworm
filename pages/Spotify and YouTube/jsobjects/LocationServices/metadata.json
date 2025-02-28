@@ -1,15 +1,11 @@
 {
+  "gitSyncId": "61ea4a44361846772cfb117d_62261fd85386390b2c7094dc",
+  "id": "Spotify and YouTube_LocationServices",
   "unpublishedCollection": {
     "name": "LocationServices",
     "pageId": "Spotify and YouTube",
     "pluginId": "js-plugin",
     "pluginType": "JS",
-    "actions": [],
-    "archivedActions": [],
-    "variables": [],
-    "userPermissions": []
-  },
-  "id": "Spotify and YouTube_LocationServices",
-  "deleted": false,
-  "gitSyncId": "61ea4a44361846772cfb117d_62261fd85386390b2c7094dc"
+    "variables": []
+  }
 }

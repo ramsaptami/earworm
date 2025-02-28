@@ -1,15 +1,11 @@
 {
+  "gitSyncId": "61ea4a44361846772cfb117d_623acab6ee795b27770e7868",
+  "id": "Spotify and YouTube__onPageActions",
   "unpublishedCollection": {
     "name": "_onPageActions",
     "pageId": "Spotify and YouTube",
     "pluginId": "js-plugin",
     "pluginType": "JS",
-    "actions": [],
-    "archivedActions": [],
-    "variables": [],
-    "userPermissions": []
-  },
-  "id": "Spotify and YouTube__onPageActions",
-  "deleted": false,
-  "gitSyncId": "61ea4a44361846772cfb117d_623acab6ee795b27770e7868"
+    "variables": []
+  }
 }

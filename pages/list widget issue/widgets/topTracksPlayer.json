@@ -1,42 +1,46 @@
 {
-    "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
-    "widgetName": "topTracksPlayer",
-    "borderColor": "",
-    "submitButtonStyles": {
-        "boxShadow": "none",
-        "borderRadius": "0px"
+  "animateLoading": true,
+  "borderColor": "",
+  "borderOpacity": 100,
+  "borderRadius": "1.5rem",
+  "borderWidth": "4",
+  "bottomRow": 108,
+  "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
+  "displayName": "Iframe",
+  "dynamicBindingPathList": [
+    {
+      "key": "source"
     },
-    "displayName": "Iframe",
-    "iconSVG": "/static/media/icon.34169b6a.svg",
-    "topRow": 38,
-    "bottomRow": 108,
-    "parentRowSpace": 10,
-    "source": "{{(function() {\nlet text = topTracksDisplay.selectedRow.external_urls\nlet result = text.replace(\"https://open.spotify.com/\",\"https://open.spotify.com/embed/\");\nreturn result\n})()\n}}",
-    "type": "IFRAME_WIDGET",
-    "hideCard": false,
-    "borderOpacity": 100,
-    "animateLoading": true,
-    "parentColumnSpace": 17.9375,
-    "dynamicTriggerPathList": [],
-    "leftColumn": 30,
-    "dynamicBindingPathList": [
-        {"key": "source"},
-        {"key": "boxShadow"}
-    ],
-    "borderWidth": "4",
-    "key": "zvcwglah5m",
-    "labelTextSize": "0.875rem",
-    "rightColumn": 64,
-    "textSize": "0.875rem",
-    "widgetId": "bl38oglv08",
-    "resetButtonStyles": {
-        "boxShadow": "none",
-        "borderRadius": "0px"
-    },
-    "isVisible": true,
-    "version": 1,
-    "parentId": "0",
-    "renderMode": "CANVAS",
-    "isLoading": false,
-    "borderRadius": "1.5rem"
+    {
+      "key": "boxShadow"
+    }
+  ],
+  "dynamicTriggerPathList": [],
+  "hideCard": false,
+  "iconSVG": "/static/media/icon.34169b6a.svg",
+  "isLoading": false,
+  "isVisible": true,
+  "key": "zvcwglah5m",
+  "labelTextSize": "0.875rem",
+  "leftColumn": 30,
+  "parentColumnSpace": 17.9375,
+  "parentId": "0",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "resetButtonStyles": {
+    "borderRadius": "0px",
+    "boxShadow": "none"
+  },
+  "rightColumn": 64,
+  "source": "{{(function() {\nlet text = topTracksDisplay.selectedRow.external_urls\nlet result = text.replace(\"https://open.spotify.com/\",\"https://open.spotify.com/embed/\");\nreturn result\n})()\n}}",
+  "submitButtonStyles": {
+    "borderRadius": "0px",
+    "boxShadow": "none"
+  },
+  "textSize": "0.875rem",
+  "topRow": 38,
+  "type": "IFRAME_WIDGET",
+  "version": 1,
+  "widgetId": "bl38oglv08",
+  "widgetName": "topTracksPlayer"
 }

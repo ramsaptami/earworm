@@ -1,15 +1,11 @@
 {
+  "gitSyncId": "61ea4a44361846772cfb117d_62a32578f4e3980741ff575d",
+  "id": "debugging page__onPageActions",
   "unpublishedCollection": {
     "name": "_onPageActions",
     "pageId": "debugging page",
     "pluginId": "js-plugin",
     "pluginType": "JS",
-    "actions": [],
-    "archivedActions": [],
-    "variables": [],
-    "userPermissions": []
-  },
-  "id": "debugging page__onPageActions",
-  "deleted": false,
-  "gitSyncId": "61ea4a44361846772cfb117d_62a32578f4e3980741ff575d"
+    "variables": []
+  }
 }

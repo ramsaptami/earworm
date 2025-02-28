@@ -1,15 +1,11 @@
 {
+  "gitSyncId": "61ea4a44361846772cfb117d_626b99c4c12c530f8f890432",
+  "id": "Spotify and YouTube_SpotifyManager",
   "unpublishedCollection": {
     "name": "SpotifyManager",
     "pageId": "Spotify and YouTube",
     "pluginId": "js-plugin",
     "pluginType": "JS",
-    "actions": [],
-    "archivedActions": [],
-    "variables": [],
-    "userPermissions": []
-  },
-  "id": "Spotify and YouTube_SpotifyManager",
-  "deleted": false,
-  "gitSyncId": "61ea4a44361846772cfb117d_626b99c4c12c530f8f890432"
+    "variables": []
+  }
 }

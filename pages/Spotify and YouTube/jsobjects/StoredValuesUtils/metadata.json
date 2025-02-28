@@ -1,15 +1,11 @@
 {
+  "gitSyncId": "612332edfe755a38b6e6a9c2_61bb7741cd5d704509533747",
+  "id": "Spotify and YouTube_StoredValuesUtils",
   "unpublishedCollection": {
     "name": "StoredValuesUtils",
     "pageId": "Spotify and YouTube",
     "pluginId": "js-plugin",
     "pluginType": "JS",
-    "actions": [],
-    "archivedActions": [],
-    "variables": [],
-    "userPermissions": []
-  },
-  "id": "Spotify and YouTube_StoredValuesUtils",
-  "deleted": false,
-  "gitSyncId": "612332edfe755a38b6e6a9c2_61bb7741cd5d704509533747"
+    "variables": []
+  }
 }

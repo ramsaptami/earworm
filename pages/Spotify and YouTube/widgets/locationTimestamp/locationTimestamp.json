@@ -1,83 +1,89 @@
 {
-    "tabId": "",
-    "boxShadow": "none",
-    "widgetName": "locationTimestamp",
-    "borderColor": "transparent",
-    "submitButtonStyles": {
-        "boxShadow": "none",
-        "borderRadius": "0px"
-    },
-    "isCanvas": true,
-    "dynamicPropertyPathList": [{"key": "borderRadius"}],
-    "displayName": "Container",
-    "iconSVG": "/static/media/icon.1977dca3.svg",
-    "topRow": 1,
-    "bottomRow": 7,
-    "parentRowSpace": 10,
-    "type": "CONTAINER_WIDGET",
-    "hideCard": false,
-    "animateLoading": true,
-    "parentColumnSpace": 0.24805068969726562,
-    "dynamicTriggerPathList": [],
-    "leftColumn": 47,
-    "dynamicBindingPathList": [],
-    "children": [{
-        "boxShadow": "none",
-        "widgetName": "Canvas10",
-        "submitButtonStyles": {
-            "boxShadow": "none",
-            "borderRadius": "0px"
-        },
-        "bottomRow": 60,
-        "topRow": 0,
-        "parentRowSpace": 1,
-        "type": "CANVAS_WIDGET",
+  "animateLoading": true,
+  "backgroundColor": "transparent",
+  "borderColor": "transparent",
+  "borderRadius": "0pxpxpx",
+  "borderWidth": "0",
+  "bottomRow": 7,
+  "boxShadow": "none",
+  "children": [
+    {
+      "borderRadius": "0px",
+      "bottomRow": 60,
+      "boxShadow": "none",
+      "canExtend": false,
+      "containerStyle": "none",
+      "detachFromLayout": true,
+      "isLoading": false,
+      "isVisible": true,
+      "labelTextSize": "0.875rem",
+      "leftColumn": 0,
+      "minHeight": 3.7353515625,
+      "parentColumnSpace": 1,
+      "parentId": "zhg0jyh043",
+      "parentRowSpace": 1,
+      "props": {
         "canExtend": false,
-        "minHeight": 3.7353515625,
-        "parentColumnSpace": 1,
-        "leftColumn": 0,
-        "labelTextSize": "0.875rem",
-        "rightColumn": 15.875244140625,
-        "textSize": "0.875rem",
-        "detachFromLayout": true,
-        "widgetId": "3o54sd9tkg",
+        "children": [],
         "containerStyle": "none",
-        "resetButtonStyles": {
-            "boxShadow": "none",
-            "borderRadius": "0px"
-        },
-        "isVisible": true,
-        "version": 1,
-        "parentId": "zhg0jyh043",
-        "props": {
-            "detachFromLayout": true,
-            "children": [],
-            "containerStyle": "none",
-            "canExtend": false
-        },
-        "isLoading": false,
-        "renderMode": "CANVAS",
-        "borderRadius": "0px"
-    }],
-    "borderWidth": "0",
-    "key": "sf9k1clp96",
-    "labelTextSize": "0.875rem",
-    "backgroundColor": "transparent",
-    "rightColumn": 64,
-    "textSize": "0.875rem",
-    "dynamicHeight": "FIXED",
-    "widgetId": "zhg0jyh043",
-    "containerStyle": "card",
-    "resetButtonStyles": {
-        "boxShadow": "none",
-        "borderRadius": "0px"
-    },
-    "isVisible": true,
-    "version": 1,
-    "parentId": "0",
-    "renderMode": "CANVAS",
-    "isLoading": false,
-    "borderRadius": "0pxpxpx",
-    "maxDynamicHeight": 9000,
-    "minDynamicHeight": 4
+        "detachFromLayout": true
+      },
+      "renderMode": "CANVAS",
+      "resetButtonStyles": {
+        "borderRadius": "0px",
+        "boxShadow": "none"
+      },
+      "rightColumn": 15.875244140625,
+      "submitButtonStyles": {
+        "borderRadius": "0px",
+        "boxShadow": "none"
+      },
+      "textSize": "0.875rem",
+      "topRow": 0,
+      "type": "CANVAS_WIDGET",
+      "version": 1,
+      "widgetId": "3o54sd9tkg",
+      "widgetName": "Canvas10"
+    }
+  ],
+  "containerStyle": "card",
+  "displayName": "Container",
+  "dynamicBindingPathList": [],
+  "dynamicHeight": "FIXED",
+  "dynamicPropertyPathList": [
+    {
+      "key": "borderRadius"
+    }
+  ],
+  "dynamicTriggerPathList": [],
+  "hideCard": false,
+  "iconSVG": "/static/media/icon.1977dca3.svg",
+  "isCanvas": true,
+  "isLoading": false,
+  "isVisible": true,
+  "key": "sf9k1clp96",
+  "labelTextSize": "0.875rem",
+  "leftColumn": 47,
+  "maxDynamicHeight": 9000,
+  "minDynamicHeight": 4,
+  "parentColumnSpace": 0.24805068969726562,
+  "parentId": "0",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "resetButtonStyles": {
+    "borderRadius": "0px",
+    "boxShadow": "none"
+  },
+  "rightColumn": 64,
+  "submitButtonStyles": {
+    "borderRadius": "0px",
+    "boxShadow": "none"
+  },
+  "tabId": "",
+  "textSize": "0.875rem",
+  "topRow": 1,
+  "type": "CONTAINER_WIDGET",
+  "version": 1,
+  "widgetId": "zhg0jyh043",
+  "widgetName": "locationTimestamp"
 }

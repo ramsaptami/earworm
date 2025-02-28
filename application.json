@@ -1,4 +1,18 @@
 {
+  "appIsExample": false,
+  "appLayout": {
+    "type": "TABLET_LARGE"
+  },
+  "applicationDetail": {
+    "themeSetting": {
+      "appMaxWidth": "LARGE",
+      "density": 1.0,
+      "sizing": 1.0
+    }
+  },
+  "applicationVersion": 2,
+  "color": "#F5D1D1",
+  "icon": "love",
   "pages": [
     {
       "id": "Home",
@@ -17,21 +31,14 @@
       "isDefault": false
     }
   ],
-  "viewMode": false,
-  "appIsExample": false,
-  "unreadCommentThreads": 0,
-  "clonedFromApplicationId": "61ea49fb361846772cfb1113",
-  "color": "#F5D1D1",
-  "icon": "love",
   "unpublishedAppLayout": {
     "type": "TABLET_LARGE"
   },
-  "publishedAppLayout": {
-    "type": "TABLET_LARGE"
-  },
-  "unpublishedCustomJSLibs": [],
-  "publishedCustomJSLibs": [],
-  "applicationVersion": 2,
-  "isManualUpdate": false,
-  "deleted": false
+  "unpublishedApplicationDetail": {
+    "themeSetting": {
+      "appMaxWidth": "LARGE",
+      "density": 1.0,
+      "sizing": 1.0
+    }
+  }
 }

@@ -1,55 +1,71 @@
 {
-    "boxShadow": "none",
-    "widgetName": "selectArtist",
-    "isFilterable": false,
-    "submitButtonStyles": {
-        "boxShadow": "none",
-        "borderRadius": "0px"
+  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+  "borderRadius": "0px",
+  "bottomRow": 23,
+  "boxShadow": "none",
+  "defaultOptionValue": "{{artistCodes.artist[0].value}}",
+  "displayName": "Select",
+  "dynamicBindingPathList": [
+    {
+      "key": "options"
     },
-    "dynamicPropertyPathList": [
-        {"key": "isDisabled"},
-        {"key": "onOptionChange"}
-    ],
-    "displayName": "Select",
-    "iconSVG": "/static/media/icon.bd99caba.svg",
-    "labelText": "",
-    "topRow": 19,
-    "bottomRow": 23,
-    "primaryColor": "{{appsmith.theme.colors.primaryColor}}",
-    "parentRowSpace": 10,
-    "type": "DROP_DOWN_WIDGET",
-    "serverSideFiltering": false,
-    "hideCard": false,
-    "defaultOptionValue": "{{artistCodes.artist[0].value}}",
-    "selectionType": "SINGLE_SELECT",
-    "parentColumnSpace": 16.5361328125,
-    "dynamicTriggerPathList": [{"key": "onOptionChange"}],
-    "leftColumn": 3,
-    "dynamicBindingPathList": [
-        {"key": "options"},
-        {"key": "defaultOptionValue"},
-        {"key": "primaryColor"},
-        {"key": "accentColor"}
-    ],
-    "options": "{{artistCodes.artist}}",
-    "placeholderText": "",
-    "isDisabled": "false",
-    "key": "ptjbds65n5",
-    "labelTextSize": "0.875rem",
-    "isRequired": false,
-    "rightColumn": 16,
-    "textSize": "0.875rem",
-    "widgetId": "qlo60cxd34",
-    "accentColor": "{{appsmith.theme.colors.primaryColor}}",
-    "resetButtonStyles": {
-        "boxShadow": "none",
-        "borderRadius": "0px"
+    {
+      "key": "defaultOptionValue"
     },
-    "isVisible": true,
-    "version": 1,
-    "parentId": "0",
-    "renderMode": "CANVAS",
-    "isLoading": false,
+    {
+      "key": "primaryColor"
+    },
+    {
+      "key": "accentColor"
+    }
+  ],
+  "dynamicPropertyPathList": [
+    {
+      "key": "isDisabled"
+    },
+    {
+      "key": "onOptionChange"
+    }
+  ],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onOptionChange"
+    }
+  ],
+  "hideCard": false,
+  "iconSVG": "/static/media/icon.bd99caba.svg",
+  "isDisabled": "false",
+  "isFilterable": false,
+  "isLoading": false,
+  "isRequired": false,
+  "isVisible": true,
+  "key": "ptjbds65n5",
+  "labelText": "",
+  "labelTextSize": "0.875rem",
+  "leftColumn": 3,
+  "onOptionChange": "{{fetchTopTracks.run(() => \n{youTubeCustomSearch.run();\nshowAlert('♬ ♩ 𝅘𝅥𝅰 ♩ 𝅘𝅥𝅰 ♬')}, () => showAlert('Uh uh! :( Looks like auth token has expired','warning'))}}",
+  "options": "{{artistCodes.artist}}",
+  "parentColumnSpace": 16.5361328125,
+  "parentId": "0",
+  "parentRowSpace": 10,
+  "placeholderText": "",
+  "primaryColor": "{{appsmith.theme.colors.primaryColor}}",
+  "renderMode": "CANVAS",
+  "resetButtonStyles": {
     "borderRadius": "0px",
-    "onOptionChange": "{{fetchTopTracks.run(() => \n{youTubeCustomSearch.run();\nshowAlert('♬ ♩ 𝅘𝅥𝅰 ♩ 𝅘𝅥𝅰 ♬')}, () => showAlert('Uh uh! :( Looks like auth token has expired','warning'))}}"
+    "boxShadow": "none"
+  },
+  "rightColumn": 16,
+  "selectionType": "SINGLE_SELECT",
+  "serverSideFiltering": false,
+  "submitButtonStyles": {
+    "borderRadius": "0px",
+    "boxShadow": "none"
+  },
+  "textSize": "0.875rem",
+  "topRow": 19,
+  "type": "DROP_DOWN_WIDGET",
+  "version": 1,
+  "widgetId": "qlo60cxd34",
+  "widgetName": "selectArtist"
 }
